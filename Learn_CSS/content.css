@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.connect{
+    text-decoration: none;
+    color: white;
+}
+
+#head {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    height: 56px;
+}
+.logo{
+    padding: 10px 0px;
+}
+.logo img {
+    width: 38.5px; /* Thay đổi kích thước theo nhu cầu */
+    height: 36px;
+}
+
+.general-menu ul {
+    list-style: none;
+    height: 56px;
+}
+
+.general-menu ul li {
+    position: relative;
+    display: inline;
+    padding: 10px 29px;
+    height: 56px;
+    line-height: 56px;
+}
+
+.general-menu ul li a {
+    text-decoration: none;
+    color: black; /* Màu chữ của menu */
+}
+
+.general-menu ul li:hover {
+    background-color: rgb(4, 170, 109); /* Thay đổi màu nền của menu khi rê chuột vào */
+}
+
+
+
+
+
+.general-icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.general-icon-item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.general-icon-item i {
+    font-size: 24px; /* Kích thước của biểu tượng */
+}
+
+.general-icon-item h3 {
+    font-size: 14px; /* Kích thước của tiêu đề */
+}
+
+
+/* Thanh tim kiem */
+input[type="text"] {
+    padding: 8px;
+    font-size: 10px;
+    font-style: italic;/* font chữ nghiêng */
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+button {
+    padding: 10px 16px;
+    background-color: rgb(4, 170, 109);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.login {
+    padding: 10px;
+}
+.btn {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none;
+    padding: 10px 30px; /* Kích thước nút */
+    border-radius: 20px; /* Bo góc */
+    cursor: pointer;
+}
+
+.login a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.btn:hover {
+    background-color: #0056b3; /* Màu nền hover */
+}
+
+
+/* PHAN MENU LINK */
+nav {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Đảm bảo khi hover thì viền không vượt ra khỏi nav */
+}
+
+nav a {
+    position: relative;
+    text-align: center;
+    width: 10%;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu khi hover */
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: calc(100% / 10); /* Chia đều chiều rộng cho từng menu */
+    height: 100%;
+    background: linear-gradient(45deg, #194b4f, #33fffc);
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: 0; /* Đảm bảo viền nằm dưới các nút */
+}
+
+nav a:hover {
+    color: #194b4f; /* Đổi màu chữ khi hover */
+}
+
+
+nav a:nth-child(1):hover ~ span {
+    left: calc(100% / 10 * 0);
+}
+
+nav a:nth-child(2):hover ~ span {
+    left: calc(100% / 10 * 1);
+}
+
+nav a:nth-child(3):hover ~ span {
+    left: calc(100% / 10 * 2);
+}
+
+nav a:nth-child(4):hover ~ span {
+    left: calc(100% / 10 * 3);
+}
+
+nav a:nth-child(5):hover ~ span {
+    left: calc(100% / 10 * 4);
+}
+
+nav a:nth-child(6):hover ~ span {
+    left: calc(100% / 10 * 5);
+}
+
+nav a:nth-child(7):hover ~ span {
+    left: calc(100% / 10 * 6);
+}
+
+nav a:nth-child(8):hover ~ span {
+    left: calc(100% / 10 * 7);
+}
+
+nav a:nth-child(9):hover ~ span {
+    left: calc(100% / 10 * 8);
+}
+
+nav a:nth-child(10):hover ~ span {
+    left: calc(100% / 10 * 9);
+}
+
+
+
+body {
+    
+    margin: 0; /* Xóa margin mặc định của body */
+}
+#wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: 50px; /* Cho phép cuộn khi nội dung vượt quá kích thước của khu vực hiển thị */
+    margin: 0 auto; /* Căn giữa main theo chiều ngang */
+}
+
+#head {
+    position: fixed; /* Đặt phần đầu trang cố định vị trí */
+    top: 0; /* Đặt vị trí phía trên cùng của phần đầu trang */
+    width: 100%; /* Đặt chiều rộng bằng 100% của phần đầu trang */
+    background-color: white; /* Màu nền của phần đầu trang */
+    z-index: 1000; /* Đảm bảo phần đầu trang nằm trên tất cả các phần tử khác */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiển thị bóng đổ nhẹ */
+}
+#head-link {
+    position: fixed;
+    margin-top: 50px;/* Đảm bảo nội dung bên dưới phần đầu trang không bị che khuất */
+    top: 0; /* Đặt vị trí phía trên cùng của phần đầu trang */
+    width: 100%; /* Đặt chiều rộng bằng 100% của phần đầu trang */
+    background-color: white; /* Màu nền của phần đầu trang */
+    z-index: 1000; /* Đảm bảo phần đầu trang nằm trên tất cả các phần tử khác */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiển thị bóng đổ nhẹ */
+}
+#main-content {
+    margin-top: 75px;
+    display: flex;
+}
+#left {
+    flex: 20;
+  min-height: 100%;
+  border: 1px solid #CDCDCD;
+  float: left;
+  background-color: #e3e1e1;
+  margin-bottom: 5px;
+  margin-top: 85px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+#content{
+    flex: 60;
+    min-height: 5000px;
+    border: 1px solid #CDCDCD;
+    float:left;
+    margin-left: 255px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+#right{
+    flex: 20;
+    min-height: 5000px;
+    border: 1px solid #CDCDCD;
+    float:right;
+    margin-bottom: 5px;
+    background: white;
+    margin-top: 10px;
+}
+
+.rounded-image {
+    border-radius: 10000px;
+    width: 100px; /* Thay đổi kích thước hình ảnh theo ý muốn */
+    height: 100px;
+}
+link[rel="icon"].rounded-image {
+    border-radius: 50%;
+}
+
+#main-container {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+#main-container {
+    width: min(100% - 30px, 840px);
+    margin-inline: auto;
+}
+
+/* ==================================(NÚT HOME)============================== */
+.home-button {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    border-radius: 50px; /* Bo góc */
+}
+.home-button a {
+    text-decoration: none; /* Loại bỏ gạch dưới */
+    color: inherit;
+}
+.home-button:hover {
+    background-color: #e5ef52; /* Màu nền của nút khi hover */
+    color: black;
+}
+/* ==================================(NÚT KẾ TIẾP)============================== */
+.next-button {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    margin-left: 250px;
+    border-radius: 50px; /* Bo góc */
+}
+.next-button:hover {
+    background-color: #0056b3; /* Màu nền của nút khi hover */
+}
+
+#background-content {
+    margin-top: 20px;
+    background-color: aqua;
+    padding: 30px;
+}
+/* ==================================(NÚT NGhiên cứu)============================== */
+.study-button a {
+    text-decoration: none; /* Loại bỏ gạch dưới */
+    color: inherit; /* Kế thừa màu sắc từ phần tử cha */
+}
+.study-button {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    border-radius: 20px; /* Bo góc */
+}
+.study-button:hover {
+    background-color: #0056b3; /* Màu nền của nút khi hover */
+}
+
+.container {
+    display: flex;
+}
+#button-container {
+    display: flex; /* chia đều 3 cột button , mỗi cột 5 thẻ button thẳng hàng*/
+    
+}
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* =======================(3 cột button , mỗi cột 5 dòng thẳng hàng) ==========================*/
+.button-three-column {
+    margin: 2px;
+    padding: 12px;
+    background-color: rgb(212, 218, 218);
+    border-radius: 5px; /* Bo góc */
+    color: black;
+    margin-bottom: 10px;
+    height: 60px;
+    width: 200px;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+}
+.button-three-column:hover{
+    background: #222;
+    color: white;
+}
+/* ====================(CSS Introduce)============================ */
+li::marker{
+    content:"👉";
+}
+/* ==========================(CSS Colors)========================= */
+#p1 {background-color:rgba(255,0,0,0.3);}
+#p2 {background-color:rgba(0,255,0,0.3);}
+#p3 {background-color:rgba(0,0,255,0.3);}
+#p4 {background-color:rgba(192,192,192,0.3);}
+#p5 {background-color:rgba(255,255,0,0.3);}
+#p6 {background-color:rgba(255,0,255,0.3);}
+#p2,#p3,#p4,#p5,#p6{
+    margin-top: 15px;
+}
+
+/* ==========================(CSS Tables)======================== */
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: black;
+}

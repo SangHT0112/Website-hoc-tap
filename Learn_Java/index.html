@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="../button.css">
+    <link rel="stylesheet" href="../Table.css">
+    <link rel="website icon" type="jpg" href="../Images/R.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Menu khái quát -->
+        <div id="head">
+            <!-- Logo cua trang -->
+            <div class="logo">
+                <a href="../Home/Home.html">
+                    <img src="../logo.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu chung -->
+            <div class="general-menu">
+                <ul>
+                    <li><a href="../HuongDan/index.html">
+                        Hướng dẫn</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li> <a href="../GoiY/index.html">Gợi ý</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../ViecLam/index.html">Việc làm</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../DaoTao/index.html">Đào tạo</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button  href="" type="submit"><i class="fas fa-search"></i></button>
+                </ul>
+            </div>
+
+            <div class="general-icon">
+                <div class="general-icon-item">
+                    <i class='bx bx-collapse-horizontal'></i>
+                    <h3>Spaces</h3>
+                </div>
+                <div class="general-icon-item">
+                    <i class='bx bxs-shopping-bags'></i>
+                    <h3>Shop</h3>
+                </div>
+
+            </div>
+
+            <div class="login">
+                <button type="submit" class="btn"><a href="LoginForm/Login.html"> Login</a></button>
+            </div>
+
+
+        </div>
+        
+        <!-- Menu chính -->
+        <div id="head-link">
+            <nav>
+                <a href="../Learn_HTML/index.html">HTML</a>
+                <a href="../Learn_CSS/index.html">CSS</a>
+                <a href="../Learn_JavaScript/index.html">JAVASCRIPT</a>
+                <a href="../Learn_SQL/index.html">SQL</a>
+                <a href="../Learn_Python/index.html">PYTHON</a>
+                <a href="../Learn_Java/index.html">JAVA</a>
+                <a href="../Learn_PHP/index.html">PHP</a>
+                <a href="../Learn_C/index.html">C</a>
+                <a href="../Learn_CPlus/index.html">C++</a>
+                <a href="../Learn_CSharp/index.html">C#</a>
+                <span></span>
+            </nav>
+        </div>
+
+        <div id="main-content">
+            <div id="left">
+                <div class="left-container">
+                    <div style="padding:10px; font-size: 20px;" align="center"><h3> Trang chủ Java</h3> </div>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i> Java HOME </h4>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#GioiThieu">Java Introduce</a> </h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#JavaEdit"> Java JavaEdit</a>  </h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#JavaWhy">Java Why</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#JavaBien">Java Variables</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Operator">Java Operator</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#String">Java String</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#ifelse">Java If..Else</a></h4>
+                </div>
+            </div> <!-- left -->
+            <div id="content">
+                <div> 
+                    <h1> Hướng dẫn Java</h1>
+                </div>
+                <div class="LuiTiep">
+                    <button class="btn">
+                        <i class="fas fa-home"></i><a href="../Home.html"> Home</a> 
+                    </button>
+                    <button class="btn"> <a href="">Kế Tiếp</a> 
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <!-- Trang chủ JAVA -->
+                <div class="JavaCoBan">
+                    <p> Java is a popular programming language</p>
+                    <br>
+                    <p> Java is used to develop mobile apps, web apps, desktop apps, games and much more.</p>
+                    <br>
+                    <p> Java rất dễ học - Bạn sẽ thích nó!</p>
+                    <br> 
+                    <button class="study-button"><a href="https://www.devpro.edu.vn/tai-lieu-hoc-lap-trinh-html-css">Nghiên cứu hướng dẫn chi tiết Java</a> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>
+                </div> 
+        
+               <!-- Giới thiệu Java -->
+                <div class="GioiThieu" id="GioiThieu">
+                    <h1>Giới thiệu Java</h1>
+                    <h2>Java là gì?</h2>
+                    <p>
+                        Java là ngôn ngữ lập trình máy tính có tính chất hướng đối tượng, 
+                        dựa trên các lớp, thường được sử dụng cho các hệ thống có tính độc lập cao. 
+                        Nó được sử dụng để hướng tới các lập trình viên viết ứng dụng "write one, 
+                        run everywhere" (viết một lần, chạy mọi nơi, nghĩa là đoạn code Java sau khi được 
+                        biên dịch có thể chạy được trên tất cả các nền tảng hỗ trợ Java mà không cần phải 
+                        được biên dịch lại. Các ứng dụng Java sau khi đã được biên dịch thành bytecode 
+                        có thể chạy trên bất kỳ máy ảo Java nào (Java virtual machine)
+                    </p>
+                    <hr>
+                </div>
+                <div>
+                    
+                </div>
+                <div class="JavaEdit" id="JavaEdit">
+                    <h1> Java Editors</h1>
+                    <h3>Là ngôn ngữ bậc cao mà ai cũng có thể dễ dàng học.</h3>
+                    <br>
+                    <hr>
+                </div>
+
+                <!-- Tại sao nên học Java -->
+                <div class="JavaWhy" id="JavaWhy">
+                    <br>
+                    <h2> Tại sao nên học Java</h2>
+                    <br>
+                    <p>Java hoạt động trên nhiều nền tảng khác nhau (Windows, Mac, Linux, Raspberry Pi, v.v.)</p>
+                    <br>
+                    <p>Đây là một trong những ngôn ngữ lập trình phổ biến nhất trên thế giới</p>
+                    <br>
+                    <p>Nó có nhu cầu lớn trong thị trường việc làm hiện tại</p>
+                    <br>
+                    <p>Nó rất dễ học và đơn giản để sử dụng</p>
+                    <br>
+                    <p>Nó là mã nguồn mở và miễn phí</p>
+                    <br>
+                    <p>Nó rất dễ học và đơn giản để sử dụng</p>
+                    <br>
+                    <p>Nó có sự hỗ trợ cộng đồng rất lớn (hàng chục triệu nhà phát triển)</p>
+                    <br>
+                    <p>Java là ngôn ngữ hướng đối tượng mang lại cấu trúc rõ ràng cho các chương trình và cho phép tái sử dụng mã, giảm chi phí phát triển</p>
+                    <hr>
+                </div>
+
+                <!-- Biến Java -->
+                <div class="JavaBien" id="JavaBien">
+                    <h2>Biến trong Java</h2>
+                    <p>
+                        Biến là tên một khu nhớ. Có ba kiểu biến: biến cục bộ (còn gọi là biến local), 
+                        thuộc tính (biến của instance- đối tượng) và biến static.
+                    </p>
+                    <p>
+                        Bạn phải khai báo tất cả các biến trước khi chúng có thể được sử dụng. 
+                        Form cơ bản của một khai báo biến như sau:
+                    </p>
+                    <div class="congthuc">
+                        <p>kieu_du_lieu bien [ = giatri][, bien [= giatri] ...] ;</p>
+                    </div>
+                    <p>Dưới đây là ví dụ về khai báo và khởi tạo biến hợp lệ trong Java:</p>
+                    <div class="vidu">
+                        <p class="code">
+                            <div class="dongcode">
+                                <h4 class="khaibao">int a, b, c; </h4>       <div class="ghichu">// Khai bao ba bien kieu int la a, b, và c.</div> 
+                            </div>
+                            <div class="dongcode">
+                                <h4 class="khaibao">int a = 5, b = 7;</h4>  <h4 class="ghichu">// Vi du ve khoi tao bien </h4>
+                            </div>
+                            <div class="dongcode">
+                                <h4 class="khaibao">byte A = 11; </h4>        <h4 class="ghichu">// Khoi tao mot bien kieu byte ten la A.</h4>
+                            </div>
+                            <div class="dongcode">
+                                <h4 class="khaibao">double pi = 3.14159;</h4> <h4 class="ghichu">// Khai bao va gan mot gia tri cua PI.</h4>
+                            </div>
+                            <div class="dongcode">
+                                <h4 class="khaibao">char nam = 'b';</h4>       <h4 class="ghichu"> // Bien nam duoc khoi tao voi gia tri 'a'.</h4> <br>
+                            </div>
+                            
+                           
+                            
+                            
+                        </p>
+                    </div>
+                </div>
+
+                
+<!-- ====================JAVA VIDU==================== -->
+                <div class="vidu">
+                    <h3>Ví dụ</h3>
+                    <h4>Ở đây, tuoi là biến local. 
+                        Nó được định nghĩa bên trong phương thức tuoiCon() 
+                        và phạm vi của nó được giới hạn chỉ trong phương thức này
+                    </h4>
+                    <img src="../Learn_Java/Images/viduTuoi.png" alt="">
+                </div>
+
+                <div class="vidu">
+                    <h3>Ví dụ</h3>
+                    <h4>Ví dụ sau sử dụng tuoi mà không khởi tạo nó, 
+                        vì thế nó sẽ tạo một lỗi tại thời gian biên dịch.
+                    </h4>
+                    <img src="../Learn_Java/Images/viduTuoi2.png" alt="">
+                </div>
+                <hr>
+
+                 <!-- =============Toán tủ Java=================== -->
+                
+                <div class="Operator" id="Operator">
+                    <h2>Java Operators</h2>
+                    <p>
+                        Toán tử được sử dụng để thực hiện các thao tác trên các biến và giá trị.
+                        Trong ví dụ bên dưới, chúng tôi sử dụng toán tử <span style="color: red;">+</span> để cộng hai giá trị lại với nhau:
+                    </p>
+                    
+
+                    <div class="vidu">
+                        <h3>Ví dụ</h3>
+                        <img src="../Learn_Java/Images/viduOperator.png" alt="">
+                    </div>
+
+                    <p>Mặc dù toán tử + thường được sử dụng để cộng hai giá trị lại với nhau,
+                        giống như trong ví dụ trên, nó cũng có thể được sử dụng để cộng lại với nhau
+                        một biến và một giá trị, hoặc một biến và một biến khác:</p>
+
+                        <div class="vidu">
+                            <h3>Ví dụ</h3>
+                            <img src="../Learn_Java/Images/viduOperator2.png" alt="">
+                        </div>
+                        <br>
+                        <h3>Java chia các toán tử thành các nhóm sau:</h3>
+                        <ul>
+                            <li>Toán tử số học</l>
+                            <li>Toán tử gán</li>
+                            <li>Toán tử so sánh</li>
+                            <li>Toán tử logic</li>
+                            <li>Toán tử bitwise</li>
+                        </ul>
+
+                        <table>
+                            <tr>
+                                <th>Toán Tử</th>
+                                <th>Tên</th>
+                                <th>Mô Tả</th>
+                                <th>Ví Dụ</th>
+             
+                            </tr>
+                            <tr>
+                                <td>+</td>
+                                <td>Cộng</td>
+                                <td>Cộng hai giá trị lại với nhau</td>
+                                <td>x + y</td>
+               
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>Trừ</td>
+                                <td>Trừ một giá trị từ một giá trị khác</td>
+                                <td>x - y</td>
+                       
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>Nhân</td>
+                                <td>Nhân hai giá trị với nhau</td>
+                                <td>x * y</td>
+                
+                            </tr>
+                            <tr>
+                                <td>/</td>
+                                <td>Chia</td>
+                                <td>Chia một giá trị cho một giá trị khác</td>
+                                <td>x / y</td>
+                     
+                            </tr>
+                            <tr>
+                                <td>%</td>
+                                <td>Chia Lấy Dư</td>
+                                <td>Trả về phần dư của phép chia</td>
+                                <td>x % y</td>
+                         
+                            </tr>
+                            <tr>
+                                <td>++</td>
+                                <td>Tăng</td>
+                                <td>Tăng giá trị của biến lên 1</td>
+                                <td>++x</td>
+                  
+                            </tr>
+                            <tr>
+                                <td>--</td>
+                                <td>Giảm</td>
+                                <td>Giảm giá trị của biến đi 1</td>
+                                <td>--x</td>
+      
+                            </tr>
+                        </table>
+                </div>
+
+                <!-- =============================Chuỗi JAVA================== -->
+                <div class="String" id="String">
+                    <h2>Java String</h2>
+                    <p>
+                        Chuỗi được sử dụng để lưu trữ văn bản. <br>
+                        A <span style="color: red;">String</span> biến chứa tập hợp các ký tự
+                        được bao quanh bởi dấu ngoặc kép:
+                    </p>
+                    <div class="vidu">
+                        <h3>Ví dụ</h3>
+                        <img src="../Learn_Java/Images/viduString.png" alt="">
+                    </div>
+                    <h3>Chiều dài String</h3>
+                    <p>
+                        Chuỗi trong Java thực chất là một đối tượng chứa các phương thức
+                         có thể thực hiện một số thao tác nhất định trên chuỗi. 
+                        Ví dụ: có thể tìm thấy độ dài của chuỗi bằng phương thức <span>length()</span> :
+                    </p>
+
+                    <div class="vidu">
+                        <h3>Ví dụ</h3>
+                        <img src="../Learn_Java/Images/viduString2.png" alt="">
+                    </div>
+
+                    <h3>Tìm một ký tự trong một chuỗi</h3>
+                    <p>
+                        Phương thức <span>indexOf()</span> trả về chỉ mục (vị trí) của lần xuất hiện đầu tiên
+                         của một văn bản được chỉ định trong một chuỗi 
+                         (bao gồm cả khoảng trắng):
+                    </p>
+
+                    <div class="vidu">
+                        <h3>Ví dụ</h3>
+                        <img src="../Learn_Java/Images/viduString2.png" alt="">
+                    </div>
+                    
+                        
+                </div>
+                  <!-- ===============JAVA IF ELSE================= -->
+                <div class="ifelse" id="ifelse">
+                    <h2>Java If...Else..</h2>
+                    <p>
+                        Chuỗi được sử dụng để lưu trữ văn bản. <br>
+                        A <span style="color: red;">String</span> biến chứa tập hợp các ký tự
+                        được bao quanh bởi dấu ngoặc kép:
+                    </p>
+                    <div class="vidu">
+                        <h3>Ví dụ</h3>
+                        <img src="../Learn_Java/Images/viduString.png" alt="">
+                    </div>
+                    <h3>Chiều dài String</h3>
+                    <p>
+                        Chuỗi trong Java thực chất là một đối tượng chứa các phương thức
+                         có thể thực hiện một số thao tác nhất định trên chuỗi. 
+                        Ví dụ: có thể tìm thấy độ dài của chuỗi bằng phương thức <span>length()</span> :
+                    </p>
+
+                    <div class="vidu">
+                        <h3>Ví dụ</h3>
+                        <img src="../Learn_Java/Images/viduString2.png" alt="">
+                    </div>
+
+                    <h3>Tìm một ký tự trong một chuỗi</h3>
+                    <p>
+                        Phương thức <span>indexOf()</span> trả về chỉ mục (vị trí) của lần xuất hiện đầu tiên
+                         của một văn bản được chỉ định trong một chuỗi 
+                         (bao gồm cả khoảng trắng):
+                    </p>
+
+                    <div class="vidu">
+                        <h3>Ví dụ</h3>
+                        <img src="../Learn_Java/Images/viduString2.png" alt="">
+                    </div>
+                    
+                        
+                </div>
+
+
+
+                
+                
+            </div>
+            <div id="right">
+
+            </div> <!-- Đóng div right -->
+        </div> <!-- Đóng div main-container -->
+    </div> <!-- Đóng div wrapper -->
+</body>
+</html>

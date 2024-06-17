@@ -1,0 +1,218 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="Yahoo.css">
+<title>Kiem tra du lieu tren Form</title>
+<script language="javascript">
+function doihinh()	//hàm đổi hình thể hiện kiểm tra độ bảo mật của password dựa theo số ký tự gõ vào
+{
+	var stt_hinh;
+	var password=document.getElementById("password");
+	if(password.value.length>=12)
+		{stt_hinh=5;}
+	else if(password.value.length>=9)
+		{stt_hinh=4;}
+		else if(password.value.length>=6)
+			{stt_hinh=3;}
+			else if(password.value.length>=3)
+				{stt_hinh=2;}
+				else
+				{stt_hinh=1;}
+	document.frm_login.picture.src=stt_hinh+'.gif';
+}
+function kiemtra() 	//hàm kiểm tra dữ liệu nhập vào Form
+{
+	var ho=document.getElementById("ho"); //biến username lấy giá trị từ thẻ có id="username"
+    var ten=document.getElementById("ten");
+    var diachi=document.getElementById("diachi");
+	var password=document.getElementById("password")
+	var confirm_password=document.getElementById("confirm_password")
+
+	if(ho.value=="")			//nếu giá trị của username là rỗng
+	{
+		alert("Nhập vào ho");		//thông báo lỗi
+		ho.focus();			//đưa con trỏ về lại vị trí username trên Form
+		return false;			//trả về kết quả false (Form không Submit được)
+	}
+    if(ten.value=="")
+	{
+		alert("Nhập vào ten");
+		ten.focus();
+		return false;
+	}
+
+    if(diachi.value=="")
+	{
+		alert("Nhập vào mật khẩu");
+		diachi.focus();
+		return false;
+	}
+
+	if(password.value=="")
+	{
+		alert("Nhập vào mật khẩu");
+		password.focus();
+		return false;
+	}
+	if(confirm_password.value!=password.value)		//so sánh mật khẩu lần 1 và mật khẩu lần 2
+	{
+		alert("Nhập lại mật khẩu không đúng");
+		confirm_password.focus();
+		return false;
+	}
+}
+//Trong Body, trên thẻ Form có thuộc tính onsubmit="return kiemtra();" : nghĩa là khi form được submit sẽ gọi hàm kiemtra()
+//Nếu giá trị trả về là false thì form sẽ không được submit
+</script>
+</head>
+
+<body Onload="window.status='Trang Web minh họa về kiểm tra dữ liệu trên Form'">
+    <div class="head">
+        <img src="logo.jpg" alt="" width="100" height="50">
+
+        <div class="head_button">
+            <button type="button">Trang chủ yahoo</button>
+            <button type="button">Trợ giúp</button>
+        </div>
+        
+    </div>
+<h2>Đăng Ký Tài Khoản</h2>
+<form id="frm_login" name="frm_login" method="post" action="login.html" onsubmit="return kiemtra();">
+    
+  <fieldset>
+    <legend>Thông Tin Cá Nhân:</legend>
+        <div class="dong">
+            <label for="fullname">Tên tôi:</label>
+            <input type="text" id="ho" name="fullname"><br>
+            <input type="text" id="ten" name="fullname"><br>
+        </div>
+
+        <div class="dong">
+            <label for="gioitinh">Giới tính:</label><br>
+            <select id="gioitinh" name="gioitinh">
+                <option value="male">Nam</option>
+                <option value="female">Nữ</option>
+              </select>
+        </div>
+
+        <div class="dong">
+            <label for="ngaysinh">Ngày sinh:</label><br>
+            <select id="ngay" name="ngay">
+                <option value="male">01</option>
+                <option value="female">02</option>
+                <option value="female">03</option>
+                <option value="female">04</option>
+                <option value="female">05</option>
+                <option value="female">06</option>
+                <option value="female">07</option>
+                <option value="female">08</option>
+                <option value="female">09</option>
+                <option value="female">10</option>
+              </select>
+
+              <select id="thang" name="thang">
+                <option value="male">01</option>
+                <option value="female">02</option>
+                <option value="female">03</option>
+                <option value="female">04</option>
+                <option value="female">05</option>
+                <option value="female">06</option>
+                <option value="female">07</option>
+                <option value="female">08</option>
+                <option value="female">09</option>
+                <option value="female">10</option>
+                <option value="male">01</option>
+                <option value="female">02</option>
+                <option value="female">03</option>
+                <option value="female">04</option>
+                <option value="female">05</option>
+                <option value="female">06</option>
+                <option value="female">07</option>
+                <option value="female">08</option>
+                <option value="female">09</option>
+                <option value="female">10</option>
+                <option value="male">11</option>
+                <option value="female">12</option>
+                <option value="female">13</option>
+                <option value="female">14</option>
+                <option value="female">15</option>
+                <option value="female">16</option>
+                <option value="female">17</option>
+                <option value="female">18</option>
+                <option value="female">19</option>
+                <option value="female">20</option>
+                <option value="male">21</option>
+                <option value="female">22</option>
+                <option value="female">23</option>
+                <option value="female">24</option>
+                <option value="female">25</option>
+                <option value="female">26</option>
+                <option value="female">27</option>
+                <option value="female">28</option>
+                <option value="female">29</option>
+                <option value="female">30</option>
+              </select>
+
+              <select id="ngay" name="ngay">
+                <option value="male">01</option>
+                <option value="female">02</option>
+                <option value="female">03</option>
+                <option value="female">04</option>
+                <option value="female">05</option>
+                <option value="female">06</option>
+                <option value="female">07</option>
+                <option value="female">08</option>
+                <option value="female">09</option>
+                <option value="female">10</option>
+              </select>
+        </div>
+
+        <div class="dong">
+            <label for="email">Toi song tai:</label><br>
+        <input type="text" id="diachi" name="diachi"><br>
+        </div>
+
+        <div class="dong">
+
+        </div>
+        
+    
+    
+  </fieldset>
+  <fieldset>
+    <legend>Chọn tên truy nhập và mật khẩu:</legend>
+        <div class="dong">
+            <label for="tentruynhap">Tên truy nhập Yahoo và Email:</label>
+            <input type="text" id="tentruynhap" name="tentruynhap"><br>
+            <select id="ngay" name="ngay">
+                <option value="male">yahoo.com</option>
+                <option value="female">gmail.com</option>
+              </select>
+              <button type="button">Kiểm tra</button>
+
+
+        </div>
+        <div class="dong">
+            <label for="password">Mật khẩu:</label><br>
+            <input type="password" id="password" name="password" style="width: calc(100% - 32px); margin: 0px 50px;" onKeyUp="doihinh();"><br>
+            <img src="1.GIF" id="picture">
+        </div>
+        <div class="dong">
+            <label for="confirm_password">Xác nhận mật khẩu:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password"><br>
+        </div>
+  </fieldset>
+  <fieldset>
+    <legend>Trong trường hợp bạn quên truy nhập hoặc mật khẩu:</legend>
+        <label for="tentruynhap">Câu hỏi bảo mật 1:</label>
+        <input type="text" id="tentruynhap" name="tentruynhap"><br>
+
+        <label for="tentruynhap">Câu hỏi bảo mật 2:</label>
+        <input type="text" id="tentruynhap" name="tentruynhap"><br>
+  </fieldset>
+  <input type="checkbox" id="agree" name="agree">
+  <label for="agree">Tôi đồng ý với <a href="login.html">Điều Khoản và Điều Kiện</a> sử dụng.</label><br>
+  <input type="submit" name="button" id="button" value="Đăng Ký">
+</form>
+</body>
+</html>

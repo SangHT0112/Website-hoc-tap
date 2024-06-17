@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    justify-content:space-between;
+    display: flex;
+    background: grey;
+    padding: 15px;
+}
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    border-top: 1px solid rgb(168, 163, 163);
+}
+.dieukhoan {
+    display: flex;
+}
+.dieukhoan p {
+    margin-left: 10px;
+}
+.trogiup {
+    display: flex;
+    float: right;
+    justify-content: right;
+    flex:20%;
+    
+}
+.trogiup p {
+    margin-left: 10px;
+    text-align: right;
+}
+
+.title {
+    margin: 10px 100px;
+}
+
+.chuy {
+    text-align: center;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+.label {
+    text-align: right;
+    flex: 40%;
+}
+.text {
+    text-align: left;
+    flex: 60%;
+}
+
+.hr {
+    border: 1px solid rgb(168, 163, 163);
+    flex:60%;
+    margin-right: 400px;
+    width: 2890px;
+}
+
+.textvanban {
+    flex: 100%;
+}
+
+
+
+
+/* =========(CSS cho thông tin đăng ký khi nhập đúng dữ liệu)========== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  /* nút đóng lại */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+  #thongtindanhgia {
+    background: grey;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 40px;
+    border: 2px solid black;
+  }
+  #thongtin {
+    margin-top: -10px;
+  }
+  .modal-content ul li {
+    margin-left: 30px;
+  } 
+  .modal {
+    border: 2px solid black;
+  }
+  #content-info {
+    border: 2px solid black;
+  }
+  /* ============================================================ */
+
+
+
+
+
+  

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="website icon" type="jpg" href="../Images/R.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Menu khái quát -->
+        <div id="head">
+            <!-- Logo cua trang -->
+            <div class="logo">
+                <a href="../Home/Home.html">
+                    <img src="../logo.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu chung -->
+            <div class="general-menu">
+                <ul>
+                    <li><a href="../HuongDan/index.html">
+                        Hướng dẫn</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li> <a href="../GoiY/index.html">Gợi ý</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../ViecLam/index.html">Việc làm</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../DaoTao/index.html">Đào tạo</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button  href="" type="submit"><i class="fas fa-search"></i></button>
+                </ul>
+            </div>
+
+            <div class="general-icon">
+                <div class="general-icon-item">
+                    <i class='bx bx-collapse-horizontal'></i>
+                    <h3>Spaces</h3>
+                </div>
+                <div class="general-icon-item">
+                    <i class='bx bxs-shopping-bags'></i>
+                    <h3>Shop</h3>
+                </div>
+
+            </div>
+
+            <div class="login">
+                <button type="submit" class="btn"><a href="LoginForm/Login.html"> Login</a></button>
+            </div>
+
+
+        </div>
+        
+        <!-- Menu chính -->
+        <div id="head-link">
+            <nav>
+                <a href="../Learn_HTML/index.html">HTML</a>
+                <a href="../Learn_CSS/index.html">CSS</a>
+                <a href="../Learn_JavaScript/index.html">JAVASCRIPT</a>
+                <a href="../Learn_SQL/index.html">SQL</a>
+                <a href="../Learn_Python/index.html">PYTHON</a>
+                <a href="../Learn_Java/index.html">JAVA</a>
+                <a href="../Learn_PHP/index.html">PHP</a>
+                <a href="../Learn_C/index.html">C</a>
+                <a href="../Learn_CPlus/index.html">C++</a>
+                <a href="../Learn_CSharp/index.html">C#</a>
+                <span></span>
+            </nav>
+        </div>
+
+        <div id="main-content">
+            <div id="left">
+                <div class="left-container">
+                    <div style="padding:25px; font-size: 20px;" align="center"><h3> Hướng dẫn SQL</h3> </div>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i><a id="sqlhome" href="#SQL-Home">SQL HOME </a> </h4>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i><a id="sqlhome" href="#SQL-Introduce">SQL Introduction</a>  </h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> SQL Select </h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> SQL Where</h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> SQL Null Values</h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> SQL Update</h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> SQL Delete</h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> SQL Sum</h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> SQL Joins</h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> SQL Having</h4>
+                </div>
+            </div> <!--đóng div left -->
+            <div id="content">
+                <div id="SQL-Home" style="margin-left: 30px; margin-top: 30px;"> <h1> Hướng dẫn SQL</h1></div>
+                <button style="margin-left: 20px; margin-top: 20px;" class="home-button"><i class="fas fa-home"></i><a href="../Home.html"> Home</a> </button>
+                <button class="next-button">Kế Tiếp <i class="fas fa-chevron-right"></i></button>
+                <div id="background-content">
+                    <p> SQL là một ngôn ngữ tiêu chuẩn để lưu trữ, thao tác và truy xuất dữ liệu trong cơ sở dữ liệu.</p>
+                    <br>
+                    <p> Hướng dẫn SQL của chúng tôi sẽ dạy bạn cách sử dụng SQL trong: MySQL, SQL Server, MS Access, Oracle, Sybase, Informix, Postgres và các hệ thống cơ sở dữ liệu khác.</p>
+                    <br>
+                    <button class="study-button"><a href="https://cafedev.vn/tu-hoc-sql-gioi-thieu-chi-tiet-ve-sql-va-ung-dung-cua-no/#:~:text=%5BT%E1%BB%B1%20h%E1%BB%8Dc%20SQL%5D%20Gi%E1%BB%9Bi%20thi%E1%BB%87u%20chi%20ti%E1%BA%BFt%20v%E1%BB%81,%C4%91%E1%BB%83%20th%E1%BB%B1c%20h%C3%A0nh%20SQL%20...%20C%C3%A1c%20m%E1%BB%A5c%20kh%C3%A1c">Nghiên cứu hướng dẫn chi tiết SQL</a> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div id="SQL-Introduce" style="margin-left: 20px; margin-top: 20px;"> <h1>SQL Select</h1></div>
+                <br>
+                <p style="margin-left:20px;">Câu lệnh được sử dụng để chọn dữ liệu từ cơ sở dữ liệu.
+                    <code class="tagjs"> SELECT </code>
+                </p>
+                <br>
+                <p style="margin-left:20px;font-size: 20px;">Cú pháp</p>
+                <br>
+                <div class="bg">
+                    <br>
+                    <p style="margin-left:20px; font-style: italic;">
+                        <code class="tagsql">SELECT</code> column1, column2, ...
+                    </p>
+                    
+                    <p style="margin-left:20px; font-style: italic; margin-top:5px;">
+                        <code class="tagsql">TABLE</code> table_name;
+                    </p>
+                </div>
+                <br>
+                <p style="margin-left:20px;">Ở đây, cột1, cột2,... là <code style="font-style: italic;">tên trường</code> của bảng mà bạn muốn chọn dữ liệu.</p>
+                <br>
+                <p style="margin-left:20px;">Hình table_name đại diện cho tên của <code style="font-style: italic;">bảng</code> mà bạn muốn chọn dữ liệu từ đó.</p>
+                <br>
+                <p style="margin-left:20px; font-size: 23px; font-family: Arial, Helvetica, sans-serif;">Chọn TẤT CẢ các cột</p>
+                <br>
+                <p style="margin-left:20px;">Nếu bạn muốn trả về tất cả các cột, mà không chỉ định mọi tên cột, bạn có thể sử dụng cú pháp: <code class="tagjs"> SELECT * </code></p>
+                <br>
+                <hr>
+                <div id="SQL-Introduce" style="margin-left: 20px; margin-top: 20px;"> <h1>SQL Null Values</h1></div>
+                <br>
+                <p style="margin-left:20px;">Trường có giá trị NULL là trường không có giá trị.</p>
+                <br>
+                <p style="margin-left:20px;">Nếu một trường trong bảng là tùy chọn, bạn có thể chèn bản ghi mới hoặc Cập nhật bản ghi mà không cần thêm giá trị vào trường này. Sau đó, trường sẽ là được lưu với giá trị NULL.</p>
+                <br>
+                <div class="bgcontent">
+                    <br>
+                    <p style="margin-left:10px;"><b>Ghi chú: </b>Giá trị NULL khác với giá trị bằng không hoặc trường chứa khoảng trắng. Trường có giá trị NULL là trường bị bỏ trống trong quá trình tạo kỷ lục!</p>
+                </div>
+                <br>
+                <p style="margin-left:20px;font-size: 20px;">Cú pháp IS NULL</p>
+                <br>
+                <div class="bgisnull">
+                    <br>
+                    <p style="margin-left:20px; font-style: italic;">
+                        <code class="tagsql">SELECT</code> column1, column2, ...
+                    </p>
+                    
+                    <p style="margin-left:20px; font-style: italic; margin-top:5px;">
+                        <code class="tagsql">TABLE</code> table_name;
+                    </p>
+
+                    <p style="margin-left:20px; font-style: italic; margin-top:5px;">
+                        <code class="tagsql">WHERE</code> column_name <code class="tagsql">IS NULL</code>;
+                    </p>
+                </div>
+
+                <br>
+                <p style="margin-left:20px;font-size: 20px;">Cú pháp IS NOT NULL</p>
+                <br>
+                <div class="bgisnull">
+                    <br>
+                    <p style="margin-left:20px; font-style: italic;">
+                        <code class="tagsql">SELECT</code> column1, column2, ...
+                    </p>
+                    
+                    <p style="margin-left:20px; font-style: italic; margin-top:5px;">
+                        <code class="tagsql">TABLE</code> table_name;
+                    </p>
+
+                    <p style="margin-left:20px; font-style: italic; margin-top:5px;">
+                        <code class="tagsql">WHERE</code> column_name <code class="tagsql">IS NOT NULL</code>;
+                    </p>
+                </div>
+                <br>
+                <hr>
+                <div id="SQL-Introduce" style="margin-left: 20px; margin-top: 20px;"> <h1>SQL Delete</h1></div>
+                <br>
+                <p style="margin-left:20px;">Câu lệnh được sử dụng để xóa các bản ghi hiện có trong bảng.
+                    <code class="tagjs"> DELETE </code>
+                </p>
+                <br>
+                <p style="margin-left:20px;font-size: 20px;">Cú pháp DELETE</p>
+                <br>
+                <div class="bgdelete">
+                    <br>
+                    <p style="margin-left:20px; font-style: italic; margin-top:5px;">
+                        <code class="tagsql">DELETE FROM </code> table_name <code class="tagsql"> WHERE </code>condition;
+                    </p>
+                </div>
+                <br>
+                <div class="bgnote-three">
+                    <br>
+                    <p style="margin-left:10px;"><b>Ghi chú: </b> 
+                        Hãy cẩn thận khi xóa các bản ghi trong bảng! Chú ý mệnh đề trong tuyên bố. Điều khoản quy định (các) bản ghi nào sẽ bị xóa. Nếu Bạn bỏ qua mệnh đề, tất cả các bản ghi trong bảng sẽ bị xóa!
+                        <code class="tagjs"> WHERE DELETE WHERE WHERE </code></p>
+                </div>
+                <br>
+                <p style="margin-left:20px;font-size: 20px;">Xóa tất cả bản ghi</p>
+                <br>
+                <p style="margin-left:10px;">Có thể xóa tất cả các hàng trong bảng mà không xóa bảng. Này có nghĩa là cấu trúc bảng, thuộc tính và chỉ mục sẽ còn nguyên vẹn:</p>
+                <br>
+                <div class="bgdelete">
+                    <br>
+                    <p style="margin-left:20px; font-style: italic; margin-top:5px;">
+                        <code class="tagsql">DELETE FROM </code> table_name 
+                    </p>
+                </div>
+                <br>
+                <hr>
+                <div id="SQL-Introduce" style="margin-left: 20px; margin-top: 20px;"> <h1>SQL Having</h1></div>
+                <br>
+                <p style="margin-left:10px;">Mệnh đề đã được thêm vào SQL vì từ khóa không thể được sử dụng với các hàm tổng hợp.<code class="tagjs"> HAVING WHERE </code></p>
+                <br>
+                <p style="margin-left:20px;font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Cú pháp HAVING</p>
+                <br>
+                <div class="bghaving">
+                    <br>
+                    <div id="bghaving-inside">
+                        <br>
+                        <p style="margin-left:20px; font-style: italic; margin-top:-10px;">
+                            <code class="tagsql">SELECT </code> column_name(s)
+                        <p style="margin-left:20px; font-style: italic; ">
+                            <code class="tagsql">FROM </code> table_name
+                        <p style="margin-left:20px; font-style: italic; ">
+                            <code class="tagsql">WHERE  </code> condition
+                        <p style="margin-left:20px; font-style: italic; ">
+                            <code class="tagsql">GROUP BY </code> column_name(s)
+                        <p style="margin-left:20px; font-style: italic; ">
+                            <code class="tagsql">HAVING </code> condition
+                        <p style="margin-left:20px; font-style: italic; ">
+                            <code class="tagsql">ORDER BY </code> column_name(s);
+                    </div>
+                </div>
+                <br>
+                <p style="margin-left:20px;font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Ví dụ SQL HAVING</p>
+                <br>
+                <p style="margin-left:20px;">Câu lệnh SQL sau liệt kê số lượng khách hàng ở mỗi quốc gia. Chỉ bao gồm các quốc gia có hơn 5 khách hàng:</p>
+                <br>
+                <div class="bghavingex">
+                    <br>
+                    <h2 style="margin-left:20px;">Ví dụ:</h2>
+                    <div id="bghaving-insideex">
+                        <br>
+                        <p style="margin-left:20px; margin-top:-10px;">
+                            <code class="tagsql">SELECT COUNT </code> (CustomerID), Country
+                        <p style="margin-left:20px; ">
+                            <code class="tagsql">FROM </code> Customers 
+                        <p style="margin-left:20px;  ">
+                            <code class="tagsql">GROUP BY </code> Country
+                        <p style="margin-left:20px;  ">
+                            <code class="tagsql">HAVING COUNT </code> (CustomerID) > <code style="color:red">5</code>;
+                    </div>
+                </div>
+            </div> <!-- Đóng div content -->
+            <div id="right">
+                <div id="SQL-Introduce" style="margin-left: 30px; margin-top: 30px;"> <h1>SQL Introduce</h1></div>
+                <br>
+                <div id="hrex"></div>
+                <br>
+                <p style="margin-left:20px;">SQL là một ngôn ngữ tiêu chuẩn để truy cập và thao tác cơ sở dữ liệu.</p>
+                <br>
+                <div id="hrex"></div>
+                <br>
+                <p id="whatsql">SQL là gì?</p>
+                <br>
+                <ul id="content-whatsql">
+                    <li>SQL là viết tắt của Ngôn ngữ truy vấn có cấu trúc</li>
+                    <li>SQL cho phép bạn truy cập và thao tác với cơ sở dữ liệu</li>
+                    <li>SQL trở thành một tiêu chuẩn của Viện Tiêu chuẩn Quốc gia Hoa Kỳ (ANSI) năm 1986, và của Tổ chức Tiêu chuẩn hóa Quốc tế (ISO) trong 1987</li>
+                </ul>
+                <br>
+                <div id="hrex"></div>
+                <div id="SQL-Introduce" style="margin-left: 20px; margin-top: 20px;"> <h1>SQL Where</h1></div>
+                <br>
+                <p style="margin-left:20px;">Mệnh đề được sử dụng để lọc các bản ghi. <code class="tagjs"> WHERE </code></p>
+                <br>
+                <p style="margin-left:20px;">Nó được sử dụng để trích xuất chỉ những bản ghi đáp ứng một chỉ định điều kiện.</p>
+                <br>
+                <p style="margin-left:20px;font-size: 20px;">Cú pháp</p>
+                <br>
+                <div class="bgright">
+                    <br>
+                    <p style="margin-left:20px; font-style: italic;">
+                        <code class="tagsql">SELECT</code> column1, column2, ...
+                    </p>
+                    
+                    <p style="margin-left:20px; font-style: italic; margin-top:5px;">
+                        <code class="tagsql">TABLE</code> table_name;
+                    </p>
+
+                    <p style="margin-left:20px; font-style: italic; margin-top:5px;">
+                        <code class="tagsql">WHERE</code> condition;
+                    </p>
+                </div>
+                <br>
+                <div class="bgnote">
+                    <br>
+                    <p style="margin-left:10px;"><b>Ghi chú: </b> Mệnh đề không chỉ được sử dụng trong các câu lệnh, nó còn được sử dụng trong , , v.v.! <code class="tagjs"> WHERE SELECT UPDATE DELETE </code></p>
+                </div>
+                <br>
+                <div id="hrex"></div>
+                <div id="SQL-Introduce" style="margin-left: 20px; margin-top: 20px;"> <h1>SQL Update</h1></div>
+                <br>
+                <p style="margin-left:10px;">Câu lệnh được sử dụng để sửa đổi các bản ghi hiện có trong bảng. <code class="tagjs"> UPDATE </code></p>
+                <br>
+                <p style="margin-left:20px;font-size: 20px;">Cú pháp CẬP NHẬT</p>
+                <br>
+                <div class="bgright-two">
+                    <br>
+                    <p style="margin-left:10px; font-style: italic; font-size: 15px;">
+                        <code class="tagsql">UPDATE</code> table_name;
+                    </p>
+                    
+                    <p style="margin-left:10px; font-style: italic; margin-top:5px;font-size: 15px;">
+                        <code class="tagsql">SET</code> column1 = value1, column2 = value2, ...
+                    </p>
+
+                    <p style="margin-left:10px; font-style: italic; margin-top:5px; font-size: 15px;">
+                        <code class="tagsql">WHERE</code> condition;
+                    </p>
+                </div>
+                <br>
+                <div class="bgnote-two">
+                    <br>
+                    <p style="margin-left:10px;"><b>Ghi chú: </b> 
+                        Hãy cẩn thận khi cập nhật bản ghi trong bảng! Chú ý mệnh đề trong tuyên bố. Điều khoản chỉ định (các) bản ghi nào cần được cập nhật. Nếu Bạn bỏ qua mệnh đề, tất cả các bản ghi trong bảng sẽ được cập nhật!
+                        <code class="tagjs"> WHERE UPDATE WHERE WHERE </code></p>
+                </div>
+                <br>
+                <div id="hrex"></div>
+                <div id="SQL-Introduce" style="margin-left: 20px; margin-top: 20px;"> <h1>SQL Sum</h1></div>
+                <br>
+                <p style="margin-left:10px;">Hàm trả về tổng của một cột số. <code class="tagjs"> SUM() </code></p>
+                <br>
+                <p style="margin-left:20px;font-size: 20px;">Cú pháp </p>
+                <br>
+                <div class="bgright-two">
+                    <br>
+                    <p style="margin-left:10px; font-style: italic; font-size: 15px;">
+                        <code class="tagsql">SELECT</code> SUM(column_name)
+                    </p>
+                    
+                    <p style="margin-left:10px; font-style: italic; margin-top:5px;font-size: 15px;">
+                        <code class="tagsql">FROM</code> table_name
+                    </p>
+
+                    <p style="margin-left:10px; font-style: italic; margin-top:5px; font-size: 15px;">
+                        <code class="tagsql">WHERE</code> condition;
+                    </p>
+                </div>
+                <br>
+                <p style="margin-left:20px;font-size: 20px;">Thêm mệnh đề WHERE </p>
+                <br>
+                <p style="margin-left:10px;">Bạn có thể thêm một mệnh đề để chỉ định các điều kiện: <code class="tagjs"> WHERE </code></p>
+                <br>
+                <p style="margin-left:20px;font-size: 20px;">Sử dụng bí danh </p>
+                <br>
+                <p style="margin-left:10px;">Đặt tên cho cột tóm tắt bằng cách sử dụng từ khóa. <code class="tagjs"> AS </code></p>
+                <br>
+                <div id="hrex"></div>
+                <br>
+                <div id="SQL-Introduce" style="margin-left: 20px; margin-top: 20px;"> <h1>SQL Joins</h1></div>
+                <br>
+                <p style="margin-left:10px;">Một mệnh đề được sử dụng để kết hợp các hàng từ hai hoặc nhiều bảng, dựa trên một cột liên quan giữa chúng. <code class="tagjs"> JOIN </code></p>
+                <br>
+                <p style="margin-left:20px;font-size: 20px;">Các loại SQL JOIN khác nhau </p>
+                <br>
+                <p style="margin-left:10px;">Dưới đây là các loại JOIN khác nhau trong SQL:</p>
+                <br>
+                <ul style="margin-left: 25px;">
+                    <li><code class="tagjs"> (INNER) JOIN </code> : Trả về các bản ghi có giá trị khớp trong cả hai bảng</li>
+                    <li><code class="tagjs"> LEFT (OUTER) JOIN </code>: Trả về tất cả các bản ghi từ bảng bên trái và các bản ghi phù hợp từ bảng bên phải</li>
+                    <li><code class="tagjs"> RIGHT (OUTER) JOIN </code>: Trả về tất cả các bản ghi từ bảng bên phải và bản ghi phù hợp Bản ghi từ bảng bên trái</li>
+                    <li><code class="tagjs"> FULL (OUTER) JOIN </code>: Trả về tất cả các bản ghi khi có kết quả khớp ở cả hai bên trái hoặc bảng bên phải</li>
+                </ul>
+                <br>
+                <img width="100%" src="../Images/SQL_Joins.png" alt="">
+                <br>
+                <hr>
+            </div> <!-- Đóng div right -->
+        </div> <!-- Đóng div main-container -->
+    </div> <!-- Đóng div wrapper -->
+</body>
+</html>

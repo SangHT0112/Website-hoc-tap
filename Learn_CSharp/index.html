@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="website icon" type="jpg" href="../Images/R.jpg">
+    <link rel="stylesheet" href="../Table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Menu khái quát -->
+        <div id="head">
+            <!-- Logo cua trang -->
+            <div class="logo">
+                <a href="../Home/Home.html">
+                    <img src="../logo.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu chung -->
+            <div class="general-menu">
+                <ul>
+                    <li><a href="../HuongDan/index.html">
+                        Hướng dẫn</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li> <a href="../GoiY/index.html">Gợi ý</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../ViecLam/index.html">Việc làm</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../DaoTao/index.html">Đào tạo</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button  href="" type="submit"><i class="fas fa-search"></i></button>
+                </ul>
+            </div>
+
+            <div class="general-icon">
+                <div class="general-icon-item">
+                    <i class='bx bx-collapse-horizontal'></i>
+                    <h3>Spaces</h3>
+                </div>
+                <div class="general-icon-item">
+                    <i class='bx bxs-shopping-bags'></i>
+                    <h3>Shop</h3>
+                </div>
+
+            </div>
+
+            <div class="login">
+                <button type="submit" class="btn"><a href="LoginForm/Login.html"> Login</a></button>
+            </div>
+
+
+        </div>
+        
+        <!-- Menu chính -->
+        <div id="head-link">
+            <nav>
+                <a href="../Learn_HTML/index.html">HTML</a>
+                <a href="../Learn_CSS/index.html">CSS</a>
+                <a href="../Learn_JavaScript/index.html">JAVASCRIPT</a>
+                <a href="../Learn_SQL/index.html">SQL</a>
+                <a href="../Learn_Python/index.html">PYTHON</a>
+                <a href="../Learn_Java/index.html">JAVA</a>
+                <a href="../Learn_PHP/index.html">PHP</a>
+                <a href="../Learn_C/index.html">C</a>
+                <a href="../Learn_CPlus/index.html">C++</a>
+                <a href="../Learn_CSharp/index.html">C#</a>
+                <span></span>
+            </nav>
+        </div>
+
+        <div id="main-content">
+            <div id="left">
+                <div class="left-container">
+                    <div style="padding:15px; font-size: 20px;" align="center"><h3> Hướng dẫn C#</h3> </div>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i> C# HOME </h4>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Introduce">C Introduction</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Variable">C# Variable</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#String">C# String</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Operator">C# Operator</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Function">C# Function</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#IfElse">C# If..Else</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> C# Classes</h4>
+                </div>
+            </div> <!-- left -->
+            <div id="content">
+                <div class="banner">
+                    <img src="Images/banner.jpg" alt="">
+                </div>
+
+                <div class="Introduce CacNoiDungChinh" id="Introduce">
+                    <h1>Giới thiệu ngôn ngữ C#</h1>
+                    <p style="background-color: blueviolet;">C# là một ngôn ngữ lập trình mạnh mẽ và phổ biến. Nó được phát triển bởi Microsoft và là một phần của nền tảng phát triển .NET.</p>
+                    <p style="background-color: blueviolet;">C# ra đời vào năm 2000 và từ đó đã trở thành một trong những ngôn ngữ lập trình chính thống cho phát triển ứng dụng trên nền tảng Windows.</p>
+                
+                    <div class="WhyStudy">
+                        <h2>Tại sao nên học C#?</h2>
+                        <ul class="DanhSach" style="background-color: rgb(180, 61, 190); border: 5px solid blueviolet;">
+                            <li>C# là ngôn ngữ cơ bản trong nền tảng phát triển .NET của Microsoft, làm cho nó trở thành lựa chọn lý tưởng cho việc phát triển ứng dụng Windows, web và di động.</li>
+                            <li>Được thiết kế với một số tính năng tiên tiến như thu gọn, bảo mật cao, và dễ dàng để học và sử dụng.</li>
+                            <li>C# hỗ trợ lập trình hướng đối tượng, cho phép bạn xây dựng các ứng dụng có cấu trúc rõ ràng và dễ bảo trì.</li>
+                            <li>Ứng dụng C# có thể chạy trên nền tảng Windows và được hỗ trợ rộng rãi bởi cộng đồng và Microsoft.</li>
+                            <li>Cung cấp các công cụ và thư viện mạnh mẽ giúp tăng hiệu suất và giảm thời gian phát triển.</li>
+                            <li>C# được sử dụng rộng rãi trong các lĩnh vực như phát triển phần mềm doanh nghiệp, trò chơi điện tử, ứng dụng di động và nhiều hơn nữa.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Variable -->
+                <!-- Variable -->
+                <div id="Variable" class="Variable CacNoiDungChinh">
+                    <img src="Images/Variabel.jpg" alt="">
+                    <h1>Biến trong ngôn ngữ lập trình C#</h1>
+                    <p style="color: rgb(83, 130, 130);">
+                        Các biến trong ngôn ngữ lập trình C# là "thùng chứa" để lưu trữ thông tin.
+                    </p>
+
+                    <h2>
+                        Tạo (Khai báo) Biến trong C#
+                    </h2>
+                    <p>Trong ngôn ngữ lập trình C#, bạn cần khai báo biến trước khi sử dụng:</p>
+
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">
+                                    int
+                                </span>
+                                <span class="Var">
+                                    x
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    5;
+                                </span>
+                            </p>
+                            <p>
+                                <span class="Var">
+                                    char
+                                </span>
+                                <span class="Var">
+                                    y
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    'A';
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="GhiChu">
+                        <br>
+                        <p>
+                            Trong ví dụ trên, biến <span class="Var">x</span> sẽ lưu trữ giá trị <span class="Var">5</span>,
+                            và biến <span class="Var">y</span> sẽ lưu trữ giá trị <span class="Var">'A'</span>.
+                        </p>
+
+                        <p>
+                            <b>Lưu ý:</b> Khi bạn gán giá trị văn bản cho một biến trong ngôn ngữ lập trình C#,
+                            bạn cần sử dụng dấu nháy đơn ('') thay vì dấu nháy kép ("").
+                        </p>
+
+                        <p>
+                            <b>Lưu ý:</b> Bạn cần khai báo biến trước khi sử dụng trong ngôn ngữ lập trình C#.
+                        </p>
+                    </div>
+
+                    <div class="ThongBaoVang">
+                        <p>
+                            Hãy coi các biến trong ngôn ngữ lập trình C# như các thùng chứa để lưu trữ dữ liệu.
+                        </p>
+                    </div>
+
+                    <br> <br>
+
+                    <h2>Tìm hiểu chuyên sâu về biến trong C#</h2>
+                    <p>
+                        Một biến trong ngôn ngữ lập trình C# có thể có tên ngắn hoặc tên mang tính mô tả hơn.
+                    </p>
+
+                    <p>Quy Tắc Biến Trong ngôn ngữ lập trình C#</p>
+                    <ul class="DanhSach">
+                        <li>Biến trong C# bắt đầu bằng ký tự chữ cái hoặc dấu gạch dưới.</li>
+                        <li>Tên biến trong C# không được bắt đầu bằng một số.</li>
+                        <li>Tên biến trong C# chỉ chứa các ký tự chữ cái, số và dấu gạch dưới (A-z, 0-9, và _).</li>
+                        <li>Tên biến trong C# không phân biệt chữ hoa và chữ thường.</li>
+                    </ul>
+
+                    <div class="ThongBaoVang">
+                        <p>Hãy nhớ rằng tên biến trong ngôn ngữ lập trình C# không phân biệt chữ hoa chữ thường.</p>
+                    </div>
+
+                    <h3>Biến đầu ra trong C#</h3>
+                    <p>Câu lệnh <code>Console.WriteLine</code> trong ngôn ngữ lập trình C# thường được sử dụng để xuất dữ liệu ra màn hình.</p>
+                    <p>Ví dụ sau đây sẽ chỉ ra cách xuất văn bản và giá trị của một biến trong ngôn ngữ lập trình C#:</p>
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">
+                                    string
+                                </span>
+                                <span class="Var">
+                                    txt
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    "W3Schools.com";
+                                </span>
+                            </p>
+                            <p>
+                                <span class="ToanTu">
+                                    Console.WriteLine
+                                </span>
+                                <span class="Value">
+                                    ("I love " + txt + "!");
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===============String================= -->
+                <div id="String" class="String CacNoiDungChinh">
+                    <img src="Images/String.jpg" alt="">
+                    <h1>Chuỗi trong ngôn ngữ lập trình C#</h1> <br>
+                    <p style="color: rgb(58, 92, 92);">Chuỗi trong ngôn ngữ lập trình C# là một chuỗi các ký tự, chẳng hạn như "Hello World!"</p>
+
+                    <h2>String</h2>
+                    <p>Các chuỗi trong ngôn ngữ lập trình C# được bao quanh bởi dấu nháy kép.</p>
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Tạo một biến kiểu string và gán cho nó một giá trị:</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">string</span>
+                                <span class="Var">greeting</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">"Hello";</span>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="ThongBaoVang">
+                        <p style="font-size: 18px;"><b>Lưu ý:</b> Trong ngôn ngữ lập trình C#, dấu nháy kép được sử dụng để xác định chuỗi ký tự.</p>
+                    </div>
+                    <br>
+                    <p>Để sử dụng chuỗi, bạn không cần phải thêm thư viện bổ sung nào vào mã nguồn vì kiểu dữ liệu chuỗi là một phần của thư viện chuẩn của C#: <span class="Var"> <code>System</code> </span>:</p>
+
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Đoạn mã dưới đây tạo một biến kiểu string:</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">string</span>
+                                <span class="Var">greeting</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">"Hello";</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2>Nối chuỗi trong C#</h2>
+                    <p>
+                        Bạn có thể sử dụng toán tử <span class="Var">+</span> để nối các chuỗi lại với nhau trong C#.
+                    </p>
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Đoạn mã dưới đây tạo các biến string và nối chúng lại với nhau:</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">string</span>
+                                <span class="Var">firstName</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">"John ";</span>
+                            </p>
+                            <p>
+                                <span class="Var">string</span>
+                                <span class="Var">lastName</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">"Doe";</span>
+                            </p>
+                            <p>
+                                <span class="Var">string</span>
+                                <span class="Var">fullName</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">firstName + lastName;</span>
+                            </p>
+                            <p>
+                                <span class="ToanTu">Console.WriteLine</span>
+                                <span class="Var">(fullName);</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2>Độ dài chuỗi trong C#</h2>
+                    <p>
+                        Để lấy độ dài của chuỗi, bạn có thể sử dụng thuộc tính <span class="Var">Length</span> của chuỗi:
+                    </p>
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Đoạn mã dưới đây tạo một biến string và xuất độ dài của nó:</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">string</span>
+                                <span class="Var">txt</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">"ABCDEFGHIJKLMNOPQRSTUVWXYZ";</span>
+                            </p>
+                            <p>
+                                <span class="ToanTu">Console.WriteLine</span>
+                                <span class="Value">("The length of the txt string is: " + txt.Length);</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Operator" class="Operator CacNoiDungChinh">
+                    <h1>Toán tử trong ngôn ngữ lập trình C#</h1>
+                    <p>Toán tử được sử dụng để thực hiện các thao tác trên các biến và giá trị.</p>
+                    <p>Trong ví dụ bên dưới, chúng ta sử dụng toán tử <span class="Var">+</span> để cộng hai giá trị lại với nhau:</p>
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">int</span>
+                                <span class="Var">result</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">100</span>
+                                <span class="ToanTu">+</span>
+                                <span class="Value">30</span>
+                                <span class="ToanTu">;</span>
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="ThongBaoVang">
+                        <p>Mặc dù toán tử <span class="Var">+</span> thường được sử dụng để cộng hai giá trị với nhau, như trong ví dụ trên, nhưng nó cũng có thể được sử dụng để cộng một biến và một giá trị hoặc một biến với một biến khác:</p>
+                    </div>
+                
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Sử dụng các biến để tính tổng:</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">int</span>
+                                <span class="Var">sum1</span>
+                                <span class="ToanTu"> = </span>
+                                <span class="Value">100</span>
+                                <span class="ToanTu"> + </span>
+                                <span class="Value">50;</span>
+                                <span class="Comment">// 150 (100 + 50)</span>
+                            </p>
+                            <p>
+                                <span class="Var">int</span>
+                                <span class="Var">sum2</span>
+                                <span class="ToanTu"> = </span>
+                                <span class="Var">sum1</span>
+                                <span class="ToanTu"> + </span>
+                                <span class="Value">250;</span>
+                                <span class="Comment">// 400 (150 + 250)</span>
+                            </p>
+                            <p>
+                                <span class="Var">int</span>
+                                <span class="Var">sum3</span>
+                                <span class="ToanTu"> = </span>
+                                <span class="Var">sum2</span>
+                                <span class="ToanTu"> + </span>
+                                <span class="Var">sum2;</span>
+                                <span class="Comment">// 800 (400 + 400)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===========FUNCTION================ -->
+                <div id="Function" class="Function CacNoiDungChinh">
+                    <img src="Images/Function.jpg" alt="">
+                    <h1>Hàm trong ngôn ngữ lập trình C#</h1>
+                    <p>Điểm mạnh thực sự của C# đến từ khả năng sử dụng hàm.</p>
+                    
+                    <p>C# có một số hàm tiêu chuẩn được tích hợp sẵn và bạn cũng có thể tự định nghĩa các hàm tùy chỉnh của riêng mình.</p>
+                
+                    <h2>Các hàm tiêu chuẩn trong C#</h2>
+                    <p>
+                        C# cung cấp nhiều hàm tiêu chuẩn có thể gọi trực tiếp từ bên trong chương trình để thực hiện các tác vụ cụ thể.
+                    </p>
+                    
+                    <p>
+                        Vui lòng tham khảo tài liệu C# của chúng tôi để có cái nhìn tổng quan đầy đủ về các hàm tiêu chuẩn của C#.
+                    </p>
+                
+                    <h2>Các hàm do người dùng xác định trong C#</h2>
+                    <p>Ngoài các hàm tiêu chuẩn, bạn cũng có thể tự định nghĩa các hàm của riêng mình trong C#.</p>
+                
+                    <ul class="DanhSach">
+                        <li>Hàm là một khối lệnh có thể tái sử dụng nhiều lần trong chương trình.</li>
+                        <li>Một hàm sẽ không tự động thực thi khi chương trình được tải.</li>
+                        <li>Một hàm sẽ được thực thi thông qua lệnh gọi hàm.</li>
+                    </ul>
+                
+                    <h2>Tạo một hàm</h2>
+                    <p>Định nghĩa hàm do người dùng bắt đầu bằng từ khóa <span class="Var">void</span> hoặc kiểu dữ liệu của giá trị trả về (nếu có), 
+                        tiếp theo là tên của hàm:
+                    </p>
+                
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Hàm C# <span class="Var">MyMessage()</span> in ra chuỗi "Hello World".</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="KieuDuLieu">void</span>
+                                <span class="ToanTu">MyMessage()</span>
+                            </p>
+                            <p> 
+                                <span class="ToanTu">{</span>
+                            </p>
+                            <p> 
+                                <span class="KieuDuLieu" style="padding-left: 20px;">Console.WriteLine</span>
+                                <span class="ToanTu">(</span>
+                                <span class="Value">"Hello World!"</span>
+                                <span class="ToanTu">);</span>
+                            </p>
+                            <p>
+                                <span class="ToanTu">}</span>
+                            </p>
+                            <p>
+                                <span class="ToanTu">MyMessage();</span>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <p>Trong ví dụ trên, chúng ta định nghĩa một hàm có tên là MyMessage().</p>
+                    <p>Dấu ngoặc nhọn mở { cho biết phần đầu của hàm và dấu ngoặc nhọn đóng } 
+                        cho biết phần cuối của hàm.</p>
+                    <p>Hàm này in ra chuỗi "Hello World!".</p>
+                
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ mới</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Hàm C# <span class="Var">Sum()</span> tính tổng của hai số nguyên.</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="KieuDuLieu">int</span>
+                                <span class="ToanTu">Sum</span>
+                                <span class="ToanTu">(</span>
+                                <span class="KieuDuLieu">int</span>
+                                <span class="Value">a</span>
+                                <span class="ToanTu">,</span>
+                                <span class="KieuDuLieu">int</span>
+                                <span class="Value">b</span>
+                                <span class="ToanTu">)</span>
+                            </p>
+                            <p> 
+                                <span class="ToanTu">{</span>
+                            </p>
+                            <p> 
+                                <span class="KieuDuLieu">return</span>
+                                <span class="Value">a + b</span>
+                                <span class="ToanTu">;</span>
+                            </p>
+                            <p>
+                                <span class="ToanTu">}</span>
+                            </p>
+                            <p>
+                                <span class="KieuDuLieu">int</span>
+                                <span class="Value">result</span>
+                                <span class="ToanTu">= Sum(3, 4);</span>
+                            </p>
+                            <p>
+                                <span class="KieuDuLieu">Console.WriteLine</span>
+                                <span class="ToanTu">(</span>
+                                <span class="Value">"Tổng của 3 và 4 là "</span>
+                                <span class="Var">+ result</span>
+                                <span class="ToanTu">);</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="WindowForm">
+                    <h1>Window Form trong C#</h1>
+                </div>
+                
+
+            </div> <!-- Đóng div content -->
+            <div id="right">
+
+            </div> <!-- Đóng div right -->
+        </div> <!-- Đóng div main-container -->
+    </div> <!-- Đóng div wrapper -->
+</body>
+</html>

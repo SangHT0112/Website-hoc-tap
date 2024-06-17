@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.connect{
+    text-decoration: none;
+    color: white;
+}
+
+#head {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    height: 56px;
+    
+}
+
+.logo{
+    padding: 10px 0px;
+}
+.logo img {
+    width: 38.5px; /* Thay đổi kích thước theo nhu cầu */
+    height: 36px;
+}
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    font-style: italic;/* font chữ nghiêng */
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+#iconsearch {
+    padding: 10px 16px;
+    background-color: rgb(4, 170, 109);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+#iconsearch:hover {
+    background-color: #0056b3;
+}
+
+.general-menu ul {
+    list-style: none;
+    height: 56px;
+    
+}
+
+.general-menu ul li {
+    position: relative;
+    display: inline;
+    padding: 10px 29px;
+    height: 56px;
+    line-height: 56px;
+}
+
+.general-menu ul li a {
+    text-decoration: none;
+    color: black; /* Màu chữ của menu */
+}
+
+.general-menu ul li:hover {
+    background-color: rgb(4, 170, 109); /* Thay đổi màu nền của menu khi rê chuột vào */
+}
+
+
+
+
+
+.general-icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.general-icon-item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.general-icon-item i {
+    font-size: 24px; /* Kích thước của biểu tượng */
+}
+
+.general-icon-item h3 {
+    font-size: 14px; /* Kích thước của tiêu đề */
+}
+
+.login {
+    padding: 10px;
+}
+.btn {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none;
+    padding: 10px 30px; /* Kích thước nút */
+    border-radius: 20px; /* Bo góc */
+    cursor: pointer;
+}
+
+.login a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.btn:hover {
+    background-color: #0056b3; /* Màu nền hover */
+}
+
+
+/* PHAN MENU LINK */
+nav {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Đảm bảo khi hover thì viền không vượt ra khỏi nav */
+}
+
+nav a {
+    position: relative;
+    text-align: center;
+    width: 10%;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu khi hover */
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: calc(100% / 10); /* Chia đều chiều rộng cho từng menu */
+    height: 100%;
+    background: linear-gradient(45deg, #194b4f, #33fffc);
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: 0; /* Đảm bảo viền nằm dưới các nút */
+}
+
+nav a:hover {
+    color: #194b4f; /* Đổi màu chữ khi hover */
+}
+
+
+nav a:nth-child(1):hover ~ span {
+    left: calc(100% / 10 * 0);
+}
+
+nav a:nth-child(2):hover ~ span {
+    left: calc(100% / 10 * 1);
+}
+
+nav a:nth-child(3):hover ~ span {
+    left: calc(100% / 10 * 2);
+}
+
+nav a:nth-child(4):hover ~ span {
+    left: calc(100% / 10 * 3);
+}
+
+nav a:nth-child(5):hover ~ span {
+    left: calc(100% / 10 * 4);
+}
+
+nav a:nth-child(6):hover ~ span {
+    left: calc(100% / 10 * 5);
+}
+
+nav a:nth-child(7):hover ~ span {
+    left: calc(100% / 10 * 6);
+}
+
+nav a:nth-child(8):hover ~ span {
+    left: calc(100% / 10 * 7);
+}
+
+nav a:nth-child(9):hover ~ span {
+    left: calc(100% / 10 * 8);
+}
+
+nav a:nth-child(10):hover ~ span {
+    left: calc(100% / 10 * 9);
+}
+/* ===========================================LAYOUT BÊN Trái========================================== */
+#left{
+    width: 250px;
+    min-height: 5000px;
+    border: 1px solid #CDCDCD;
+    float:left;
+    background-color: #e3e1e1	;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.left-container {
+    font-family: Arial, sans-serif; /* Font chữ dễ nhìn */
+    flex-direction: column;
+    max-height: calc(100vh - 88px); /* Đặt chiều cao tối đa là chiều cao của màn hình trừ 100px */
+    overflow-y: auto; /* Cho phép cuộn dọc khi nội dung vượt quá chiều cao */
+    overflow-x: hidden;
+}
+.left-item {
+    margin-bottom: 25px; /* Khoảng cách giữa các mục menu */
+    cursor:pointer; /* Biểu tượng con trỏ khi rê chuột qua */  
+    white-space: nowrap; /* Ngăn ngừa quá trình ngắt dòng */
+    padding: 5px 0;
+}
+.left-item {
+    display: flex;
+    align-items: center;
+}
+.check-icon {
+    margin-right: 8px; /* Khoảng cách giữa icon và văn bản */
+    color: white; /* Màu của icon check tích */
+}
+.check-icon.green {
+    color: green;
+}
+.left-item:hover {
+    color: blue; /* Change color to whatever you prefer */
+    background: #8a8888;
+    
+}
+/* ===========================================LAYOUT Chính giữa========================================== */
+#content{
+    width: 655px;
+    min-height: 5000px;
+    border: 1px solid #CDCDCD;
+    float:left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+/* ==================================(NÚT HOME)============================== */
+.home-button {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    border-radius: 50px; /* Bo góc */
+}
+.home-button a {
+    text-decoration: none; /* Loại bỏ gạch dưới */
+    color: inherit;
+}
+.home-button:hover {
+    background-color: #e5ef52; /* Màu nền của nút khi hover */
+    color: black;
+}
+/* ==================================(NÚT KẾ TIẾP)============================== */
+.next-button {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    margin-left: 250px;
+    border-radius: 50px; /* Bo góc */
+}
+.next-button:hover {
+    background-color: #0056b3; /* Màu nền của nút khi hover */
+}
+
+#background-content {
+    margin-top: 20px;
+    background-color: aqua;
+    padding: 30px;
+}
+/* ==================================(NÚT NGhiên cứu)============================== */
+.study-button a {
+    text-decoration: none; /* Loại bỏ gạch dưới */
+    color: inherit; /* Kế thừa màu sắc từ phần tử cha */
+}
+.study-button {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    border-radius: 20px; /* Bo góc */
+}
+.study-button:hover {
+    background-color: #0056b3; /* Màu nền của nút khi hover */
+}
+/* =================================================================================== */
+
+.container {
+    display: flex;
+}
+#button-container {
+    display: flex; /* chia đều 3 cột button , mỗi cột 5 thẻ button thẳng hàng*/
+    
+}
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* =======================(3 cột button , mỗi cột 5 dòng thẳng hàng) ==========================*/
+.button-three-column {
+    margin: 2px;
+    padding: 15px;
+    background-color: rgb(212, 218, 218);
+    border-radius: 5px; /* Bo góc */
+    color: black;
+    size: 5px;
+    size: 5px;
+    margin-bottom: 10px;
+    height: 60px;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.button-three-column:hover{
+    background: #222;
+    color: white;
+}
+/* ============================================================================================== */
+#html-editors h3 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#html-editors p {
+    margin-left: 20px;
+}
+#notepad {
+    margin-left: 20px;
+}
+#notepad-step2 {
+    margin-left: 20px;
+}
+#notepad-step3 p {
+    margin-left: 20px;
+}
+#notepad-step3 h3 {
+    margin-left: 20px;
+}
+#notepad-step4 p {
+    margin-left: 20px;
+}
+#notepad-step4 h3 {
+    margin-left: 20px;
+}
+#img1 {
+    width: 250px;
+    height: 270px;
+}
+#img2 {
+    margin-left: 12px;
+    width: 370px;
+    height: 280px;
+    float: right;
+}
+#img3 {
+    width: 100%;
+    height: 270px;
+}
+#meo {
+    background: #f4ec4b;
+    width: 653px;
+    height: 100px;
+    text-align: left;
+}
+#meo p {
+    margin-left: 20px;
+    margin-top: 12px;
+}
+#img4 {
+    width: 100%;
+    height: 350px;
+}
+
+
+
+/* ===========================================LAYOUT BÊN PHẢI========================================== */
+#right{
+    width: 300px;
+    min-height: 5000px;
+    border: 1px solid #CDCDCD;
+    float:right;
+    margin-bottom: 5px;
+    background: white;
+    margin-top: 10px;
+}
+/* ==================================(NÚT Hãy tự mình thử)============================== */
+.Try-button a {
+    text-decoration: none; /* Loại bỏ gạch dưới */
+    color: inherit; /* Kế thừa màu sắc từ phần tử cha */
+}
+.Try-button {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    border-radius: 20px; /* Bo góc */
+}
+.Try-button:hover {
+    background-color: red; /* Màu nền của nút khi hover */
+}
+/* =================================================================================== */
+
+#example ul {
+    list-style-type: none; /* Loại bỏ kiểu danh sách */
+    padding: 0; /* Loại bỏ padding */
+    margin: 0; /* Loại bỏ margin */
+    text-align: left; /* Căn chỉnh văn bản sang phải */
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color:rgb(90, 90, 225);
+    
+}
+/* id của example.jpg */
+#ex {
+    width: 300px;
+    height: 270px;
+}
+/* id của example2.jpg */
+#ex2 {
+    width: 300px;
+    height: 270px;
+}
+.thehtml {
+    color: rgb(249, 53, 53);
+    background: #d9d7d7;
+}
+#html-basic h2:hover {
+    color: red; /* Màu chữ sẽ thay đổi thành màu đỏ khi trỏ chuột vào */
+}
+#html-basic h2 {
+    margin-left: 20px;
+}
+#html-basic p {
+    margin-left: 20px;
+}
+#doctype {
+    color: black;
+}
+#tieude h2 {
+    color: black;
+}
+#tieude p {
+    color: black;
+}
+#img5 {
+    width: 290px;
+    height: 70px;
+}
+
+.elemt {
+    color: rgb(184, 8, 8);
+}
+.blue {
+    color: blue;
+}
+
+
+
+
+
+
+

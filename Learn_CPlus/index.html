@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="../Table.css">
+    <link rel="website icon" type="jpg" href="../Images/R.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Menu khái quát -->
+        <div id="head">
+            <!-- Logo cua trang -->
+            <div class="logo">
+                <a href="../Home/Home.html">
+                    <img src="../logo.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu chung -->
+            <div class="general-menu">
+                <ul>
+                    <li><a href="../HuongDan/index.html">
+                        Hướng dẫn</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li> <a href="../GoiY/index.html">Gợi ý</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../ViecLam/index.html">Việc làm</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../DaoTao/index.html">Đào tạo</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button  href="" type="submit"><i class="fas fa-search"></i></button>
+                </ul>
+            </div>
+
+            <div class="general-icon">
+                <div class="general-icon-item">
+                    <i class='bx bx-collapse-horizontal'></i>
+                    <h3>Spaces</h3>
+                </div>
+                <div class="general-icon-item">
+                    <i class='bx bxs-shopping-bags'></i>
+                    <h3>Shop</h3>
+                </div>
+
+            </div>
+
+            <div class="login">
+                <button type="submit" class="btn"><a href="LoginForm/Login.html"> Login</a></button>
+            </div>
+
+
+        </div>
+        
+        <!-- Menu chính -->
+        <div id="head-link">
+            <nav>
+                <a href="../Learn_HTML/index.html">HTML</a>
+                <a href="../Learn_CSS/index.html">CSS</a>
+                <a href="../Learn_JavaScript/index.html">JAVASCRIPT</a>
+                <a href="../Learn_SQL/index.html">SQL</a>
+                <a href="../Learn_Python/index.html">PYTHON</a>
+                <a href="../Learn_Java/index.html">JAVA</a>
+                <a href="../Learn_PHP/index.html">PHP</a>
+                <a href="../Learn_C/index.html">C</a>
+                <a href="../Learn_CPlus/index.html">C++</a>
+                <a href="../Learn_CSharp/index.html">C#</a>
+                <span></span>
+            </nav>
+        </div>
+
+        <div id="main-content">
+            <div id="left">
+                <div class="left-container">
+                    <div style="padding:10px; font-size: 20px;" align="center"><h3> Hướng dẫn C++</h3> </div>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i> C++ HOME </h4>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Introduce">C Introduction</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Variable">C++ Variable</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#String">C++ String</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Operator">C++ Operator</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Function">C++ Function</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#IfElse">C++ If..Else</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> C++ Classes</h4>
+                </div>
+            </div> <!-- left -->
+            <div id="content">
+                <div class="banner">
+                    <img src="Images/banner.jpg" alt="">
+                </div>
+
+                <div class="Introduce CacNoiDungChinh" id="Introduce">
+                    <h1>Giới thiệu ngôn ngữ C++</h1>
+                    <p>C++ là một ngôn ngữ lập trình mạnh mẽ và phổ biến. Nó đặc biệt thích hợp cho việc phát triển phần mềm hệ thống, trình biên dịch, và các ứng dụng hiệu suất cao.</p>
+                    <p>C++ được phát triển vào đầu những năm 1980 bởi Bjarne Stroustrup tại Bell Labs.</p>
+                
+                    <div class="WhyStudy">
+                        <h2>Tại sao nên học C++?</h2>
+                        <ul class="DanhSach" style="background-color: rgb(11, 209, 143);">
+                            <li>C++ là nền tảng của nhiều ngôn ngữ lập trình hiện đại như Java, C#, và có ảnh hưởng lớn đến nhiều ngôn ngữ khác.</li>
+                            <li>Cung cấp khả năng kiểm soát cao cấp đối với phần cứng và bộ nhớ cùng với các tính năng lập trình hướng đối tượng.</li>
+                            <li>Chạy trên nhiều nền tảng khác nhau (Windows, Linux, Unix, Mac OS X, v.v.).</li>
+                            <li>Hiệu suất cao và thường được sử dụng cho các ứng dụng yêu cầu tài nguyên hạn chế và hiệu suất cao.</li>
+                            <li>Được hỗ trợ rộng rãi và có nhiều tài liệu học tập từ cộng đồng.</li>
+                            <li>Rất phù hợp để học các khái niệm lập trình cơ bản và nâng cao, bao gồm cả lập trình hướng đối tượng và lập trình tổng quát.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Variable -->
+                <div id="Variable" class="Variable CacNoiDungChinh">
+                    <img src="Images/Variable.jpg" alt="">
+                    <h1>Biến trong ngôn ngữ lập trình C++</h1>
+                    <p style="color: rgb(83, 130, 130);">
+                        Các biến trong ngôn ngữ lập trình C++ là "thùng chứa" để lưu trữ thông tin.
+                    </p>
+                
+                    <h2>
+                        Tạo (Khai báo) Biến trong C++
+                    </h2>
+                    <p>Trong ngôn ngữ lập trình C++, bạn cần khai báo biến trước khi sử dụng:</p>
+                
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">
+                                    int
+                                </span>
+                                <span class="Var">
+                                    x
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    5;
+                                </span>
+                            </p>
+                            <p>
+                                <span class="Var">
+                                    char
+                                </span>
+                                <span class="Var">
+                                    y
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    'A';
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="GhiChu">
+                        <br>
+                        <p>
+                            Trong ví dụ trên, biến <span class="Var">x</span> sẽ lưu trữ giá trị <span class="Var">5</span>,
+                            và biến <span class="Var">y</span> sẽ lưu trữ giá trị <span class="Var">'A'</span>.
+                        </p>
+                
+                        <p>
+                            <b>Lưu ý:</b> Khi bạn gán giá trị văn bản cho một biến trong ngôn ngữ lập trình C++,
+                            bạn cần sử dụng dấu nháy đơn ('') thay vì dấu nháy kép ("").
+                        </p>
+                
+                        <p>
+                            <b>Lưu ý:</b> Bạn cần khai báo biến trước khi sử dụng trong ngôn ngữ lập trình C++.
+                        </p>
+                    </div>
+                
+                    <div class="ThongBaoVang">
+                        <p>
+                            Hãy coi các biến trong ngôn ngữ lập trình C++ như các thùng chứa để lưu trữ dữ liệu.
+                        </p>
+                    </div>
+                
+                    <br> <br>
+                
+                    <h2>Tìm hiểu chuyên sâu về biến trong C++</h2>
+                    <p>
+                        Một biến trong ngôn ngữ lập trình C++ có thể có tên ngắn hoặc tên mang tính mô tả hơn.
+                    </p>
+                
+                    <p>Quy Tắc Biến Trong ngôn ngữ lập trình C++</p>
+                    <ul class="DanhSach" style="background-color: rgb(11, 209, 143);">
+                        <li>Biến trong C++ bắt đầu bằng ký tự chữ cái hoặc dấu gạch dưới.</li>
+                        <li>Tên biến trong C++ không được bắt đầu bằng một số.</li>
+                        <li>Tên biến trong C++ chỉ chứa các ký tự chữ cái, số và dấu gạch dưới (A-z, 0-9, và _).</li>
+                        <li>Tên biến trong C++ không phân biệt chữ hoa và chữ thường.</li>
+                    </ul>
+                
+                    <div class="ThongBaoVang">
+                        <p>Hãy nhớ rằng tên biến trong ngôn ngữ lập trình C++ không phân biệt chữ hoa chữ thường.</p>
+                    </div>
+                
+                    <h3>Biến đầu ra trong C++</h3>
+                    <p>Câu lệnh <code>cout</code> trong ngôn ngữ lập trình C++ thường được sử dụng để xuất dữ liệu ra màn hình.</p>
+                    <p>Ví dụ sau đây sẽ chỉ ra cách xuất văn bản và giá trị của một biến trong ngôn ngữ lập trình C++:</p>
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">
+                                    std::string
+                                </span>
+                                <span class="Var">
+                                    txt
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    "W3Schools.com";
+                                </span>
+                            </p>
+                            <p>
+                                <span class="ToanTu">
+                                    std::cout
+                                </span>
+                                <span class="Value">
+                                    << "I love " << txt << "!";
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===============String================= -->
+                <div id="String" class="String CacNoiDungChinh">
+                    <img src="Images/String.jpg" alt="">
+                    <h1>Chuỗi trong ngôn ngữ lập trình C++</h1> <br>
+                    <p style="color: rgb(58, 92, 92);">Chuỗi trong ngôn ngữ lập trình C++ là một chuỗi các ký tự, chẳng hạn như "Hello World!"</p>
+                
+                    <h2>String</h2>
+                    <p>Các chuỗi trong ngôn ngữ lập trình C++ được bao quanh bởi dấu nháy kép.</p>
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Tạo một biến kiểu string và gán cho nó một giá trị:</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">std::string</span>
+                                <span class="Var">greeting</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">"Hello";</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                
+                    <div class="ThongBaoVang">
+                        <p style="font-size: 18px;"><b>Lưu ý:</b> Trong ngôn ngữ lập trình C++, dấu nháy kép được sử dụng để xác định chuỗi ký tự.</p>
+                    </div>
+                    <br>
+                    <p>Để sử dụng chuỗi, bạn phải thêm một tệp 
+                        tiêu đề bổ sung vào mã nguồn, thư viện <span class="Var"> <code>&lt;string&gt;</code> </span>:</p>
+
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Đoạn mã dưới đây bao gồm thư viện string và tạo một biến kiểu string:</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Comment">// Include the string library</span>
+                                <br>
+                                <span class="Directive">#include &lt;string&gt;</span>
+                            </p>
+                            <p>
+                                <span class="Comment">// Create a string variable</span>
+                                <br>
+                                <span class="">std::string</span>
+                                <span class="">greeting</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Var">"Hello";</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2>Nối string C++</h2>
+                    <p>
+                        Toán tử <span class="Var">+</span> có thể được sử dụng giữa các
+                         chuỗi để cộng chúng lại với nhau nhằm tạo thành một chuỗi mới.
+                    </p>
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Đoạn mã dưới đây tạo các biến string và nối chúng lại với nhau:</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">std::string</span>
+                                <span class="Var">firstName</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">"John ";</span>
+                            </p>
+                            <p>
+                                <span class="Var">std::string</span>
+                                <span class="Var">lastName</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">"Doe";</span>
+                            </p>
+                            <p>
+                                <span class="Var">std::string</span>
+                                <span class="Var">fullName</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">firstName + lastName;</span>
+                            </p>
+                            <p>
+                                <span class="ToanTu">std::cout</span>
+                                <span class="Var"><<</span>
+                                <span class="Value">fullName;</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2>String Length</h2>
+                    <p>
+                        Để lấy độ dài của chuỗi, hãy sử dụng hàm <span class="Var">length()</span>:
+                    </p>
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Đoạn mã dưới đây tạo một biến string và xuất độ dài của nó:</p>
+                        <div class="Code">
+                            <p>
+                                <span class="">std::string</span>
+                                <span class="Value">txt</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">"ABCDEFGHIJKLMNOPQRSTUVWXYZ";</span>
+                            </p>
+                            <p>
+                                <span class="">std::cout</span>
+                                <span class="Var"><<</span>
+                                <span class="Value">"The length of the txt string is: "</span>
+                                <span class="Var"><<</span>
+                                <span class="Value">txt.length();</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ThongBaoVang">
+                        <p>
+                            <b>Mẹo</b>: Bạn có thể thấy một số chương trình C++ sử dụng hàm <span class="Var">size() </span>
+                            để lấy độ dài của chuỗi. Đây chỉ là bí danh của <span class="Var">length()</span>.
+                             Hoàn toàn tùy thuộc vào bạn nếu bạn muốn sử dụng <span class="Var">length()</span> hoặc <span class="Var">size()</span>:
+                        </p>
+                    </div>
+                
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Đoạn mã dưới đây tạo một biến string và xuất độ dài của nó:</p>
+                        <div class="Code">
+                            <p>
+                                <span class="">std::string</span>
+                                <span class="Var">txt</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">"ABCDEFGHIJKLMNOPQRSTUVWXYZ";</span>
+                            </p>
+                            <p>
+                                <span class="">std::cout</span>
+                                <span class="Var"><<</span>
+                                <span class="Value">"The length of the txt string is: "</span>
+                                <span class="Var"><<</span>
+                                <span class="Value">txt.size();</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+       
+                </div> <!--kết thúc string-->
+
+                <div id="Operator" class="Operator CacNoiDungChinh">
+                    <img src="Images/Operator.jpg" alt="">
+                    <h1>Toán tử C++</h1>
+                    <p>Toán tử được sử dụng để thực hiện các thao tác trên các biến và giá trị.</p>
+                    <p>Trong ví dụ bên dưới, chúng tôi sử dụng toán tử <span class="Var">+</span> để cộng hai giá trị lại với nhau:</p>
+                    <div class="Example">
+                        <p class="TieuDeViDu"> Ví dụ</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">int</span>
+                                <span class="ToanTu">=</span>
+                                <span class="Value">100</span>
+                                +
+                                <span class="Value">30</span>
+                                ;
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ThongBaoVang">
+                        <p>Mặc dù toán tử <span class="Var">+</span> thường được sử dụng để cộng hai giá trị với nhau, 
+                            như trong ví dụ trên, nhưng nó cũng có thể được sử dụng để cộng một biến và
+                             một giá trị hoặc một biến với một biến khác:</p>
+                    </div>
+
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Sử dụng các biến để tính tổng:</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Type">int</span>
+                                <span class="Var">sum1</span>
+                                <span class="ToanTu"> = </span>
+                                <span class="Value">100</span>
+                                <span class="ToanTu"> + </span>
+                                <span class="Value">50;</span>
+                                <span class="Comment">// 150 (100 + 50)</span>
+                            </p>
+                            <p>
+                                <span class="Type">int</span>
+                                <span class="Var">sum2</span>
+                                <span class="ToanTu"> = </span>
+                                <span class="Var">sum1</span>
+                                <span class="ToanTu"> + </span>
+                                <span class="Value">250;</span>
+                                <span class="Comment">// 400 (150 + 250)</span>
+                            </p>
+                            <p>
+                                <span class="Type">int</span>
+                                <span class="Var">sum3</span>
+                                <span class="ToanTu"> = </span>
+                                <span class="Var">sum2</span>
+                                <span class="ToanTu"> + </span>
+                                <span class="Var">sum2;</span>
+                                <span class="Comment">// 800 (400 + 400)</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <!-- Function -->
+                <div id="Function" class="Function CacNoiDungChinh">
+                    <img src="Images/Function.jpg" alt="">
+                    <h1>Hàm trong C++</h1>
+                    <p>Điểm mạnh thực sự của C++ đến từ khả năng sử dụng hàm.</p>
+                    
+                    <p>C++ có một số hàm tiêu chuẩn được tích hợp sẵn và bạn cũng có thể tự định nghĩa các hàm tùy chỉnh của riêng mình.</p>
+
+                    <h2>Các hàm tiêu chuẩn trong C++</h2>
+                    <p>
+                        C++ cung cấp nhiều hàm tiêu chuẩn có thể gọi trực tiếp từ bên trong chương trình để thực hiện các tác vụ cụ thể.
+                    </p>
+                    
+                    <p>
+                        Vui lòng tham khảo tài liệu C++ của chúng tôi để có cái nhìn tổng quan đầy đủ về các hàm tiêu chuẩn của C++.
+                    </p>
+
+                    <h2>Các hàm do người dùng xác định trong C++</h2>
+                    <p>Ngoài các hàm tiêu chuẩn, bạn cũng có thể tự định nghĩa các hàm của riêng mình trong C++.</p>
+
+                    <ul class="DanhSach">
+                        <li>Hàm là một khối lệnh có thể tái sử dụng nhiều lần trong chương trình.</li>
+                        <li>Một hàm sẽ không tự động thực thi khi chương trình được tải.</li>
+                        <li>Một hàm sẽ được thực thi thông qua lệnh gọi hàm.</li>
+                    </ul>
+
+                    <h2>Tạo một hàm</h2>
+                    <p>Định nghĩa hàm do người dùng bắt đầu bằng từ khóa <span class="Var">void</span> hoặc kiểu dữ liệu của giá trị trả về (nếu có), 
+                        tiếp theo là tên của hàm:
+                    </p>
+
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Hàm C++ <span class="Var">myMessage()</span> in ra chuỗi "Hello World".</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="KieuDuLieu">void</span>
+                                <span class="ToanTu">myMessage()</span>
+                            </p>
+                            <p> 
+                                <span class="ToanTu">{</span>
+                            </p>
+                            <p> 
+                                <span class="KieuDuLieu" style="padding-left: 20px;">std::cout</span>
+                                <span class="ToanTu"><<</span>
+                                <span class="Value">"Hello World!"</span>
+                                <span class="ToanTu">;</span>
+                            </p>
+                            <p>
+                                <span class="ToanTu">}</span>
+                            </p>
+                            <p>
+                                <span class="ToanTu">myMessage();</span>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <p>Trong ví dụ trên, chúng ta định nghĩa một hàm có tên là myMessage().</p>
+                    <p>Dấu ngoặc nhọn mở { cho biết phần đầu của hàm và dấu ngoặc nhọn đóng } 
+                        cho biết phần cuối của hàm.</p>
+                    <p>Hàm này in ra chuỗi "Hello World!".</p>
+
+                    <div class="Example">
+                        <p class="TieuDeViDu">Ví dụ mới</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Hàm C++ <span class="Var">sum()</span> tính tổng của hai số nguyên.</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="KieuDuLieu">int</span>
+                                <span class="ToanTu">sum</span>
+                                <span class="ToanTu">(</span>
+                                <span class="KieuDuLieu">int</span>
+                                <span class="Value">a</span>
+                                <span class="ToanTu">,</span>
+                                <span class="KieuDuLieu">int</span>
+                                <span class="Value">b</span>
+                                <span class="ToanTu">)</span>
+                            </p>
+                            <p> 
+                                <span class="ToanTu">{</span>
+                            </p>
+                            <p> 
+                                <span class="KieuDuLieu">return</span>
+                                <span class="Value">a + b</span>
+                                <span class="ToanTu">;</span>
+                            </p>
+                            <p>
+                                <span class="ToanTu">}</span>
+                            </p>
+                            <p>
+                                <span class="KieuDuLieu">int</span>
+                                <span class="Value">result</span>
+                                <span class="ToanTu">= sum(3, 4);</span>
+                            </p>
+                            <p>
+                                <span class="KieuDuLieu">std::cout</span>
+                                <span class="ToanTu"><<</span>
+                                <span class="Value">"Tổng của 3 và 4 là "</span>
+                                <span class="Var"><< result << std::endl;</span>
+                            </p>
+                        </div>
+                        <br>
+                        <p>Trong ví dụ này, chúng ta có một hàm có tên là <span class="Var">sum()</span>, nhận hai tham số nguyên và trả về tổng của chúng.</p>
+                        <p>Sau đó, chúng ta gọi hàm <span class="Var">sum()</span> với các tham số là 3 và 4, và in ra kết quả bằng cách sử dụng hàm <span class="KieuDuLieu">std::cout</span>.</p>
+                    </div>
+                </div>
+
+                <!-- .If..Else -->
+                <!-- If..Else -->
+                <div id="IfElse" class="IfElse CacNoiDungChinh">
+                    <img src="Images/IfElse.jpg" alt="">
+                    <h1>Câu lệnh if...else của C++</h1>
+                    <p>Câu lệnh <span class="Var">if...else</span> thực thi một số mã nếu điều kiện đúng và mã khác nếu điều kiện đó sai.</p>
+                    <h3>Công thức</h3>
+                    <div class="code-container">
+                        <div class="if-block">
+                            <div class="condition">if (condition) {</div>
+                            <div class="code-true">// code to be executed if condition is true;</div>
+                            <div class="closing-bracket">}</div>
+                        </div>
+                        <div class="else-block">
+                            <div class="else">else {</div>
+                            <div class="code-false">// code to be executed if condition is false;</div>
+                            <div class="closing-bracket">}</div>
+                        </div>
+                    </div>
+
+                    <!-- Ví dụ -->
+                    <br>
+                    <div class="Example">
+                        <p class="TieuDeViDu"> Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Câu lệnh <span class="Var">if...else</span> thực thi một số mã nếu điều kiện đúng và mã khác nếu điều kiện đó sai.</p>
+                        <div class="Code">
+                            <p>
+                                <span class="Var">int</span>
+                                <span class="Var">t;</span>
+                            </p>
+                            <p>
+                                <span class="Var">std::cin</span>
+                                <span class="Value"> >> t;</span>
+                            </p>
+                            <p>
+                                <span class="Var">if</span>
+                                <span class="Condition">(t &lt; 20) {</span>
+                            </p>
+                            <p style="padding-left: 30px;">
+                                <span class="Var">std::cout</span>
+                                <span class="Value"> << "Have a good day!";</span>
+                            </p>
+                            <p class="ClosingBracket">}</p>
+                            <p>
+                                <span class="Var">else {</span>
+                            </p>
+                            <p style="padding-left: 30px;">
+                                <span class="Var">std::cout</span>
+                                <span class="Value"> << "Have a good night!";</span>
+                            </p>
+                            <p class="ClosingBracket">}</p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <h2>Câu lệnh if...else if...else của C++</h2>
+                        <p>Câu lệnh <span class="Var">if...else if...else</span> thực thi các mã khác nhau cho nhiều hơn hai điều kiện.</p>
+
+                        <!-- Công thức -->
+                        <h3>Công thức</h3>
+                        <div class="code-container">
+                            <div class="if-block">
+                                <div class="condition">if (condition) {</div>
+                                <div class="code-true">// code to be executed if this condition is true;</div>
+                                <div class="closing-bracket">}</div>
+                            </div>
+                            <div class="elseif-block">
+                                <div class="elseif" style="color: green;">else if (condition) {</div>
+                                <div class="code-elseif">// code to be executed if first condition is false and this condition is true;</div>
+                                <div class="closing-bracket">}</div>
+                            </div>
+                            <div class="else-block">
+                                <div class="else">else {</div>
+                                <div class="code-false">// code to be executed if all conditions are false;</div>
+                                <div class="closing-bracket">}</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="Example">
+                            <p class="TieuDeViDu"> Ví dụ</p>
+                            <p style="padding-left: 30px; padding-bottom: 10px;">Câu lệnh Đầu ra "Chúc buổi sáng tốt lành!" 
+                                nếu thời gian hiện tại nhỏ hơn 10 và "Chúc một ngày tốt lành!" 
+                                nếu thời gian hiện tại nhỏ hơn 20. Nếu không, nó sẽ xuất ra
+                                "Chúc bạn ngủ ngon!":</p>
+                            <div class="Code">
+                                <p>
+                                    <span class="Var">int</span>
+                                    <span class="Var">t;</span>
+                                </p>
+                                <p>
+                                    <span class="Var">std::cin</span>
+                                    <span class="Value"> >> t;</span>
+                                </p>
+                                <p>
+                                    <span class="Var">if</span>
+                                    <span class="Condition">(t &lt; 10) {</span>
+                                </p>
+                                <p style="padding-left: 30px;">
+                                    <span class="Var">std::cout</span>
+                                    <span class="Value"> << "Have a good morning!";</span>
+                                </p>
+                                <p class="ClosingBracket">}</p>
+                                <p>
+                                    <span class="Var">else if</span>
+                                    <span class="Condition">(t &lt; 20) {</span>
+                                </p>
+                                <p style="padding-left: 30px;">
+                                    <span class="Var">std::cout</span>
+                                    <span class="Value"> << "Have a good day!";</span>
+                                </p>
+                                <p class="ClosingBracket">}</p>
+                                <p>
+                                    <span class="Var">else {</span>
+                                </p>
+                                <p style="padding-left: 30px;">
+                                    <span class="Var">std::cout</span>
+                                    <span class="Value"> << "Have a good night!";</span>
+                                </p>
+                                <p class="ClosingBracket">}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+            </div> <!-- Đóng div content -->
+            <div id="right">
+
+            </div> <!-- Đóng div right -->
+        </div> <!-- Đóng div main-container -->
+    </div> <!-- Đóng div wrapper -->
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="../LienKetTrong.css">
+    <link rel="website icon" type="jpg" href="../Images/R.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Menu khái quát -->
+        <div id="head">
+            <!-- Logo cua trang -->
+            <div class="logo">
+                <a href="../Home/Home.html">
+                    <img src="../logo.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu chung -->
+            <div class="general-menu">
+                <ul>
+                    <li><a href="../HuongDan/index.html">
+                        Hướng dẫn</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li> <a href="../GoiY/index.html">Gợi ý</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../ViecLam/index.html">Việc làm</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../DaoTao/index.html">Đào tạo</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button  href="" type="submit"><i class="fas fa-search"></i></button>
+                </ul>
+            </div>
+
+            <div class="general-icon">
+                <div class="general-icon-item">
+                    <i class='bx bx-collapse-horizontal'></i>
+                    <h3>Spaces</h3>
+                </div>
+                <div class="general-icon-item">
+                    <i class='bx bxs-shopping-bags'></i>
+                    <h3>Shop</h3>
+                </div>
+
+            </div>
+
+            <div class="login">
+                <button type="submit" class="btn"><a href="LoginForm/Login.html"> Login</a></button>
+            </div>
+
+
+        </div>
+        
+        <!-- Menu chính -->
+        <div id="head-link">
+            <nav>
+                <a href="../Learn_HTML/index.html">HTML</a>
+                <a href="../Learn_CSS/index.html">CSS</a>
+                <a href="../Learn_JavaScript/index.html">JAVASCRIPT</a>
+                <a href="../Learn_SQL/index.html">SQL</a>
+                <a href="../Learn_Python/index.html">PYTHON</a>
+                <a href="../Learn_Java/index.html">JAVA</a>
+                <a href="../Learn_PHP/index.html">PHP</a>
+                <a href="../Learn_C/index.html">C</a>
+                <a href="../Learn_CPlus/index.html">C++</a>
+                <a href="../Learn_CSharp/index.html">C#</a>
+                <span></span>
+            </nav>
+        </div>
+
+        <div id="main-content">
+            <div id="left">
+                <div class="left-container">
+                    <div style="padding: 10px 80px; font-size: 20px;" align="center"><h3> Danh sách</h3> </div>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#1">1. Đại Học Bách Khoa Hà Nội (HUST)</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#2">2. Đại học Quốc gia <br>Thành phố Hồ Chí Minh</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#3">3. Đại Học Bách Khoa <br>TP.HCM (HCMUT)</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#4">4. Đại Học FPT</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#5">5. Trường Đại học Tiền Giang</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#6">6.Đại học Sư phạm <br> kỹ thuật TP. HCM</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#7">7. Đại học Cần Thơ</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#8">8. Đại Học Duy Tân</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#9">9. Đại học Thăng Long</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#10">10. Trường Đại học <br>Giao thông Vận tải</a></h4>
+                </div>
+            </div> <!--đóng div left -->
+            <div id="content">
+                <div class="container">
+        
+                    <h1>Các Trường Đào Tạo Ngành Công Nghệ Thông Tin Tại Việt Nam</h1>
+                    <p>Ngành Công nghệ Thông tin (CNTT) là một trong những ngành học đang phát triển mạnh mẽ tại Việt Nam. Dưới đây là danh sách 10 trường đại học hàng đầu đào tạo ngành CNTT ở Việt Nam.</p>
+                    
+                    <h2 id="1" class="List">1. Đại Học Bách Khoa Hà Nội (HUST)</h2>
+                    <img src="Images/dai-hoc-bach-khoa-ha-noi-1308182.jpg" alt="Đại Học Bách Khoa Hà Nội">
+                    <p>Đại học Bách Khoa Hà Nội là một trong những trường đại học kỹ thuật hàng đầu tại Việt Nam, với chương trình đào tạo CNTT chuyên sâu và chất lượng cao.</p>
+                    <p>Trường Đại học Bách khoa Hà Nội (viết tắt là HUST) là một trong những trường đại học kỹ thuật đa ngành hàng đầu tại Việt Nam và cũng là một trong các trường đại học trọng điểm quốc gia Việt Nam. Đây là một trong 13 thành viên của Hiệp hội các trường đại học kỹ thuật hàng đầu của Châu Á - Thái Bình Dương mang tên AOTULE (Asia-Oceania Top University League on Engineering).</p>
+                    <div class="ThongTinLienHe">
+                        <p>THÔNG TIN LIÊN HỆ: <br>
+            
+                            <b>Địa chỉ:</b> số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội <br>
+                            
+                            <b>Điện thoại:</b> 024 3869 4242 & 024 3623 1732 <br>
+                            
+                            <b>Email:</b> hcth@hust.edu.vn  <br>
+                            
+                            <b>Website:</b> https://hust.edu.vn/ <br>
+                            
+                            <b>Fanpage:</b> www.facebook.com/dhbkhanoi
+                        </p>
+                    </div>
+                    
+                    <h2 id="2" class="List">2. Trường Đại học Công nghệ Thông tin - Đại học Quốc gia Thành phố Hồ Chí Minh</h2>
+                    <img src="Images/dai-hoc-cong-nghe-thong-tin-dai-hoc-quoc-gia-tp-hcm-uit-1308187.jpg" alt="Đại học Quốc gia Thành phố Hồ Chí Minh">
+                    <p>Trường Đại học Công nghệ Thông tin - Đại học Quốc gia Thành phố Hồ Chí Minh là trường đại học công lập đào tạo về công nghệ thông tin và truyền thông (CNTT&TT) được thành lập theo quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ.</p>
+                    <p>Trường Đại học Công nghệ Thông tin có nhiệm vụ đào tạo nguồn nhân lực công nghệ thông tin chất lượng cao, góp phần tích cực vào sự phát triển của nền công nghiệp công nghệ thông tin Việt Nam, đồng thời tiến hành nghiên cứu khoa học và chuyển giao công nghệ thông tin tiên tiến, đặc biệt là hướng vào các ứng dụng nhằm góp phần đẩy mạnh sự nghiệp công nghiệp hóa, hiện đại hóa đất nước.</p>
+                    <p>Trường có 07 chương trình đào tạo đặc biệt (hệ chính quy) các ngành: kỹ sư tài năng ngành An toàn Thông tin, chương trình tiên tiến ngành Hệ thống thông tin, cử nhân tài năng ngành Khoa học máy tính v.v… Ở bậc đào tạo sau đại học có 03 chương trình đào tạo trình độ thạc sĩ (ngành khoa học máy tính, công nghệ thông tin và hệ thống thông tin) và 02 chương trình đào tạo trình độ tiến sĩ (ngành khoa học máy tính và công nghệ thông tin).</p>
+                    <div class="ThongTinLienHe">
+                        <p>THÔNG TIN LIÊN HỆ: <br>
+            
+                            <b>Địa chỉ:</b> Khu phố 6, Phường Linh Trung, TP. Thủ Đức, TP. HCM <br>
+                            
+                            <b>Điện thoại:</b>  028 3725 2002 <br>
+                            
+                            <b>Email:</b> info@uit.edu.vn  <br>
+                            
+                            <b>Website:</b> https://www.uit.edu.vn
+                            <b>Fanpage:</b> www.facebook.com/UIT.Fanpage
+                        </p>
+                    </div>
+
+
+                    <h2 id="3" class="List">3. Đại Học Bách Khoa TP.HCM (HCMUT)</h2>
+                    <img src="Images/dai-hoc-bach-khoa-tphcm-1308198.jpg" alt="Đại Học Bách Khoa TP.HCM">
+                    <p>Đại học Bách Khoa TP.HCM là một trong những trường đại học kỹ thuật hàng đầu tại miền Nam Việt Nam, với chương trình đào tạo CNTT chất lượng.</p>
+                    <p>Mục tiêu của chương trình ngành Công nghệ thông tin là đào tạo ra những sinh viên có kiến thức chuyên sâu để phân tích, thiết kế, xây dựng, phát triển hệ thống công nghệ thông tin, ứng dụng, nghiên cứu và thiết kế, sản xuất sản phẩm, có khả năng phát triển và vận dụng kiến thức khoa học cơ bản, toán học vào thực tiễn của ngành, khả năng lập trình thành thạo và nắm bắt nhanh với các ngôn ngữ, phát triển kiến thức và kỹ năng cần có cho nghề nghiệp tương lai trong ngành Công nghệ Thông tin, cung cấp một môi trường chuẩn bị cho sinh viên có nhiều định hướng nghề nghiệp khác nhau và có khả năng tự học suốt cuộc đời.</p>
+                    <p>Nếu bạn cảm thấy mình thực sự đam mê với ngành công nghệ thông tin thì hãy chọn đại học Bách khoa làm bến đỗ của mình. Trường được trang bị các thiết bị hiện đại phục vụ cho việc học tập và giảng dạy của thầy và trò với 2 phòng thí nghiệm trọng điểm quốc gia, 6 phòng thí nghiệm trọng điểm của ĐHQG TPHCM, 11 xưởng thực tập và phòng thực hành, 9 trung tâm nghiên cứu chuyển giao công nghệ.</p>
+                    <div class="ThongTinLienHe">
+                        <p>THÔNG TIN LIÊN HỆ: <br>
+            
+                            <b>Địa chỉ:</b> 268 Lý Thường Kiệt, Phường 14, Quận 10, TP.HCM <br>
+                            
+                            <b>Điện thoại:</b>  028 3864 7256 & 028 3864 5282 <br>
+                            
+                            <b>Email:</b> qttt@hcmut.edu.vn <br>
+                            
+                            <b>Website:</b> https://hcmut.edu.vn <br>
+                            <b>Fanpage:</b>www.facebook.com/truongdhbachkhoa
+                        </p>
+                    </div>
+
+                    <h2 id="4" class="List">4. Đại Học FPT</h2>
+                    <img src="Images/dai-hoc-fpt-1308221.jpg" alt="Đại Học FPT">
+                    <p>Xuất thân từ tập đoàn FPT – tập đoàn nổi tiếng về CNTT nên Đại học FPT cũng nhanh chóng trở thành cái tên hàng đầu trong lĩnh vực đào tạo CNTT. Nhờ lợi thế hiểu yêu cầu thực tế của doanh nghiệp đối với nhân sự ngành CNTT, ĐH FPT xây dựng một chương trình đào tạo đáp ứng yêu cầu của không chỉ các doanh nghiệp trong nước mà còn làm hài lòng nhiều nhà tuyển dụng quốc tế.</p>
+                    <p>Đại học FPT nổi tiếng với các chương trình đào tạo về CNTT và kỹ năng mềm, giúp sinh viên sẵn sàng cho môi trường làm việc toàn cầu.</p>
+                    <p>Sinh viên của trường được học hoàn toàn bằng giáo trình nhập ngoại và cập nhật theo những xu hướng công nghệ mới nhất như Mobility, Cloud, Trí tuệ Nhân tạo v.v... Sinh viên cũng được đào tạo bài bản về ngoại ngữ với ngôn ngữ bắt buộc là tiếng Anh và tiếng Nhật để có thể làm việc với những thị trường CNTT lớn nhất thế giới hiện nay.</p>
+                    <p>Ngoài ra, ngôi trường này còn nổi bật trong số các trường đào tạo về CNTT nhờ tỉ lệ sinh viên ra trường có việc làm riêng ngành CNTT đạt tới 98% với mức lương khởi điểm trung bình lên tới 8,3 triệu đồng/tháng. Đây là minh chứng rõ ràng về chất lượng đào tạo của ĐH FPT, đồng thời giúp ngôi trường này trở thành cái tên đứng đầu khi lựa chọn trường để học về công nghệ thông tin.</p>
+                    <img src="Images/dai-hoc-fpt-1308222.jpg" alt="">
+                    <div class="ThongTinLienHe">
+                        <p>THÔNG TIN LIÊN HỆ: <br>
+            
+                            <b>Địa chỉ:</b>Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc – Km29 Đại lộ Thăng Long, Thạch Thất, Hà Nội - 024 7300 1866 <br>
+                            
+                            
+                            <b>Email:</b> daihocfpt@fpt.edu.vnn  <br>
+                            
+                            <b>Website:</b>  https://daihoc.fpt.edu.vn
+                            <b>Fanpage:</b> www.facebook.com/daihocfpt</p>
+                    </div>
+                    
+                    <h2 id="5" class="List">5. Trường Đại học Tiền Giang</h2>
+                    <img src="Images/TG.jpg" style="width: 500px;" alt="Trường Đại học Tiền Giang">
+                    <p>Chương trình đào tạo (CTĐT) đại học Công nghệ thông tin (CNTT) Trường Đại Học Tiền Giang đào tạo nguồn nhân lực ngành CNTT có kiến thức thực tế vững chắc, kiến thức lý thuyết toàn diện, kiến thức chuyên sâu về ngành CNTT;
+                         có kỹ năng nhận thức, phản biện, phân tích, tổng hợp; có kỹ năng thực hành nghề nghiệp, kỹ năng sử dụng ngoại ngữ, kỹ năng thuyết trình và giao tiếp để thực hiện nhiệm vụ phức tạp, khả năng làm việc độc lập và làm việc nhóm; 
+                         có nhận thức đúng đắn về vai trò của ngành học và vai trò của công dân, có đạo đức nghề nghiệp, có sức khỏe tốt để làm việc; có khả năng truyền đạt kiến thức, khả năng tự đào tạo để nâng cao kiến thức và kỹ năng nghề nghiệp.
+                          CTĐT này đã được công nhận đạt kiểm định chất lượng theo Tiêu chuẩn của Bộ Giáo dục và Đào tạo (theo Quyết định 68/QĐ-TTKĐ ngày 28/05/2022 của Trung tâm Kiểm định Chất lượng Giáo dục ĐH Quốc Gia TP. Hồ Chí Minh).
+                           Khối lượng kiến thức toàn khóa của CTĐT là 126 tín chỉ và thời gian đào tạo là 4 năm. CTĐT đại học CNTT Trường Đại học Tiền Giang bao gồm các nội dung sau:</p>
+                    <p>- Kiến thức giáo dục đại cương và nhập môn ngành: Giới thiệu về ngành CNTT, nghề CNTT, vai trò và ứng dụng của ngành CNTT trong sự nghiệp công nghiệp hóa, hiện đại hóa đất nước và hội nhập quốc tế.</p>    
+                    <p>- Kiến thức cơ sở ngành: Lập trình, Hệ điều hành, Kiến trúc máy tính, Cấu trúc dữ liệu và giải thuật, Cơ sở dữ liệu, Mạng máy tính…</p>
+                    <p>- Thực tập tốt nghiệp và Khóa luận tốt nghiệp: Người học được gửi đến các đơn vị chuyên về CNTT để thực tập tốt nghiệp và làm Khóa luận tốt nghiệp.</p>
+
+                    <h3>Chương Trình Đào Tạo</h3>
+                    <p>Chương trình đào tạo ngành CNTT tại TGU được thiết kế nhằm cung cấp cho sinh viên những kiến thức và kỹ năng cần thiết để đáp ứng nhu cầu của thị trường lao động. Chương trình bao gồm các môn học cơ bản và chuyên sâu trong lĩnh vực CNTT, như:</p>
+                    <ul>
+                        <li>Kỹ Thuật Phần Mềm:</li>
+                        <li>Mạng Máy Tính và An Ninh Mạng:</li>
+                        <li>Hệ Thống Thông Tin:</li>
+                        <li>Thiết kế website</li>
+                    </ul>
+                    <br>
+
+                    <img src="Images/KiemDinhChatLuong.png" alt="">
+                    <p style="text-align: center;">Hình 1: Giấy chứng nhận đạt kiểm định chất lượng của CTĐT đại học Công nghệ thông tin Trường Đại Học Tiền Giang</p>
+                    <br>
+                    <h3>Cơ Sở Vật Chất</h3>
+                    <p>Cơ sở vật chất của Trường Đại học Tiền Giang phục vụ đào tạo ngành CNTT bao gồm hệ thống thông tin tích hợp, hệ thống mạng và máy chủ, 8 phòng máy tính dùng chung, 4 phòng máy tính chuyên ngành và một phòng máy tính do VNPT-IT tài trợ.</p>
+                    <ul>
+                        <li>Phòng Máy Tính: Được trang bị hiện đại, đáp ứng nhu cầu học tập và thực hành của sinh viên.</li>
+                        <li>Phòng Thí Nghiệm Mạng: Để thực hành cấu hình và quản lý mạng.</li>
+                        <li>Thư Viện Số: Cung cấp tài liệu học tập và nghiên cứu phong phú về CNTT.</li>
+                    </ul>
+                    <img src="Images/ThucHanh.jpg" alt="">
+                    <p style="text-align: center;">Hình 2: Phòng máy tính phục vụ đào tạo ngành CNTT tại Trường Đại học Tiền Giang.</p>
+                   
+                   <h3>Hợp Tác và Nghiên Cứu</h3>
+                   <p>Ngành CNTT tại TGU cũng có các mối quan hệ hợp tác với nhiều doanh nghiệp, tổ chức và trường đại học khác, tạo điều kiện cho sinh viên tham gia vào các dự án thực tế, thực tập và nghiên cứu khoa học. Điều này không chỉ giúp sinh viên áp dụng kiến thức vào thực tiễn mà còn nâng cao kỹ năng chuyên môn và mở rộng mạng lưới nghề nghiệp.</p>
+                   <h3>Hoạt Động Ngoại Khóa</h3>
+                   <p>Trường cũng tổ chức nhiều hoạt động ngoại khóa, các cuộc thi lập trình, hội thảo chuyên đề và các câu lạc bộ học thuật liên quan đến CNTT. Những hoạt động này giúp sinh viên phát triển kỹ năng mềm, làm việc nhóm và tăng cường sự sáng tạo.</p>
+                   
+                   
+                    <h2 id="6" class="List">6.Đại học Sư phạm kỹ thuật TP. HCM</h2>
+                    <img src="Images/SuPhamKyThuat.jpg" alt="">
+                    <p>Trường Đại học Sư phạm Kỹ thuật, với chuyên ngành Công nghệ Thông tin, là một trong những cơ sở đào tạo hàng đầu tại Việt Nam trong lĩnh vực giáo dục và công nghệ kỹ thuật. Chuyên ngành Công nghệ Thông tin của trường cung cấp một chương trình học hiện đại và toàn diện, giúp sinh viên nắm vững cả lý thuyết lẫn kỹ năng thực tiễn, từ đó có thể tự tin tham gia vào thị trường lao động cạnh tranh ngày nay.</p>
+                    <h3>Cơ Sở Vật Chất và Môi Trường Học Tập</h3>
+                    <p>
+                        Trường Đại học Sư phạm Kỹ thuật sở hữu hệ thống cơ sở vật chất hiện đại, bao gồm các phòng lab máy tính tiên tiến, thư viện với nguồn tài liệu phong phú, và các phòng học được trang bị đầy đủ thiết bị giảng dạy. Sinh viên có cơ hội tham gia vào các dự án thực tế, các câu lạc bộ học thuật và các hoạt động ngoại khóa phong phú, giúp phát triển kỹ năng mềm và kỹ năng làm việc nhóm.</p>
+                        <h3>Cơ Hội Nghề Nghiệp</h3>
+                        <p>
+                        Sinh viên tốt nghiệp chuyên ngành Công nghệ Thông tin tại Đại học Sư phạm Kỹ thuật có nhiều cơ hội nghề nghiệp rộng mở, bao gồm:</p>
+
+                        <ul>
+                            <li>Lập trình viên: Thiết kế và phát triển phần mềm, ứng dụng.</li>
+                            <li>Chuyên viên an ninh mạng: Đảm bảo an toàn cho hệ thống mạng của các tổ chức.</li>
+                            <li>Quản trị hệ thống: Quản lý và bảo trì các hệ thống công nghệ thông tin.</li>
+                            <li>Phân tích dữ liệu: Xử lý và phân tích dữ liệu để đưa ra các quyết định kinh doanh chiến lược.</li>
+                            <li>Giảng viên và nhà nghiên cứu: Đào tạo và nghiên cứu trong lĩnh vực công nghệ thông tin.</li>
+                        </ul>
+
+                    <h2 id="7" class="List">7. Trường Đại học Cần Thơ</h2>
+                    <img src="Images/CanTho.jpg" alt="">
+                    <p>Ngành Công nghệ Thông tin (CNTT) tại Trường Đại học Cần Thơ (CTU) là một trong những ngành học quan trọng và được đầu tư mạnh mẽ, nhằm đáp ứng nhu cầu ngày càng cao về nhân lực trong lĩnh vực công nghệ thông tin của khu vực Đồng bằng sông Cửu Long cũng như toàn quốc.</p>
+                    <h3>Chương Trình Đào Tạo</h3>
+                    <p>Chương trình đào tạo ngành CNTT tại Đại học Cần Thơ được xây dựng bài bản, kết hợp giữa lý thuyết và thực hành, nhằm trang bị cho sinh viên những kiến thức và kỹ năng cần thiết để đáp ứng yêu cầu của thị trường lao động.</p>
+
+                    <h3>Cơ Sở Vật Chất</h3>
+                    <p>Trường Đại học Cần Thơ đầu tư mạnh vào cơ sở vật chất phục vụ ngành CNTT, bao gồm:</p>
+                    <ul>
+                        <li>Phòng Thí Nghiệm Máy Tính: Trang bị hiện đại, phục vụ cho việc học tập và nghiên cứu của sinh viên.</li>
+                        <li>Phòng Thí Nghiệm Mạng và An Ninh Mạng: Để thực hành các kỹ thuật quản trị và bảo mật mạng.</li>
+                        <li>Thư Viện Kỹ Thuật Số: Cung cấp tài liệu học tập và nghiên cứu phong phú về CNTT.</li>
+                    </ul>
+                    
+                    <h3>Đội Ngũ Giảng Viên</h3>
+                    <p>Đội ngũ giảng viên ngành CNTT tại Đại học Cần Thơ là những người có trình độ cao, nhiều người trong số đó có bằng cấp từ các trường đại học uy tín ở nước ngoài. Họ không chỉ giỏi về chuyên môn mà còn rất nhiệt tình và tận tâm với công tác giảng dạy và nghiên cứu.</p>
+
+
+
+                    <h2 id="8" class="List">8. Đại Học Duy Tân</h2>
+                    <img src="Images/DuyTan.jpg" alt="Đại Học Duy Tân">
+                    <p>Đại học Duy Tân tại Đà Nẵng là trường đại học tư thục có chương trình đào tạo CNTT tiên tiến và hiện đại.</p>
+                    
+                    <h2 id="9" class="List">9. Đại Học Thăng Long</h2>
+                    <img src="Images/ThangLong.jpg" alt="Đại Học Thăng Long">
+                    <p>Đại học Thăng Long tại Hà Nội cung cấp chương trình đào tạo CNTT với môi trường học tập năng động và hiện đại.</p>
+                    
+                    <h2 id="10" class="List">10. Trường Đại học Giao thông Vận tải</h2>
+                    <img src="Images/dai-hoc-giao-thong-van-tai.jpg" alt="">
+                    <p>
+                        Ngành Công nghệ Thông tin (CNTT) tại Trường Đại học Giao thông Vận tải (UTC) là một ngành học được nhiều sinh viên quan tâm và lựa chọn. Trường Đại học Giao thông Vận tải là một trong những cơ sở giáo dục uy tín tại Việt Nam, có bề dày lịch sử và thành tích trong lĩnh vực đào tạo kỹ thuật, trong đó có CNTT.</p>
+
+
+                </div>
+                
+            </div> <!-- Đóng div content -->
+
+        </div> <!-- Đóng div main-container -->
+    </div> <!-- Đóng div wrapper -->
+</body>
+</html>

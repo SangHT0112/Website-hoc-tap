@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.connect{
+    text-decoration: none;
+    color: white;
+}
+
+#head {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    height: 56px;
+}
+.logo{
+    padding: 10px 0px;
+}
+.logo img {
+    width: 38.5px; /* Thay đổi kích thước theo nhu cầu */
+    height: 36px;
+}
+
+/* ============================SLIDE SHOW=================== */
+
+/* ============================END================ */
+
+/* Thanh tim kiem */
+input[type="text"] {
+    padding: 8px;
+    font-size: 10px;
+    font-style: italic;/* font chữ nghiêng */
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+
+.login {
+    padding: 10px;
+}
+
+
+.login a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#main-content {   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 485px; /* Đảm bảo phần content giữa trang theo chiều dọc */
+    background: url("/Home/Images/BackgroundHome.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#content {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-seri;
+     /* Căn giữa nội dung trong phần content */
+}
+#content h1{
+    font-size: 70px;
+    margin-bottom: -20;
+    color: aliceblue;
+    
+}
+#content h2 {
+    width: 600px;
+    height: 35px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #e7e729;
+}
+#content h3{
+    text-decoration: underline;
+    color: white;
+}
+
+.html-text {
+    white-space: pre;
+}
+
+
+
+/* Màu của khung sub-content-item */
+.sub-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 550px;
+}
+@media (min-width: 960px) {
+    .sub-content {
+        flex-direction: row;
+    }
+}
+.sub-content-item {
+    text-align: center;
+    padding: 20px 16px;
+    margin-top: 25px;
+    background-color: white;
+    flex-basis: 40%;
+    height: 500px;
+}
+.sub-content-item-menu{
+    margin-top: 70px;
+    width: 200px;
+    height: 400px;
+}
+
+.sub-content-item-code h2{
+    margin-top: 16px;
+    flex-basis: 40%;
+    background-color: white;
+    text-align: left;
+}
+
+
+/* =====================Đổi màu cho từng background Sub-content ===============================*/
+.sub-content-html {
+    background-color: #5477af; /* Màu cho phần HTML */
+}
+
+.sub-content-css {
+    background-color: #33FF99; /* Màu cho phần CSS */
+}
+
+.sub-content-js {
+    background-color: #3399FF; /* Màu cho phần JavaScript */
+}
+
+.sub-content-pt {
+    background-color: #9c2ac2; /* Màu cho phần JavaScript */
+}
+.sub-content-sql {
+    background-color: #cad769; /* Màu cho phần JavaScript */
+}
+
+.code-example img{
+    width: 200px;
+    height: 200px;
+}
+
+
+/* Feature layout */
+.wrap-learn {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ không gian */
+    justify-content: space-around; /* Các phần tử sẽ tự động căn đều về hai bên */
+    background-color: #222;
+}
+
+.wrap-learn-item {
+    padding: 50px 16px; /* Giảm padding của .wrap-learn-item */
+    text-align: center;
+    align-items: center;
+    height: 300px;
+    margin: 30px 30px;
+    flex-basis: 40%;
+    box-sizing: border-box;
+    background-color: #33fffc;
+    font-weight: 700;
+}
+
+.wrap-learn-item-btn{
+    margin-top: 40px;
+}
+
+.btn-learn {
+    
+    background-color: #222;
+    border-radius: 45px;
+    width: fit-content; /* Đặt width là fit-content để nút chỉ mở rộng đủ để chứa nội dung bên trong */
+    display: inline-block; /* Đặt display là inline-block để nút không chiếm toàn bộ chiều ngang */
+    padding: 10px 20px; /* Thiết lập padding cho nút */
+}
+
+.btn-learn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-learn:hover {
+    background-color: rgb(58, 76, 92);
+}
+
+
+
+.wrap-learn-php {
+    background-color: rgb(181, 40, 155);
+}
+.wrap-learn-jquery {
+    background-color: rgb(181, 199, 79);
+}
+.wrap-learn-cplus {
+    background-color: rgb(116, 90, 170);
+}
+.wrap-learn-bootstrap {
+    background-color: rgb(66, 208, 90);
+}
+
+
+
+.mini-learn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Các phần tử sẽ căn đều về hai bên */
+}
+
+.mini-learn-item {
+    height: 100px;
+    line-height: 100px;
+    margin: 35px auto;
+    width: calc(25% - 50px); /* Đặt chiều rộng của mỗi phần tử là 25% với khoảng cách 10px giữa chúng */
+}
+
+.mini-learn-item a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #ccc;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.mini-learn-item-C{
+    background-color: #cad769;
+}
+
+.mini-learn-item-Kotlin{
+    background-color: #3399FF;
+}

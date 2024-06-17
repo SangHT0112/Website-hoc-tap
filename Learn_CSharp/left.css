@@ -1,0 +1,32 @@
+.left-container {
+    font-family: Arial, sans-serif; /* Font chữ dễ nhìn */
+    flex-direction: column;
+    max-height: calc(100vh - 88px); /* Đặt chiều cao tối đa là chiều cao của màn hình trừ 100px */
+    overflow-y: auto; /* Cho phép cuộn dọc khi nội dung vượt quá chiều cao */
+    overflow-x: hidden;
+}
+.left-item {
+    margin-bottom: 25px; /* Khoảng cách giữa các mục menu */
+    cursor:pointer; /* Biểu tượng con trỏ khi rê chuột qua */  
+    white-space: nowrap; /* Ngăn ngừa quá trình ngắt dòng */
+    padding: 5px 0;
+}
+.left-item {
+    display: flex;
+    align-items: center;
+}
+.check-icon {
+    margin-right: 8px; /* Khoảng cách giữa icon và văn bản */
+    color: white; /* Màu của icon check tích */
+}
+.check-icon.green {
+    color: green;
+}
+.left-item:hover {
+    color: blue; /* Change color to whatever you prefer */
+    background: #8a8888;
+    
+}
+.left-container h4 {
+    margin-left: 20px;
+}

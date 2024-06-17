@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="js.js">
+    <link rel="stylesheet" href="ThongTin.html">
+    <script language="javascript">
+        function kiemtra() {
+    var WLID = document.getElementById("WLID").value;
+    var Email = document.getElementById("mail").value;
+    var MatKhau = document.getElementById("MatKhau").value;
+    var GoLaiMatKhau = document.getElementById("GoLaiMatKhau").value;
+    var EmailThayThe = document.getElementById("EmailThayThe").value;
+    var Ho = document.getElementById("Ho").value;
+    var Ten = document.getElementById("Ten").value;
+    var LanhTho = document.getElementById("LanhTho").value;
+    var TP = document.getElementById("TP").value;
+    var MaBuuChinh = document.getElementById("MaBuuChinh").value;
+    var NamSinh = document.getElementById("NamSinh").value;
+    var NhapKyTuNhinThay = document.getElementsByName("NhapKyTuNhinThay")[0].value;
+
+    if (WLID == "") {
+        alert("Nhập vào Windows Live ID");
+        document.getElementById("WLID").focus();
+        return false;
+    }
+
+    if (MatKhau == "") {
+        alert("Nhập vào mật khẩu");
+        document.getElementById("MatKhau").focus();
+        return false;
+    }
+
+    if (GoLaiMatKhau != MatKhau) {
+        alert("Nhập lại mật khẩu không đúng");
+        document.getElementById("GoLaiMatKhau").focus();
+        return false;
+    }
+
+    var re = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (!re.test(EmailThayThe)) {
+        alert("Email thay thế không đúng định dạng!");
+        document.getElementById("EmailThayThe").focus();
+        return false;
+    }
+
+    if (Ho == "") {
+        alert("Nhập vào Họ");
+        document.getElementById("Ho").focus();
+        return false;
+    }
+
+    if (Ten == "") {
+        alert("Nhập vào Tên");
+        document.getElementById("Ten").focus();
+        return false;
+    }
+
+    if (MaBuuChinh == "") {
+        alert("Nhập vào mã bưu chính");
+        document.getElementById("MaBuuChinh").focus();
+        return false;
+    }
+
+    if (NamSinh == "") {
+        alert("Nhập vào năm sinh");
+        document.getElementById("NamSinh").focus();
+        return false;
+    }
+
+    if (NhapKyTuNhinThay == "") {
+        alert("Nhập vào ký tự bạn nhìn thấy");
+        document.getElementsByName("NhapKyTuNhinThay")[0].focus();
+        return false;
+    }
+
+    // Chuyển hướng với các tham số truyền
+    var queryString = "?WLID=" + encodeURIComponent(WLID) +
+                      "&Email=" + encodeURIComponent(Email) +
+                      "&MatKhau=" + encodeURIComponent(MatKhau) +
+                      "&EmailThayThe=" + encodeURIComponent(EmailThayThe) +
+                      "&Ho=" + encodeURIComponent(Ho) +
+                      "&Ten=" + encodeURIComponent(Ten) +
+                      "&LanhTho=" + encodeURIComponent(LanhTho) +
+                      "&TP=" + encodeURIComponent(TP) +
+                      "&MaBuuChinh=" + encodeURIComponent(MaBuuChinh) +
+                      "&NamSinh=" + encodeURIComponent(NamSinh);
+
+    window.location.href = "ThongTin.html" + queryString;
+
+    return false; // Ngăn form gửi đi
+}
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Home/Home.html"> <img src="../logo.jpg" alt="" style="width: 50px;"></a>
+            
+        </div>
+        <div class="login">
+            <br>
+            <a href="../LoginForm/Login.html"> <p>Đăng nhập</p></a>          
+        </div>
+    </header>
+
+    <main>
+        <div class="tittle">
+            <h1 style="padding-bottom: 10px;">Tạo Window School của bạn</h1>
+            <p>
+                Nó sẽ giúp bạn vào được tất cả các dịch vụ của Windows - 
+                và những nơi khác mà bạn nhìn thấy <br>
+                Tất cả các thông tin đều bắt buộc có.
+            </p>
+        </div>
+          
+        <form id="frm_login" name="frm_login" method="post" action="ThongTin.html" onsubmit="return kiemtra();">
+
+            <div class="list" style="padding-bottom: 20px;">
+                <div class="label">
+    
+                </div>
+                <div class="text">
+                    <p>Nếu bạn dùng <B>Email</B> hoặc <b>Messager</b> 
+                        bạn <br>đã có windows Live ID rồi đó. <span style="color: rgb(4, 84, 28);">Đăng nhập</span></p>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="label">
+                    <p>Windows School:</p>
+                </div>
+
+                <div class="text">
+                    <input type="text" id="WLID" name="WLID" style="width: 180px;">@
+
+                    <div class="button">
+                        <select id="mail" name="mail">
+                            <option value="hotmail">hotmail.com</option>
+                            <option value="messager">messager.com</option>
+                          </select>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="list list-kiemtra">
+                <div class="label">
+
+                </div>
+                <div class="text">
+                    <input type="submit" name="KiemTraTinhSanDung" id="KiemTraTinhSanDung" value="Kiểm tra tính sẵn dùng" />
+                </div>
+                
+            </div>
+
+            <div class="list">
+                <div class="label"></div>
+
+                <div class="text ghichu">
+                    <p>Hoặc dùng địa chỉ email riêng của bạn</p>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="label">Tạo mật khẩu:</div>
+
+                <div class="text">
+                    <input type="password" name="MatKhau" id="MatKhau"/>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="label">             
+                </div>
+                <div class="text ghichu">
+                    <p>Ít nhất là 6 ký tự: có phân biệt chữ hoa chữ <br>thường</p>
+                </div>     
+            </div>
+
+            
+            <div class="list">
+                <div class="label">Xin gõ lại mật khẩu:</div>
+
+                <div class="text">
+                    <input type="password" name="GoLaiMatKhau" id="GoLaiMatKhau"/>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="label">Địa chỉ email thay thế:</div>
+
+                <div class="text">
+                    <input type="text" name="EmailThayThe" id="EmailThayThe"/>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="label">             
+                </div>
+                <div class="text ghichu">
+                    <p>Hoặc chọn câu hỏi an toàn cho phần đặt lại <br>mật khẩu</p>
+                </div>     
+            </div>
+            
+            <div class="list">
+                <div class="label">Họ:</div>
+
+                <div class="text">
+                    <input type="text" name="Ho" id="Ho"/>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="label">Tên:</div>
+
+                <div class="text">
+                    <input type="text" name="Ten" id="Ten"/>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="label">Quốc gia/Vùng lãnh thổ:</div>
+                <div class="text">
+                    <select name="LanhTho" id="LanhTho" style="width: 300px; height: 20px;">
+                        <option value="Việt Nam">Việt Nam</option>
+                        <option value="Thái Lan">Thái Lan</option>
+                        <option value="Singapore">Singapore</option>
+                    </select>
+                </div>
+                
+                <!-- <div class="text">
+                    <input type="text" name="LanhTho" id="LanhTho"/>
+                </div> -->
+            </div>
+
+            <div class="list">
+                <div class="label">Thành phố/khu vực:</div>
+
+                <!-- <div class="text">
+                    <input type="text" name="TP" id="TP"/>
+                </div> -->
+
+                <div class="text">
+                    <select name="TP" id="TP" style="width: 300px; height: 20px;">
+                        <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
+                        <option value="Bến Tre">Bến Tre</option>
+                        <option value="Tiền Giang">Tiền Giang</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="label">Mã bưu chính:</div>
+
+                <div class="text">
+                    <input type="text" name="MaBuuChinh" id="MaBuuChinh"/>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="label">Giới tính:</div>
+                <div class="text">
+                    <input type="radio">Nam
+                <input type="radio">Nữ
+                </div>
+                
+            </div>
+
+            <div class="list">
+                <div class="label">Năm sinh:</div>
+
+                <div class="text">
+                    <input type="text" name="NamSinh" id="NamSinh" style="width: 150px;" placeholder="ví dụ:2004"/>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="label">             
+                </div>
+                <div class="text">
+                    Nhập các ký tự bạn nhìn thấy
+                </div>     
+            </div>
+
+            <div class="list">
+                <div class="label">
+
+                </div>
+                <div class="text" style="display: flex; color: rgb(4, 170, 109);">
+                    <div class="item">Mới</div>
+                    <div class="item">Âm thanh</div>
+                    <div class="item">Trợ giúp</div>
+                </div>
+            </div>
+
+            
+
+            <div class="list">
+                <div class="label"></div>
+                <div class="text">
+                    <img src="Images/1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="label">
+
+                </div>
+                <div class="text">
+                    <input type="text" name="NhapKyTuNhinThay">
+                </div>
+                
+            </div>  
+
+            <div class="tittle" style="margin-right: 200px; width: 600px;">
+                <p>Bấm <b>Tôi chấp nhận</b> nghĩa là bạn đông ý với <span style="color: rgb(4, 170, 109);">thỏa thuận dịch vụ</span> và <span style="color: rgb(4, 170, 109);">điều khoản về quyền 
+                    riêng tư</span> của Microsoft. Bạn cũng đồng ý nhận email từ windows. Bing và MSN với cập nhật dịch vụ.
+                     quảng cáo đặc biệt và lời mời tham gia khảo sát, Bạn có thể dừng đăng ký vào bất kỳ lúc nào
+                </p>
+            </div>
+            
+            <input type="submit" value="Tôi chấp nhận" name="button" id="button" style="margin-left: 200px; margin-bottom: 40px; width: 100px; height: 40px;">
+            
+             
+        </form>
+
+        
+
+        
+        <div id="registrationInfo"></div>
+    
+        
+    </main>
+
+    <footer>
+        <div class="fleft">
+            <div class="fleft-item">
+                <p>@ 2010 Microsoft</p>
+            </div>
+            <div class="fleft-item">
+                <p> <b>Điều khoản </b> </p>
+            </div>
+            <div class="fleft-item">
+                <p><b>Quyền riêng tư </b> </p>
+            </div>
+            <div class="fleft-item">
+                <p><b>Giới thiệu quảng cáo </b> </p>
+            </div>
+            
+        </div>
+
+        <div class="fright">
+            <div class="fright-item"><p><b>Trung tâm Trợ giúp </b></p></div>
+            <div class="fright-item"><p><b>ý kiến phản hồi </b></p></div>
+            <div class="fright-item"><p><b>Tiếng việt </b></p></div>
+        </div>
+    </footer>
+
+</body>
+</html>

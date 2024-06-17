@@ -1,0 +1,55 @@
+/* ================Menu chung=============================  */
+
+/* Khi kích thước màn hình nhỏ hơn hoặc bằng 768px */
+@media only screen and (max-width: 768px) {
+    .general-menu ul li {
+        display: block; /* Hiển thị từng mục menu trên một dòng */
+        padding: 10px 0; /* Giảm khoảng cách giữa các mục menu */
+        text-align: center; /* Căn giữa các mục menu */
+    }
+}
+.general-menu ul {
+    list-style: none;
+    height: 56px;
+    display: flex; /* Sử dụng flexbox */
+    justify-content: flex-start; /* Căn menu về phía bên trái */
+    align-items: center; /* Căn các phần tử theo chiều dọc vào giữa */
+}
+
+.general-menu ul li {
+    position: relative;
+    display: inline;
+    padding: 0px 25px;
+    height: 56px;
+    line-height: 56px;
+}
+
+.general-menu ul li a {
+    text-decoration: none;
+    color: black; /* Màu chữ của menu */
+}
+
+.general-menu ul li:hover {
+    background-color: rgb(4, 170, 109); /* Thay đổi màu nền của menu khi rê chuột vào */
+}
+
+
+.general-icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.general-icon-item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.general-icon-item i {
+    font-size: 24px; /* Kích thước của biểu tượng */
+}
+
+.general-icon-item h3 {
+    font-size: 14px; /* Kích thước của tiêu đề */
+}

@@ -1,0 +1,205 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner img{
+    width: 100%;
+    height: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 20px auto;
+    background-color: rgb(26, 182, 130);
+}
+th, td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+    text-align: center;
+}
+th {  
+    background-color: #007c38;
+}
+
+h1{
+    margin-top: 10px;
+    background-color: #000000;
+    color: white;
+    margin-bottom: 10px;
+}
+
+h2 {
+    padding:10px;
+}
+
+h3{
+    padding: 15px;
+}
+
+p {
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.Introduce p{
+    color: #ffffff;
+    background-color: #106cb1;
+    padding-top: 10px;
+
+    
+}
+
+
+
+ .DanhSach {
+    border: 2px solid blue;
+    padding: 10px 30px;
+    color: #ffffff;
+    background-color: #1d89db;
+}
+
+
+.CacNoiDungChinh {
+    margin-top: 10px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.CacNoiDungChinh img {
+    margin-top: 3px;
+    margin-left: 170px;
+    width: 300px;
+    height: 100px;
+}
+
+.Example {
+    background-color: rgb(213, 211, 211);
+    height: auto; /* Đặt tự động chiều cao theo nội dung */
+    padding: 20px; /* Thêm khoảng đệm bên trong khung */
+    border-radius: 10px; /* Bo tròn các góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng cho khung */
+    align-items: center; /* Căn giữa theo trục dọc */
+    justify-content: center; /* Căn giữa theo trục ngang */
+}
+
+.Code {
+    border-left: 5px solid rgb(4, 170, 109);
+    background-color: white;
+    width: 100% -30px; /* Đặt chiều rộng 100% của khung cha */
+    height: auto; /* Đặt tự động chiều cao theo nội dung */
+    padding: 20px; /* Thêm khoảng đệm bên trong khung */
+    margin-left: 0; /* Xóa khoảng cách thụt lề bên trái */
+    border-radius: 10px; /* Bo tròn các góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng cho khung */
+    font-family: 'Courier New', Courier, monospace; /* Đặt kiểu chữ cho mã code */
+    overflow: auto; /* Thêm thanh cuộn nếu nội dung quá dài */
+}
+
+
+.TieuDeViDu {
+    color: rgb(4, 170, 109); font-size: 20px; padding-bottom: 10px;
+}
+.Var{
+    color: red;
+}
+.Value {
+    color: #39b470;
+}
+
+.ToanTu {
+    color: #1d89db;
+}
+
+.Comment {
+    color: #035d2b;
+}
+
+.Type {
+    color: #000000;
+}
+
+.ThongBaoVang {
+    margin-top: 10px;
+    background-color: #edfcc8;
+    padding: 20px; /* Thêm khoảng đệm để văn bản không sát với cạnh khung */
+    margin-bottom: 10px;
+}
+
+.ThongBaoVang p {
+    margin: 0; /* Loại bỏ margin mặc định của p để tránh các khoảng trống không mong muốn */
+}
+
+
+
+.String {
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 15px 10px;
+}
+
+
+
+.TableOperator {
+    margin: 15px 20px;
+    background-color: rgb(134, 47, 134);
+    color: white;
+    padding-bottom: 20px;
+}
+
+
+.code-container {
+    background-color: #dbdbdb;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 600px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-left: 13px;
+}
+
+.if-block, .elseif-block, .else-block {
+    margin-bottom: 10px;
+}
+
+.condition, .elseif, .else, .closing-bracket {
+    font-weight: bold;
+}
+
+.condition {
+    color: #007BFF; /* Blue for the if condition */
+}
+
+.code-true, .code-elseif, .code-false {
+    margin-left: 20px;
+}
+
+.code-true {
+    color: #28A745; /* Green for the true block */
+}
+
+.elseif {
+    color: #6C757D; /* Gray for the elseif keyword */
+}
+
+.code-elseif {
+    color: #FFC107; /* Yellow for the elseif block */
+}
+
+.else {
+    color: #DC3545; /* Red for the else keyword */
+}
+
+.code-false {
+    color: #6C757D; /* Gray for the false block */
+}
+
+.closing-bracket {
+    margin-left: 0;
+}
+

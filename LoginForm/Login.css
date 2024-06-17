@@ -1,0 +1,115 @@
+* {
+    margin: 0; /* Thiết lập margin của tất cả các phần tử về 0 */
+    padding: 0; /* Thiết lập padding của tất cả các phần tử về 0 */
+    box-sizing: border-box; /* Sử dụng hộp mô hình border-box để tính toán kích thước */
+    font-family: "Poppins", sans-serif; /* Sử dụng font "Poppins" hoặc font sans-serif là font mặc định */
+}
+
+body {
+    display: flex; /* Sử dụng flexbox để căn chỉnh phần tử con */
+    justify-content: center; /* Căn chỉnh các phần tử con theo chiều ngang vào trung tâm */
+    align-items: center; /* Căn chỉnh các phần tử con theo chiều dọc vào trung tâm */
+    min-height: 100vh; /* Đặt chiều cao tối thiểu của body là 100% của viewport */
+    background: url('BackgroundLogin.jpg') no-repeat; /* Sử dụng hình ảnh làm nền và không lặp lại */
+    background-size: cover; /* Căn chỉnh kích thước hình ảnh nền để nó lấp đầy body */
+    background-position: center; /* Căn chỉnh vị trí của hình ảnh nền vào trung tâm */
+}
+
+.wrapper {
+    width: 420px; /* Đặt chiều rộng của wrapper là 420px */
+    background: transparent; /* Nền trong suốt */
+    color: #fff; /* Màu chữ là trắng */
+    border-radius: 10px; /* Góc bo viền là 10px */
+    padding: 30px 40px; /* Khoảng cách padding bên trong wrapper */
+    border: 2px solid rgba(255, 255, 255, .2); /* Viền có độ mờ */
+    backdrop-filter: blur(20px); /* Lọc mờ nền */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* Đổ bóng */
+}
+
+.wrapper h1 {
+    text-align: center; /* Căn giữa tiêu đề */
+    font-size: 36px; /* Kích thước font là 36px */
+}
+
+.wrapper .input-box{
+    position: relative; /* Thiết lập vị trí tương đối cho phần tử con bên trong wrapper */
+    width: 100%; /* Chiều rộng là 100% */
+    height: 50px; /* Chiều cao là 50px */
+    margin: 30px 0; /* Khoảng cách giữa các input */
+}
+
+.input-box input{
+    width: 100%; /* Chiều rộng là 100% */
+    height: 100%; /* Chiều cao là 100% */
+    background: transparent; /* Nền trong suốt */
+    border: none; /* Không có viền */
+    outline: none; /* Không có đường viền khi focus */
+    border: 2px solid rgba(255, 255, 255, .2); /* Viền với màu sắc có độ mờ */
+    border-radius: 40px; /* Góc bo viền là 40px */
+    font-size: 16px; /* Kích thước font là 16px */
+    color: #fff; /* Màu chữ là trắng */
+    padding: 20px 45px 20px 20px; /* Khoảng cách padding bên trong input */
+}
+
+.input-box input::placeholder{
+    color: #fff; /* Màu chữ gợi ý là trắng */
+}
+
+.input-box i {
+    position: absolute; /* Thiết lập vị trí tuyệt đối cho phần tử con */
+    right: 20px; /* Cách lề phải 20px */
+    top: 50%; /* Căn chỉnh ở giữa theo chiều dọc */
+    transform: translateY(-50%); /* Dịch chuyển phần tử lên trên 50% của chính nó */
+    font-size: 20px; /* Kích thước font là 20px */
+}
+
+.wrapper .remember-forgot {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: space-between; /* Căn các phần tử con đều ra hai bên */
+    font-size: 14.5px; /* Kích thước font là 14.5px */
+    margin: -15px 0 15px; /* Khoảng cách giữa các phần tử */
+}
+
+.remember-forgot label input {
+    accent-color: #fff; /* Màu sắc cho phần kiểm tra */
+    margin-right: 3px; /* Khoảng cách với phần tử bên cạnh */
+}
+
+.remember-forgot a {
+    color: #fff; /* Màu chữ là trắng */
+    text-decoration: none; /* Không gạch chân cho liên kết */
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline; /* Gạch chân khi di chuột qua */
+}
+
+.wrapper .btn {
+    width: 100%; /* Chiều rộng là 100% */
+    height: 45px; /* Chiều cao là 45px */
+    background: #fff; /* Nền màu trắng */
+    border: none; /* Không có viền */
+    outline: none; /* Không có đường viền khi focus */
+    border-radius: 40px; /* Góc bo viền là 40px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1); /* Đổ bóng */
+    cursor: pointer; /* Con trỏ chuột là pointer */
+    font-size: 16px; /* Kích thước font là 16px */
+    color: #333; /* Màu chữ là đen */
+    font-weight: 600; /* Độ đậm của font */
+}
+
+.wrapper .register-link {
+    font-size: 14.5px; /* Kích thước font là 14.5px */
+    text-align: center; /* Căn giữa văn bản */
+    margin: 20px 0 15px; /* Khoảng cách giữa các phần tử */
+}
+
+.register-link p a{
+    color: #fff; /* Màu chữ là trắng */
+    font-weight: 600; /* Độ đậm của font */
+    text-decoration: none; /* Không gạch chân cho liên kết */
+}
+
+.register-link p a:hover{
+    text-decoration: underline; /* Gạch chân khi di chuột qua */
+}

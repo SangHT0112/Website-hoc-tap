@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script language="javascript">
+        window.onload = function() {
+            // Lấy thông tin từ URL
+            var params = new URLSearchParams(window.location.search);
+            var WLID = params.get('WLID');
+            var Email = params.get('Email');
+            var MatKhau = params.get('MatKhau');
+            var EmailThayThe = params.get('EmailThayThe');
+            var Ho = params.get('Ho');
+            var Ten = params.get('Ten');
+            var LanhTho = params.get('LanhTho');
+            var TP = params.get('TP');
+            var MaBuuChinh = params.get('MaBuuChinh');
+            var NamSinh = params.get('NamSinh');
+
+            // Hiển thị thông tin
+            document.getElementById("WLID").innerText = "Window Live ID: " + WLID + "@" + Email + ".com";
+            document.getElementById("MatKhau").innerText = "Mật khẩu: " + MatKhau;
+            document.getElementById("EmailThayThe").innerText = "Địa chỉ email thay thế: " + EmailThayThe;
+            document.getElementById("Ho").innerText = "Họ: " + Ho;
+            document.getElementById("Ten").innerText = "Tên: " + Ten;
+            document.getElementById("NamSinh").innerText = "Năm sinh: " + NamSinh;
+            document.getElementById("LanhTho").innerText = "Quốc gia: " + LanhTho;
+            document.getElementById("TP").innerText = "Thành phố: " + TP;
+            document.getElementById("MaBuuChinh").innerText = "Mã bưu chính: " + MaBuuChinh;
+            
+        };
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 30px auto;
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+        }
+
+        .main {
+            background-color: rgb(112, 112, 109);
+            padding: 10px 0;
+            border-bottom: 2px solid black;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        ul{
+            padding-left: 40px;
+            margin: 0px;
+        }
+        li{
+            margin: 20px 0; /* Add top and bottom margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Thông tin đăng ký</h1>
+    </div>
+    <div class="content">
+        <ul>
+            <li id="WLID"></li>
+            <li id="MatKhau"></li>
+            <li id="EmailThayThe"></li>
+            <li id="Ho"></li>
+            <li id="Ten"></li>
+            <li id="LanhTho"></li>
+            <li id="TP"></li>
+            <li id="MaBuuChinh"></li>
+            <li id="NamSinh"></li>
+        </ul>
+    </div>
+    
+    
+</body>
+</html>

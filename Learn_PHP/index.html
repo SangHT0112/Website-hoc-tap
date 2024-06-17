@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="../Table.css">
+    <link rel="website icon" type="jpg" href="../Images/R.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Menu khái quát -->
+        <div id="head">
+            <!-- Logo cua trang -->
+            <div class="logo">
+                <a href="../Home/Home.html">
+                    <img src="../logo.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu chung -->
+            <div class="general-menu">
+                <ul>
+                    <li><a href="../HuongDan/index.html">
+                        Hướng dẫn</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li> <a href="../GoiY/index.html">Gợi ý</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../ViecLam/index.html">Việc làm</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../DaoTao/index.html">Đào tạo</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button  href="" type="submit"><i class="fas fa-search"></i></button>
+                </ul>
+            </div>
+
+            <div class="general-icon">
+                <div class="general-icon-item">
+                    <i class='bx bx-collapse-horizontal'></i>
+                    <h3>Spaces</h3>
+                </div>
+                <div class="general-icon-item">
+                    <i class='bx bxs-shopping-bags'></i>
+                    <h3>Shop</h3>
+                </div>
+
+            </div>
+
+            <div class="login">
+                <button type="submit" class="btn"><a href="LoginForm/Login.html"> Login</a></button>
+            </div>
+
+
+        </div>
+        
+        <!-- Menu chính -->
+        <div id="head-link">
+            <nav>
+                <a href="../Learn_HTML/index.html">HTML</a>
+                <a href="../Learn_CSS/index.html">CSS</a>
+                <a href="../Learn_JavaScript/index.html">JAVASCRIPT</a>
+                <a href="../Learn_SQL/index.html">SQL</a>
+                <a href="../Learn_Python/index.html">PYTHON</a>
+                <a href="../Learn_Java/index.html">JAVA</a>
+                <a href="../Learn_PHP/index.html">PHP</a>
+                <a href="../Learn_C/index.html">C</a>
+                <a href="../Learn_CPlus/index.html">C++</a>
+                <a href="../Learn_CSharp/index.html">C#</a>
+                <span></span>
+            </nav>
+        </div>
+
+        <div id="main-content">
+            <div id="left">
+                <div class="left-container">
+                    <div style="font-size: 20px;" align="center"><h3> Hướng dẫn PHP</h3> </div>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="index.html"></a>PHP HOME </h4>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Introduce">PHP Introduction</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Variable">PHP Variable</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#String">PHP String</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Operator">PHP Operator</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Function">PHP Function</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#IfElse">PHP If..Else</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> PHP Classes</h4>
+                    
+                </div>
+            </div> <!-- left -->
+            <div id="content">
+                <div class="banner">
+                    <img src="Images/banner.jpg" alt="">
+                </div>
+
+                <div class="Introduce CacNoiDungChinh" id="Introduce">
+                    <h1>Giới thiệu PHP</a></h1>
+                    <p>PHP là một ngôn ngữ lập trình kịch bản phía máy chủ mạnh mẽ và phổ biến. Nó đặc biệt thích hợp cho phát triển web và có thể được nhúng trực tiếp vào HTML.</p>
+                    <p>PHP là viết tắt của "PHP: Hypertext Preprocessor", ban đầu được gọi là "Personal Home Page".</p>
+
+                    <div class="WhyStudy">
+                        <h2>Tại sao nên học PHP?</h2>
+                        <ul class="DanhSach">
+                            <li>PHP là ngôn ngữ lập trình phổ biến nhất cho phát triển web.</li>
+                            <li>Dễ học và có cú pháp đơn giản.</li>
+                            <li>Chạy trên nhiều nền tảng khác nhau (Windows, Linux, Unix, Mac OS X, v.v.).</li>
+                            <li>Tương thích với hầu hết các máy chủ hiện nay (Apache, IIS, v.v.).</li>
+                            <li>Hỗ trợ rộng rãi từ cộng đồng và nhiều tài liệu học tập.</li>
+                            <li>Hiệu suất cao và khả năng mở rộng tốt.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div>
+                    <p style="color: red;">Bạn có thể bắt đầu với PHP chỉ bằng cách cài đặt một máy chủ web hỗ trợ PHP như XAMPP hoặc WAMP và viết các tập tin .php đầu tiên của bạn.</p>
+                    <button type="submit" class="btn"><a href="https://www.php.net/manual/en/getting-started.php" style="text-decoration:none; color: white;">Nghiên cứu hướng dẫn chi tiết PHP</a> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <div id="Variable" class="Variable CacNoiDungChinh">
+                    <img src="Images/Variable.jpg" alt="">
+                    <h1>Biến trong PHP</h1> <br>
+                    <p style="color: rgb(83, 130, 130);">
+                        Các biến là "thùng chứa" để lưu trữ thông tin.
+                    </p>
+
+                    <h2>
+                        Tạo (Khai báo) Biến PHP
+                    </h2>
+                    <p>In PHP, a variable starts with the $ sign, followed by the name of the variable:</p> <br>
+
+                    <div class="Example">
+                        <p class="TieuDeViDu"> Ví dụ</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="Var">
+                                    $x
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    5
+                                </span>
+                            </p>
+                            <p>
+                                <span class="Var">
+                                    $y
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    "John"
+                                </span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="GhiChu">
+                        <br>
+                       <p>
+                        In the example above, the variable <span class="Var">$x</span> will hold the value <span class="Var">5</span>, 
+                        and the variable <span class="Var">$y</span> will hold the value<span class="Var">"John"</span>.
+                       </p> 
+                       
+                       <p>
+                        <b>Lưu ý:</b> Khi bạn gán giá trị văn bản cho một biến,
+                         hãy đặt dấu ngoặc kép quanh giá trị đó.
+                       </p>      
+                                       
+                       <p>
+                        <b>Lưu ý:</b> Không giống như các ngôn ngữ lập trình khác, PHP không có lệnh khai báo biến. 
+                        Nó được tạo vào thời điểm bạn gán giá trị cho nó lần đầu tiên.
+                       </p>
+                    </div>
+
+                    <div class="ThongBaoVang">
+                        <p>
+                            Hãy coi các biến như các thùng chứa để lưu trữ dữ liệu.
+                        </p>
+                    </div>
+
+
+                    <!-- Variable -->
+                    <br> <br>
+
+                    <h2>Tìm hiểu chuyên sâu về biến</h2>
+                    <p>
+                        Một biến có thể có tên ngắn (như <span class="Var">$x</span> và <span class="Var">$y</span>)
+                         hoặc tên mang tính mô tả hơn (<span class="Var">$age</span> , <span class="Var">$carname</span> , <span class="Var">$total_volume</span> ).
+                    </p>
+
+                    <p>Quy Tắc Biến Trong PHP</p>
+                    <ul class="DanhSach">
+                        <li>Biến bắt đầu bằng ký tự $ theo sau là tên biến.</li>
+                        <li>Tên biến phải bắt đầu bằng một chữ cái hoặc ký tự gạch dưới (_).</li>
+                        <li>Tên biến không được bắt đầu bằng một số.</li>
+                        <li>Tên biến chỉ có thể chứa các ký tự chữ và số và gạch dưới (A-z, 0-9, và _).</li>
+                        <li>Tên biến phân biệt chữ hoa và chữ thường ($age và $AGE là hai biến khác nhau).</li>
+                    </ul>
+
+                    <div class="ThongBaoVang">
+                        <p>Hãy nhớ rằng tên biến PHP phân biệt chữ hoa chữ thường</p>
+                    </div>
+
+                    <h3>Biến đầu ra</h3>
+                    <p>Câu lệnh echo trong PHP thường được sử dụng để xuất dữ liệu ra màn hình.</p>
+                    <p>Ví dụ sau đây sẽ chỉ ra cách xuất văn bản và một biến:</p>
+                    <div class="Example">
+                        <p class="TieuDeViDu"> Ví dụ</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="Var">
+                                    $txt
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    "W3Schools.com";
+                                </span>
+                            </p>
+                            <p>
+                                <span class="Var">
+                                    echo
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    "I love <span class="Var">$txt</span>!";
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- STRING TRONG JAVA -->
+                <div id="String" class="String CacNoiDungChinh">
+                    <img src="Images/String.jpg" alt="">
+                    <h1>Chuỗi trong PHP</h1> <br>
+                    <p style="color: rgb(58, 92, 92);">Chuỗi là một chuỗi các ký tự, chẳng hạn như "Xin chào thế giới!"</p>
+
+                    <h2>Chuỗi</h2>
+                    <p>Các chuỗi trong PHP được bao quanh bởi dấu ngoặc kép hoặc dấu ngoặc đơn.</p>
+                    <div class="Example">
+                        <p class="TieuDeViDu"> Ví dụ</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="Var">
+                                    echo 
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    "Hello";
+                                </span>
+                            </p>
+                            <p>
+                                <span class="Var">
+                                    echo
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    'Hello';
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ThongBaoVang">
+                        <p style="font-size: 18px;"><b>Lưu ý</b> Có sự khác biệt lớn giữa dấu ngoặc kép và dấu ngoặc đơn trong PHP.</p>
+                        <p>Dấu ngoặc kép xử lý các ký tự đặc biệt, dấu ngoặc đơn thì không.</p>
+                    </div>
+
+                    <h2>Chiều dài Chuỗi</h2>
+                    <p>The PHP <span class="Var">strlen()</span> function returns the length of a string.</p>
+                    <div class="Example">
+                        <p class="TieuDeViDu"> Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px ;">Trả về độ dài của chuỗi "Xin chào thế giới!":</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="ToanTu">
+                                    echo 
+                                </span>
+                                <span class="Var">
+                                    strlen
+                                </span>
+                                <span class="Value">
+                                    ("Hello world!");
+                                </span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <!-- IN HOA -->
+                    <h2>Upper Case</h2>
+                    <div class="Example">
+                        <p class="TieuDeViDu"> Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Hàm strtoupper() trả về chuỗi ở dạng chữ hoa:</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="Var">
+                                    $x 
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    "Hello World!";
+                                </span>
+                            </p>
+
+                            <p> 
+                                <span class="ToanTu">
+                                    echo 
+                                </span>
+                                <span class="Var">
+                                    strtoupper($x);
+                                </span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <!-- IN THƯỜNG -->
+                    <h2>Lower  Case</h2>
+                    <div class="Example">
+                        <p class="TieuDeViDu"> Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Hàm <span class="Var">strtower()</span> trả về chuỗi ở dạng chữ thường:</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="Var">
+                                    $x 
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    "Hello World!";
+                                </span>
+                            </p>
+
+                            <p> 
+                                <span class="ToanTu">
+                                    echo 
+                                </span>
+                                <span class="Var">
+                                    strtower($x);
+                                </span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <!-- REPLACE STRING -->
+                    <h2>Replace String</h2>
+                    <div class="Example">
+                        <p class="TieuDeViDu"> Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Hàm PHP <span class="Var">str_replace()</span> thay
+                             thế một số ký tự bằng một 
+                            số ký tự khác trong chuỗi.</p>
+                         <div class="Code">
+                            <p> 
+                                <span class="Var">
+                                    $x 
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    "Hello World!";
+                                </span>
+                            </p>
+
+                            <p> 
+                                <span class="ToanTu">
+                                    echo 
+                                </span>
+                                <span class="Var">
+                                    str_replace($x);
+                                </span>
+                            </p>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Reverse a String-->
+                    <h2>Reverse a String</h2>
+                    <div class="Example">
+                        <p class="TieuDeViDu"> Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Hàm PHP  <span class="Var">strrev()</span> đảo ngược một chuỗi.</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="Var">
+                                    $x 
+                                </span>
+                                <span class="ToanTu">
+                                    =
+                                </span>
+                                <span class="Value">
+                                    "Hello World!";
+                                </span>
+                            </p>
+
+                            <p> 
+                                <span class="ToanTu">
+                                    echo 
+                                </span>
+                                <span class="Var">
+                                    strrev($x)
+                                </span>
+                            </p>
+                        
+                    </div>
+                </div> 
+            </div>
+                <!-- Đóng String -->
+
+                <div id="Operator" class="Operator CacNoiDungChinh">
+                    <img src="Images/Operator.jpg" alt="">
+                    <h1>Toán tử trong PHP</h1>
+                    <p>
+                        Toán tử được sử dụng để thực hiện các thao tác trên các biến và giá trị.
+                    </p>
+                    <br>
+
+                    <p>PHP chia các toán tử thành các nhóm sau:</p>
+                    <ul class="DanhSach">
+                        <li>Toán tử số học</l>
+                        <li>Toán tử gán</li>
+                        <li>Toán tử so sánh</li>
+                    </ul>
+                    <br>
+
+                    <!-- Toán tử số học -->
+                    <div class="TableOperator">
+                        <h2>Toán tử số học</h2>
+                        <p>Các toán tử số học PHP được sử dụng với các giá trị số để thực hiện các phép toán
+                            số học phổ biến, chẳng hạn như cộng, trừ, nhân, v.v.</p>
+                        <table>
+                            <tr>
+                                <th style="width: 80px;">Toán Tử</th>
+                                <th>Tên</th>
+                                <th>Mô Tả</th>
+                                <th style="width: 80px;">Ví Dụ</th>
+            
+                            </tr>
+                            <tr>
+                                <td>+</td>
+                                <td>Cộng</td>
+                                <td>Tổng của $x và $y</td>
+                                <td>$x + $y</td>
+            
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>Trừ</td>
+                                <td>Sự khác biệt của $x và $y</td>
+                                <td>$x - $y</td>
+                    
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>Nhân</td>
+                                <td>Tích của $x và $y</td>
+                                <td>$x * $y</td>
+                
+                            </tr>
+                            <tr>
+                                <td>/</td>
+                                <td>Chia</td>
+                                <td>Chia một giá trị cho một giá trị khác</td>
+                                <td>$x / $y</td>
+                    
+                            </tr>
+                            <tr>
+                                <td>%</td>
+                                <td>Chia Lấy Dư</td>
+                                <td>Trả về phần dư của phép chia</td>
+                                <td>$x % $y</td>
+                        
+                            </tr>
+                            <tr>
+                                <td>**</td>
+                                <td>lũy thừa</td>
+                                <td>Kết quả của việc nâng $x lên lũy thừa $y'</td>
+                                <td>$x ** $y</td>
+                
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Toán tử GÁN -->
+                    <div class="TableOperator">
+                        <h2>Toán tử gán</h2>
+                        <p>Toán tử gán PHP được sử dụng với các giá trị số để ghi giá trị vào một biến.</p>
+                        <p>Toán tử gán cơ bản trong PHP là "=". Điều đó có nghĩa là toán hạng bên trái
+                             được đặt thành giá trị của biểu thức gán ở bên phải.</p>
+                             <table>
+                                <thead>
+                                    <tr>
+                                        <th>Assignment</th>
+                                        <th style="width: 90px;">Same as...</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>x = y</td>
+                                        <td>x = y</td>
+                                        <td>Phép gán: toán hạng bên trái được gán giá trị của biểu thức ở bên phải</td>
+                                    </tr>
+                                    <tr>
+                                        <td>x += y</td>
+                                        <td>x = x + y</td>
+                                        <td>Cộng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>x -= y</td>
+                                        <td>x = x - y</td>
+                                        <td>Trừ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>x *= y</td>
+                                        <td>x = x * y</td>
+                                        <td>Nhân</td>
+                                    </tr>
+                                    <tr>
+                                        <td>x /= y</td>
+                                        <td>x = x / y</td>
+                                        <td>Chia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>x %= y</td>
+                                        <td>x = x % y</td>
+                                        <td>Chia lấy dư</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                    </div>
+
+                    <!-- TOÁN TỬ SO SÁNH -->
+                    <div class="TableOperator">
+                        <h2>Toán tử so sánh</h2>
+                        <p>Toán tử so sánh PHP được sử dụng để so sánh hai giá trị (số hoặc chuỗi):</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Toán tử</th>
+                                    <th>Tên</th>
+                                    <th style="width: 80px;">Ví dụ</th>
+                                    <th>Kết quả</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>==</td>
+                                    <td>Bằng</td>
+                                    <td>$x == $y</td>
+                                    <td>Trả về true nếu $x bằng $y</td>
+                                </tr>
+                                <tr>
+                                    <td>===</td>
+                                    <td>Đồng nhất</td>
+                                    <td>$x === $y</td>
+                                    <td>Trả về true nếu $x bằng $y, và chúng cùng kiểu dữ liệu</td>
+                                </tr>
+                                <tr>
+                                    <td>!=</td>
+                                    <td>Không bằng</td>
+                                    <td>$x != $y</td>
+                                    <td>Trả về true nếu $x không bằng $y</td>
+                                </tr>
+                                <tr>
+                                    <td><></td>
+                                    <td>Không bằng</td>
+                                    <td>$x <> $y</td>
+                                    <td>Trả về true nếu $x không bằng $y</td>
+                                </tr>
+                                <tr>
+                                    <td>!==</td>
+                                    <td>Không đồng nhất</td>
+                                    <td>$x !== $y</td>
+                                    <td>Trả về true nếu $x không bằng $y, hoặc chúng không cùng kiểu dữ liệu</td>
+                                </tr>
+                                <tr>
+                                    <td>></td>
+                                    <td>Lớn hơn</td>
+                                    <td>$x > $y</td>
+                                    <td>Trả về true nếu $x lớn hơn $y</td>
+                                </tr>
+                                <tr>
+                                    <td><</td>
+                                    <td>Nhỏ hơn</td>
+                                    <td>$x < $y</td>
+                                    <td>Trả về true nếu $x nhỏ hơn $y</td>
+                                </tr>
+                                <tr>
+                                    <td>>=</td>
+                                    <td>Lớn hơn hoặc bằng</td>
+                                    <td>$x >= $y</td>
+                                    <td>Trả về true nếu $x lớn hơn hoặc bằng $y</td>
+                                </tr>
+                                <tr>
+                                    <td><=</td>
+                                    <td>Nhỏ hơn hoặc bằng</td>
+                                    <td>$x <= $y</td>
+                                    <td>Trả về true nếu $x nhỏ hơn hoặc bằng $y</td>
+                                </tr>
+                                <tr>
+                                    <td><=></td>
+                                    <td>Phép chấm</td>
+                                    <td>$x <=> $y</td>
+                                    <td>Trả về một số nguyên nhỏ hơn, bằng hoặc lớn hơn không, tùy thuộc vào $x có nhỏ hơn, bằng hoặc lớn hơn $y. Giới thiệu trong PHP 7.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                            
+                    </div>
+                    
+                </div>  <!--Dong Operator-->
+
+                <!-- FUNCTION -->
+                <div id="Function" class="Function CacNoiDungChinh">
+                    <img src="Images/Function.jpg" alt="">
+                    <h1>Hàm trong PHP</h1>
+                    <p>Sức mạnh thực sự của PHP đến từ các chức năng của nó.</p>
+                    
+                    <p>PHP có hơn 1000 hàm dựng sẵn và ngoài ra bạn có thể tạo các hàm tùy chỉnh của riêng mình.</p>
+
+                    <h2>Các hàm dựng sẵn trong PHP</h2>
+                    <p>
+                        PHP có hơn 1000 hàm dựng sẵn có thể được gọi trực tiếp, 
+                        từ bên trong tập lệnh, để thực hiện một tác vụ cụ thể.
+                    </p>
+                    
+                    <p>
+                        Vui lòng xem tài liệu tham khảo PHP của
+                        chúng tôi để có cái nhìn tổng quan đầy đủ về các hàm dựng sẵn PHP.
+                    </p>
+
+                    <h2>Các hàm do người dùng xác định PHP</h2>
+                    <p>Bên cạnh các hàm PHP tích hợp, bạn có thể tạo các hàm của riêng mình.</p>
+
+                    <ul class="DanhSach">
+                        <li>Hàm là một khối câu lệnh có thể được sử dụng nhiều lần trong chương trình.</li>
+                        <li>Một chức năng sẽ không tự động thực thi khi tải trang.</li>
+                        <li>Một hàm sẽ được thực thi bằng một lệnh gọi hàm.</li>
+                    </ul>
+
+                    <h2>Tạo một hàm</h2>
+                    <p>A user-defined function declaration starts with the keyword <span class="Var">function</span>, 
+                        followed by the name of the function:
+                    </p>
+
+                    <div class="Example">
+                        <p class="TieuDeViDu"> Ví dụ</p>
+                        <p style="padding-left: 30px; padding-bottom: 10px;">Hàm PHP  <span class="Var">strrev()</span> đảo ngược một chuỗi.</p>
+                        <div class="Code">
+                            <p> 
+                                <span class="ToanTu">
+                                    function  
+                                </span>
+                                <span class="Var">
+                                    myMessage() {
+                                </span>
+
+                            </p>
+
+                            <p> 
+                                <span class="ToanTu">
+                                    echo 
+                                </span>
+                                <span class="Value">
+                                    "Hello World";
+                                </span>
+                            </p>
+                            <p><span class="Var">}</span></p>
+
+                            <p><span class="Var">myMessage()</span></p>
+                        </div>
+                    </div>
+                    <br>
+                    <p>Trong ví dụ của chúng tôi, chúng tôi tạo một hàm có tên myMessage().</p>
+                    <p>Dấu ngoặc nhọn mở { cho biết phần đầu của mã hàm và dấu ngoặc nhọn đóng } 
+                        cho biết phần cuối của hàm.</p>
+                    <p>Hàm xuất ra "Hello World!".</p>
+                    
+                </div>
+
+                <!-- If..Else -->
+                <div id="IfElse" class="IfElse CacNoiDungChinh">
+                    <img src="Images/IfElse.jpg" alt="">
+                    <h1>Câu lệnh if...else của PHP</h1>
+                    <p>Câu lệnh <span class="Var">if...else</span> thực thi một số mã nếu điều 
+                        kiện đúng và mã khác nếu điều kiện đó sai.</p>
+                        <h3>Công thức</h3>
+                        <div class="code-container">
+                            <div class="if-block">
+                                <div class="condition">if (condition) {</div>
+                                <div class="code-true">// code to be executed if condition is true;</div>
+                                <div class="closing-bracket">}</div>
+                            </div>
+                            <div class="else-block">
+                                <div class="else">else {</div>
+                                <div class="code-false">// code to be executed if condition is false;</div>
+                                <div class="closing-bracket">}</div>
+                            </div>
+                        </div>
+
+                        <!-- ViDu -->
+                        <br>
+                        <div class="Example">
+                            <p class="TieuDeViDu"> Ví dụ</p>
+                            <p style="padding-left: 30px; padding-bottom: 10px;">Câu lệnh <span class="Var">if...else</span> thực thi một số mã nếu điều kiện đúng và mã khác nếu điều kiện đó sai.</p>
+                            <div class="Code">
+                                <p>
+                                    <span class="Var">$t</span>
+                                    <span class="ToanTu">=</span>
+                                    <span class="Var">date</span>
+                                    <span class="Value">("H");</span>
+                                </p>
+                                <p>
+                                    <span class="ToanTu">if</span>
+                                    <span class="Condition">($t &lt; "20") {</span>
+                                </p>
+                                <p style="padding-left: 30px;">
+                                    <span class="ToanTu">echo</span>
+                                    <span class="Value">"Have a good day!";</span>
+                                </p>
+                                <p class="ClosingBracket">}</p>
+                                <p>
+                                    <span class="ToanTu">else {</span>
+                                </p>
+                                <p style="padding-left: 30px;">
+                                    <span class="ToanTu">echo</span>
+                                    <span class="Value">"Have a good night!";</span>
+                                </p>
+                                <p class="ClosingBracket">}</p>
+                            </div>>
+                        </div>
+
+                        <div class="">
+                            <h2>PHP - Câu lệnh if...elseif...else</h2>
+                            <p>Câu lệnh <span class="Var">if...elseif...else</span> thực thi các mã khác nhau cho nhiều hơn hai điều kiện.</p>
+
+                            <!-- Công thức -->
+                            <h3>Công thức</h3>
+                            <div class="code-container">
+                                <div class="if-block">
+                                    <div class="condition">if (condition) {</div>
+                                    <div class="code-true">// code to be executed if this condition is true;</div>
+                                    <div class="closing-bracket">}</div>
+                                </div>
+                                <div class="elseif-block">
+                                    <div class="elseif" style="color: green;">elseif (condition) {</div>
+                                    <div class="code-elseif">// code to be executed if first condition is false and this condition is true;</div>
+                                    <div class="closing-bracket">}</div>
+                                </div>
+                                <div class="else-block">
+                                    <div class="else">else {</div>
+                                    <div class="code-false">// code to be executed if all conditions are false;</div>
+                                    <div class="closing-bracket">}</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="Example">
+                                <p class="TieuDeViDu"> Ví dụ</p>
+                                <p style="padding-left: 30px; padding-bottom: 10px;">Câu lệnh Đầu ra "Chúc buổi sáng tốt lành!" 
+                                    nếu thời gian hiện tại nhỏ hơn 10 và "Chúc một ngày tốt lành!" 
+                                    nếu thời gian hiện tại nhỏ hơn 20. Nếu không, nó sẽ xuất ra
+                                    "Chúc bạn ngủ ngon!":</p>
+                                    <div class="Code">
+                                        <p>
+                                            <span class="Var">$t</span>
+                                            <span class="ToanTu">=</span>
+                                            <span class="Var">date</span>
+                                            <span class="Value">("H");</span>
+                                        </p>
+                                        <p>
+                                            <span class="ToanTu">if</span>
+                                            <span class="Condition">($t &lt; "10") {</span>
+                                        </p>
+                                        <p style="padding-left: 30px;">
+                                            <span class="ToanTu">echo</span>
+                                            <span class="Value">"Have a good morning!";</span>
+                                        </p>
+                                        <p class="ClosingBracket">}</p>
+                                        <p>
+                                            <span class="ToanTu">elseif</span>
+                                            <span class="Condition">($t &lt; "20") {</span>
+                                        </p>
+                                        <p style="padding-left: 30px;">
+                                            <span class="ToanTu">echo</span>
+                                            <span class="Value">"Have a good day!";</span>
+                                        </p>
+                                        <p class="ClosingBracket">}</p>
+                                        <p>
+                                            <span class="ToanTu">else {</span>
+                                        </p>
+                                        <p style="padding-left: 30px;">
+                                            <span class="ToanTu">echo</span>
+                                            <span class="Value">"Have a good night!";</span>
+                                        </p>
+                                        <p class="ClosingBracket">}</p>
+                                    </div>
+                            </div>
+
+
+                        </div>
+                </div>
+         
+ 
+            </div> <!-- Đóng div content -->
+            <div id="right">
+
+            </div> <!-- Đóng div right -->
+        </div> <!-- Đóng div main-container -->
+    </div> <!-- Đóng div wrapper -->
+</body>
+</html>

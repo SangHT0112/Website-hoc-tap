@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Lives</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="DoiMaHienThi.js">
+    <script src="kiemtrahople.js"></script>
+    <!-- <script src="hienthithongtin.js"></script> -->
+
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Window Live</p>
+        </div>
+        <div class="login">
+            <button>Login</button>
+        </div>
+    </header>
+
+    <div class="title" >
+        <h1>Tạo Window Live ID của bạn</h1>
+        <p>Nó sẽ giúp bạn tạo được tất cả các dịch vụ của window live - và những nơi khác mà bạn nhìn thầy
+            <br>
+            Tất cả các thông tin đều bắt buộc có
+        </p>
+
+    </div>
+
+
+    <div class="chuy">
+        <p>Nếu bạn dùng <b>Hotmail</b> hoặc <b>Messanger</b>
+        <br>Bạn đã có Window Live đi rồi đó.Đăng nhập</p>
+    </div>
+    
+    <form  onsubmit="return kiemtra()" name="dangky"  >
+        <div class="line">
+            <div class="label">
+                <p>Window Live ID: </p>
+            </div>
+            <div class="text">
+                <input id="windowIdInput" type="text"  name="em"> @
+                <select name="duoiem" id="">
+                    <option value="Hotmail.com.vn">hotmail.com.vn</option>
+                    <option value="Messanger.com.vn">messanger.com.vn</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label"></div>
+            <div class="text">
+                <button>Kiem tra tinh san dung</button>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label"></div>
+            <div class="text">
+                <p>Hoac dung de chi email cua ban</p>
+            </div>
+        </div>
+
+
+        <div class="line">
+            <div class="label">Tao mat khau</div>
+            <div class="text">
+                <input type="password" name="pasword" id="">
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label"></div>
+            <div class="text">
+                <p>It nhat la 5 ki tu</p>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label">Xin go lai mat khau</div>
+            <div class="text">
+                <input type="password" name="Enterpasword" id="">
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label">Dia chi email thay the</div>
+            <div class="text">
+                <input type="text" name="emthaythe">
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label"></div>
+            <div class="text">
+                <p>Hoac chon cau hoi</p>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label">Ho:</div>
+            <div class="text">
+                <input type="text" name="txtHo">
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label">Ten:</div>
+            <div class="text">
+                <input type="text" name="txtTen">
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label">Quốc gia/Vùng lãnh thổ:</div>
+            <div class="text">
+                <select name="countries" id="countries">
+                    <option value="Việt Nam">Việt Nam</option>
+                    <option value="Mỹ">Mỹ</option>
+                    <option value="Pháp">Pháp</option>
+                    <option value="Singapore">Singapore</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label">Thanh pho/khu vuc:</div>
+            <div class="text">
+                <select name="city" id="city" >
+                    <option value="" disabled selected hidden>Xin chọn một</option>
+                    <option value="Tiền Giang">Tiền Giang</option>
+                    <option value="An Giang">An Giang</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label">Ma buu chinh: </div>
+            <div class="text">
+                <input type="text" name="mbc">
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label">Gioi tinh:</div>
+            <div class="text">
+                <input type="radio" name="gt" id="" value="Nam">Nam
+                <input type="radio" name="gt" id="" value="Nữ">Nữ
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label">Nam sinh:</div>
+            <div class="text">
+                <input type="text" name="year">
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label"></div>
+            <div class="text">
+                <p>Nhập các ký tự bạn nhìn thấy <br>  <input type="button" name="ChuoiMaHienThi" id="ChuoiMaHienThi" value="Mới" onclick="DoiMa()"> | Âm thanh | Trợ giúp</p>
+            </div>
+        </div>
+        <div class="line">
+            <div class="label"></div>
+            <div class="text">
+                <img  id="picture"  width="20%" src="Images/1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label"></div>
+            <div class="text">
+                <input type="text" id="pic" name="pic" >
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label"></div>
+            <div class="hr">
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label"></div>
+            <div class="textvanban">
+                <p>Bấm <b>Tôi chấp nhận</b> nghĩa là bạn đồng ý với thỏa thuận dịch vụ và điều khoản về quyền riêng tư của Microsoft. Bạn <br>cũng đồng ý nhận email từ Windows Live, Bing, và MSN với cập nhật dịch vụ, quảng cáo đặc biệt và lời mời tham gia <br> khảo sát. Bạn có thể dừng đăng ký vào bất kỳ lúc nào.</p>
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="label"></div>
+            <div class="text">
+                <input type="submit" name="button" id="button" value="Tôi Chấp Nhận" onclick="displayfeedback(); return false;"  >
+            </div>
+        </div>
+
+        <div id="feedback-modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div id="thongtindanhgia">
+                <br>
+                <h2 id="thongtin" >Thông tin đăng ký</h2>
+              </div>
+              <div id="content-info">
+                <ul>
+                    <br>
+                    <li id="email-info"></li>
+                    <li id="matkhau-info"></li>
+                    <li id="emailthaythe-info"></li>
+                    <li id="ho-info"></li>
+                    <li id="ten-info"></li>
+                    <li id="gioitinh-info"></li>
+                    <li id="namsinh-info"></li>
+                    <li id="quocgia-info"></li>
+                    <li id="thanhpho-info"></li>
+                    <br>
+                  </ul>
+              </div>
+            </div>
+        </div>
+
+
+        
+    </form>
+
+    <footer>
+        <div class="dieukhoan">
+            <p> @2010 Microsoft</p>
+            <p>Điều khoản</p>
+            <p>Quyền riêng tư</p>
+            <p>Giới thiệu quảng cáo</p>
+        </div>
+        <div class="trogiup">
+            <p>Trung tâm trợ giúp</p>
+            <p>ý kiến phản hồi</p>
+            <p>Tiếng Việt</p>
+        </div>
+    </footer>
+
+
+    
+    
+</body>
+</html>

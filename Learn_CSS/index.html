@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="MenuCss.css">
+    <link rel="stylesheet" href="search.js">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="../Khungchung.css">
+    <link rel="website icon" type="jpg" href="../Images/OIP (1).jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Menu khái quát -->
+        <div id="head">
+            <!-- Logo cua trang -->
+            <div class="logo">
+                <a href="../Home/Home.html">
+                    <img src="../logo.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu chung -->
+            <div class="general-menu">
+                <ul>
+                    <li><a href="../HuongDan/index.html">
+                        Hướng dẫn</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li> <a href="../GoiY/index.html">Gợi ý</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../ViecLam/index.html">Việc làm</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../DaoTao/index.html">Đào tạo</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button  href="" type="submit"><i class="fas fa-search"></i></button>
+                </ul>
+            </div>
+
+            <div class="general-icon">
+                <div class="general-icon-item">
+                    <i class='bx bx-collapse-horizontal'></i>
+                    <h3>Spaces</h3>
+                </div>
+                <div class="general-icon-item">
+                    <i class='bx bxs-shopping-bags'></i>
+                    <h3>Shop</h3>
+                </div>
+
+            </div>
+
+            <div class="login">
+                <button type="submit" class="btn"><a href="LoginForm/Login.html"> Login</a></button>
+            </div>
+
+
+        </div>
+        
+        <!-- Menu chính -->
+        <div id="head-link">
+            <nav>
+                <a href="../Learn_HTML/index.html">HTML</a>
+                <a href="../Learn_CSS/index.html">CSS</a>
+                <a href="../Learn_JavaScript/index.html">JAVASCRIPT</a>
+                <a href="../Learn_SQL/index.html">SQL</a>
+                <a href="../Learn_Python/index.html">PYTHON</a>
+                <a href="../Learn_Java/index.html">JAVA</a>
+                <a href="../Learn_PHP/index.html">PHP</a>
+                <a href="../Learn_C/index.html">C</a>
+                <a href="../Learn_CPlus/index.html">C++</a>
+                <a href="../Learn_CSharp/index.html">C#</a>
+                <span></span>
+            </nav>
+        </div>
+
+        <div id="main-content">
+            <div class="left left-container">
+                    <div style="padding:25px; font-size: 20px;" align="center"><h3> Hướng dẫn CSS</h3> </div>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i> CSS HOME </h4>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Introduce">CSS Introduction</a> </h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> CSS Website Layout </h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> CSS Forms</h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> CSS Animations</h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Colors">CSS Colors</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> CSS Icons</h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> CSS Margin</h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#Tables">CSS Tables</a> </h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> CSS Float</h4>
+            </div>
+
+            <div class="content">
+                <div style="margin-left: 30px; margin-top: 30px;"> <h1> Hướng dẫn CSS</h1></div>
+                <button style="margin-left: 20px; margin-top: 20px;" class="home-button"><i class="fas fa-home"></i><a href="../Home.html"> Home</a> </button>
+                <button class="next-button">Kế Tiếp <i class="fas fa-chevron-right"></i></button>
+                <div id="background-content">
+                    <p> CSS là ngôn ngữ chúng ta sử dụng để tạo kiểu cho một tài liệu HTML.</p>
+                    <br>
+                    <p> CSS mô tả cách các phần tử HTML sẽ được hiển thị.</p>
+                    <br>
+                    <p> Hướng dẫn này sẽ dạy cho bạn CSS từ cơ bản đến nâng cao.</p>
+                    <br> 
+                    <button class="study-button"><a href="https://cafedev.vn/series-tu-hoc-css-tu-co-ban-toi-nang-cao/">Nghiên cứu hướng dẫn chi tiết CSS</a> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div>
+                    <h2 style="padding: 16px;">Tham khảo CSS</h2>
+                    <p style="font-size: 26px; margin-bottom: 30px;"> Tại đây, bạn sẽ tìm thấy các tham chiếu CSS hoàn chỉnh của tất cả các thuộc tính và bộ chọn với cú pháp, ví dụ, hỗ trợ trình duyệt và hơn thế nữa.</p>
+                </div>
+                <div id="button-container">
+                    <!-- First Column -->
+                    <div class="column">
+                        <button type="submit" class="button-three-column">CSS Properties</button>
+                        <button type="submit" class="button-three-column">CSS Functions</button>
+                        <button type="submit" class="button-three-column">CSS Web Safe Fonts</button>
+                        <button type="submit" class="button-three-column">CSS Colors</button>
+                    </div>
+                
+                    <!-- Second Column -->
+                    <div class="column">
+                        <button type="submit" class="button-three-column">CSS Selectors</button>
+                        <button type="submit" class="button-three-column">CSS Animatable</button>
+                        <button type="submit" class="button-three-column">CSS Units</button>
+                        <button type="submit" class="button-three-column">CSS Default Values</button>
+                    </div>
+                
+                    <!-- Third Column -->
+                    <div class="column">
+                        <button type="submit" class="button-three-column">CSS Browser Support</button>
+                        <button type="submit" class="button-three-column">CSS Aural</button>
+                        <button type="submit" class="button-three-column">Px to Em Conversion</button>
+                        <button type="submit" class="button-three-column">CSS Entities</button>
+                    </div>
+                </div>
+                <div id="Introduce">
+                    <h1 style="padding: 20px"> CSS Introduce</h1>
+                    <hr>
+                    <h3 style="padding: 20px; margin-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        CSS là ngôn ngữ chúng ta sử dụng để tạo kiểu cho một trang Web.
+                    </h3>
+                    <hr>
+                </div>
+                <div>
+                    <h2 style="padding: 20px" >CSS là gì?</h2>
+                </div>
+                <div style="margin-left: 40px; font-size: 20px;">
+                    <ul>
+                        <li>CSS là viết tắt của Cascading Style Sheets</li>
+                        <li>CSS mô tả cách các phần tử HTML được hiển thị trên màn hình, giấy, hoặc trong các phương tiện truyền thông khác</li>
+                        <li>CSS tiết kiệm rất nhiều công việc. Nó có thể kiểm soát bố cục của Nhiều trang web cùng một lúc</li>
+                        <li>Biểu định kiểu bên ngoài được lưu trữ trong tệp CSS</li>
+                    </ul>
+                </div>
+                <br>
+                <hr>
+
+                <div id="Colors">
+                    <h1 style="padding: 20px"> CSS Colors</h1>
+                    <hr>
+                    <h3 style="padding: 20px; margin-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        CSS hỗ trợ 140+ tên màu, giá trị HEX, giá trị RGB, RGBA giá trị, giá trị HSL, giá trị HSLA và độ mờ.
+                    </h3>
+                    <hr>
+                    <br>
+                    <p style="margin-left: 20px;font-size: 16px">
+                        Ví dụ sau đây xác định các màu RGBA khác nhau:
+                    </p>
+                    <br>
+                    <p id="p1"> Red {background-color:rgba(255,0,0,0.3);}</p>
+                    <p id="p2"> Green {background-color:rgba(0,255,0,0.3);}</p>
+                    <p id="p3"> Blue {background-color:rgba(0,0,255,0.3);}</p>
+                    <p id="p4"> Grey {background-color:rgba(192,192,192,0.3);}</p>
+                    <p id="p5"> Yellow {background-color:rgba(255,255,0,0.3);}</p>
+                    <p id="p6"> Cerise {background-color:rgba(255,0,255,0.3);}</p>
+                </div>
+                <br>
+                <hr>
+                <div id="Tables">
+                    <h1 style="padding: 20px"> CSS Tables</h1>
+                    <hr>
+                    <h3 style="padding: 20px; margin-left: 20px;margin-top:40px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        Giao diện của bảng HTML có thể được cải thiện rất nhiều với CSS:
+                    </h3>
+                    <table id="customers" >
+                        <tr>
+                          <th>Công Ty</th>
+                          <th>Địa Chỉ</th>
+                          <th>Quốc Gia</th>
+                        </tr>
+                        <tr>
+                          <td>Alfreds Futterkiste</td>
+                          <td>Maria Anders</td>
+                          <td>Germany</td>
+                        </tr>
+                        <tr>
+                          <td>Berglunds snabbköp</td>
+                          <td>Christina Berglund</td>
+                          <td>Sweden</td>
+                        </tr>
+                        <tr>
+                          <td>Centro comercial Moctezuma</td>
+                          <td>Francisco Chang</td>
+                          <td>Mexico</td>
+                        </tr>
+                        <tr>
+                          <td>Ernst Handel</td>
+                          <td>Roland Mendel</td>
+                          <td>Austria</td>
+                        </tr>
+                        <tr>
+                          <td>Island Trading</td>
+                          <td>Helen Bennett</td>
+                          <td>UK</td>
+                        </tr>
+                        <tr>
+                          <td>Königlich Essen</td>
+                          <td>Philip Cramer</td>
+                          <td>Germany</td>
+                        </tr>
+                        <tr>
+                          <td>Laughing Bacchus Winecellars</td>
+                          <td>Yoshi Tannamuri</td>
+                          <td>Canada</td>
+                        </tr>
+                        <tr>
+                          <td>Magazzini Alimentari Riuniti</td>
+                          <td>Giovanni Rovelli</td>
+                          <td>Italy</td>
+                        </tr>
+                        <tr>
+                          <td>North/South</td>
+                          <td>Simon Crowther</td>
+                          <td>UK</td>
+                        </tr>
+                        <tr>
+                          <td>Paris spécialités</td>
+                          <td>Marie Bertrand</td>
+                          <td>France</td>
+                        </tr>
+                      </table>
+                      <div style="padding:10px"></div>
+                      <br >
+                      <hr>
+                </div>
+                
+
+
+            </div> <!-- Đóng div content -->
+
+            <div class="right">
+                <h2 id="right-first">CSS Selectors</h2>
+                <br>
+                <hr>
+                <marquee style="padding: 20px">CSS Selectors chọn các phần tử HTML mà bạn muốn tạo kiểu.</marquee>
+                <button class="Try-button">
+                    <a href="selector.html">Ví dụ chi tiết</a> 
+                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <hr>
+
+                <h2 id="right-second">CSS Borders</h2>
+                <br>
+                <hr>
+                <p style="padding: 20px">The CSS border cho phép bạn chỉ định kiểu, chiều rộng và màu sắc của đường viền của một phần tử.</p>
+                <button class="Try-button">
+                    <a href="border.html">Ví dụ chi tiết</a> 
+                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <hr>
+
+                <h2 id="right-second">CSS Website Layout</h2>
+                <br>
+                <hr>
+                <p style="padding: 20px">Một trang web thường được chia thành tiêu đề, menu, nội dung và chân trang:</p>
+                <button class="Try-button">
+                    <a href="layoutex.html">Ví dụ chi tiết</a> 
+                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <hr>
+                <h2 id="right-second">CSS Forms</h2>
+                <br>
+                <hr>
+                <p style="padding: 20px">Giao diện của một biểu mẫu HTML có thể được cải thiện rất nhiều với CSS:</p>
+                <div id="form">
+                    <form action="/action_page.php">
+                      <label for="fname">Tên</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Tên của bạn..">
+                  
+                      <label for="lname">Họ</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Họ của bạn..">
+                  
+                      <label for="country">Quốc gia</label>
+                      <select id="country" name="country">
+                        <option value="australia">Việt Nam</option>
+                        <option value="canada">Nhật Bản</option>
+                        <option value="usa">Mỹ</option>
+                      </select>
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                  <br>
+                <hr>
+                <h2 id="right-second">CSS Animations</h2>
+                <br>
+                <hr>
+                <p style="padding: 20px">CSS cho phép hoạt ảnh của các phần tử HTML mà không cần sử dụng JavaScript!</p>
+                <div id="animation" ></div>
+                <p style="margin-left:20px;margin-top:20px">
+                    <b>Note:</b> 
+                    Khi hoạt ảnh kết thúc, nó sẽ trở về kiểu ban đầu.
+                </p>
+                <br>
+                <hr>
+                
+                <h2 id="right-second">CSS Margins</h2>
+                <br>
+                <HR></HR>
+                <br>
+                <p style="margin-left:20px;">
+                    Các thuộc tính CSS được sử dụng để tạo không gian xung quanh các phần tử, bên ngoài bất kỳ biên giới xác định nào.
+                    <p style="color: red; background: rgb(188, 187, 187); width:50px;">margin</p>
+                </p>
+                <br>
+                <P style="margin-left:20px;">Với CSS, bạn có toàn quyền kiểm soát lợi nhuận. Có tính chất để đặt lề cho mỗi bên của một phần tử (trên, phải, dưới cùng và trái).</P>
+                <hr>
+                <h2 id="right-second">CSS Icons</h2>
+                <br>
+                <HR></HR>
+                <br>
+                <p style="margin-left:20px;">
+                    Các biểu tượng có thể dễ dàng được thêm vào trang HTML của bạn, bằng cách sử dụng thư viện biểu tượng.
+                </p>
+                <br>
+                <h3 style="margin-left:20px;">Ví dụ:</h3>
+                
+                <div id="icon" style="margin-left:20px;">
+                    <p>Một số biểu tượng Font Awesome:</p>
+                    <i class="fas fa-cloud"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-car"></i>
+                    <i class="fas fa-file"></i>
+                    <i class="fas fa-bars"></i>
+                    <p>Font Awesome được tạo kiểu Biểu tượng (kích thước và màu sắc):</p>
+                    <i class="fas fa-cloud" style="font-size:24px;"></i>
+                    <i class="fas fa-cloud" style="font-size:36px;"></i>
+                    <i class="fas fa-cloud" style="font-size:48px;color:red;"></i>
+                    <i class="fas fa-cloud" style="font-size:60px;color:lightblue;"></i>
+                </div>
+                
+                <hr>
+                <h2 id="right-second">CSS Floats</h2>
+                <br>
+                <p>Thuộc tính CSS chỉ định Làm thế nào một yếu tố nên nổi.(float)</p>
+                <br>
+                <p>Thuộc tính CSS Chỉ định phần tử nào có thể nổi bên cạnh phần tử đã xóa và ở phía nào.(clear)</p>
+                <br>
+                <div>
+                    <p id="float-left"><b>Float Left</b></p>
+                    <p id="float-right"><b>Float Right</b></p>
+                </div>
+                
+                <HR></HR>
+            </div> <!-- Đóng div right -->
+        </div> <!-- Đóng div main-container -->
+    </div> <!-- Đóng div wrapper -->
+</body>
+</html>
+    

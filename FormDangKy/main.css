@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.tittle {
+    padding: 25px 120px;
+
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    background-color: rgb(4, 170, 109);
+}
+
+.login {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: rgb(0, 99, 66);
+}
+
+.login a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.login:hover{
+    background-color: rgb(67, 178, 141);
+}
+/* Form styles */
+form {
+    max-width: 600px;
+    margin: auto; /* Điều này sẽ căn giữa form theo chiều ngang */
+}
+
+
+
+.list-kiemtra {
+    display: flex;
+    justify-content: center; /* Canh giữa nút */
+}
+.list-ghichu{
+    width: 400px;
+}
+
+.list {
+    display: flex;
+    margin-bottom: 10px;
+}
+.label {
+    flex: 30%;
+    text-align: right;
+}
+.text{
+    display: flex;
+    flex: 70%;
+    text-align: left;
+}
+.text img {
+    width: 150px;
+}
+
+.text input[type="text"] {
+    width: 300px;
+}
+
+.ghichu{
+    color: rgb(4, 170, 109);
+}
+
+.item:first-child{
+    padding-left: 0px;
+}
+.item {
+    padding: 0px 5px;
+    border-right: 1px solid black;
+}
+.item:last-child {
+    border-right: none;
+}
+
+
+
+.ketbai{
+    flex: 1;
+    padding-left: 0px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+}
+
+.fleft{
+    padding: 10px;
+    display: flex;
+}
+
+.fleft-item{
+    padding: 0 5px;
+    
+}
+.fleft-item{
+    padding: 0, 15px;
+}
+
+.fright-item{
+    padding: 0 5px;
+}
+.fright{
+    padding: 10px;
+    display: flex;
+}
+
+
+#button {
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(4, 170, 109);
+}

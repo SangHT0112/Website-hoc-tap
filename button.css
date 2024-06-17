@@ -1,0 +1,109 @@
+/* CSS cho các nút (button) */
+
+/* Nút mặc định */
+.btn {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none;
+    padding: 10px 20px; /* Kích thước nút */
+    border-radius: 20px; /* Bo góc */
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/* Hiệu ứng hover */
+.btn:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+}
+
+/* Nút cho các mục đặc biệt (ví dụ: màu nền khác) */
+.btn-special {
+    background-color: #008CBA; /* Màu nền khác */
+}
+
+/* Nút cho các mục đặc biệt khi hover */
+.btn-special:hover {
+    background-color: #0073e6; /* Màu nền khác khi hover */
+}
+
+
+
+.btn-general {
+    height: 30px;
+    padding: 20px 20px;
+    margin: 20px;
+}
+
+.btn-learn{
+    background-color: rgb(57, 187, 187);
+}
+.btn-reference{
+    background-color: rgb(112, 221, 49);
+}
+
+.btn-certified {
+    background-color: #ff33d6;
+}
+
+
+.btn-general a {
+    text-decoration: none; /* Loại bỏ gạch chân dưới các liên kết */
+}
+
+
+
+.btn-search {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none;
+    padding: 10px 20px; /* Kích thước nút */
+    border-radius: 20px; /* Bo góc */
+    cursor: pointer;
+}
+.btn-search:hover {
+    background-color: #0056b3;
+}
+
+/* Thiết lập kiểu cho input */
+.text-search {
+    width: 150px; /* Độ rộng của input */
+    height: 30px; /* Chiều cao của input */
+    padding: 10px; /* Khoảng cách padding bên trong input */
+    border: 1px solid #ccc; /* Viền mảnh và màu xám */
+    border-radius: 20px; /* Góc bo viền là 20px */
+    outline: none; /* Không hiển thị đường viền khi focus */
+    font-size: 16px; /* Kích thước font là 16px */
+}
+
+.text-main-search {
+    width: 300px; /* Độ rộng của input */
+    height: 40px; /* Chiều cao của input */
+    padding: 20px; /* Khoảng cách padding bên trong input */
+    margin: 20px 0;
+    border: 1px solid #ccc; /* Viền mảnh và màu xám */
+    border-radius: 20px; /* Góc bo viền là 20px */
+    outline: none; /* Không hiển thị đường viền khi focus */
+    font-size: 16px; /* Kích thước font là 16px */
+}
+
+/* Thiết lập kiểu cho nút search */
+.text-search[type="submit"] {
+    width:25px; /* Độ rộng của nút */
+    height: 25px; /* Chiều cao của nút */
+    background-color: #007bff; /* Màu nền là màu xanh dương */
+    border: none; /* Không có viền */
+    border-radius: 20px; /* Góc bo viền là 20px */
+    cursor: pointer; /* Con trỏ chuột là pointer */
+}
+
+/* Thiết lập kiểu cho biểu tượng search */
+.text-search[type="submit"] i {
+    color: #fff; /* Màu biểu tượng là trắng */
+    font-size: 18px; /* Kích thước font là 18px */
+    margin-top: 2px; /* Khoảng cách từ biểu tượng đến viền trên */
+}
+
+

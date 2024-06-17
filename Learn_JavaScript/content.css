@@ -1,0 +1,189 @@
+/* ==================================(NÚT HOME)============================== */
+.home-button {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    border-radius: 50px; /* Bo góc */
+}
+.home-button a {
+    text-decoration: none; /* Loại bỏ gạch dưới */
+    color: inherit;
+}
+.home-button:hover {
+    background-color: #e5ef52; /* Màu nền của nút khi hover */
+    color: black;
+}
+/* ==================================(NÚT KẾ TIẾP)============================== */
+.next-button {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    margin-left: 250px;
+    border-radius: 50px; /* Bo góc */
+}
+.next-button:hover {
+    background-color: #0056b3; /* Màu nền của nút khi hover */
+}
+
+#background-content {
+    margin-top: 20px;
+    background-color: aqua;
+    padding: 30px;
+}
+/* ==================================(NÚT NGhiên cứu)============================== */
+.study-button a {
+    text-decoration: none; /* Loại bỏ gạch dưới */
+    color: inherit; /* Kế thừa màu sắc từ phần tử cha */
+}
+.study-button {
+    background-color: rgb(4, 170, 109); /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền */
+    padding: 10px 20px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    border-radius: 20px; /* Bo góc */
+}
+.study-button:hover {
+    background-color: #0056b3; /* Màu nền của nút khi hover */
+}
+
+/* =============================( div content two)======================= */
+.content-two h2, .content-two p{
+    margin-left: 20px;
+}
+#link-ex {
+    color:black;
+}
+#link-ex:hover {
+    color:darkgreen;
+}
+
+#ct7 {
+    margin-left: 20px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#ct8 {
+    margin-left:20px;
+}
+#title-jsa,#title-jsa2 {
+    margin-left:20px;
+}
+#title-jsa {
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left:30px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #ffffff; /* Màu nền cho header */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ffffff; /* Màu nền cho hàng chẵn */
+  }
+  
+  tr:nth-child(odd) {
+    background-color:#f2f2f2 ; /* Màu nền cho hàng lẻ */
+  }
+  
+  /* Thiết lập độ rộng tối thiểu cho cột Operator */
+  th:last-child,
+  td:last-child {
+    min-width: 250px; /* Có thể điều chỉnh độ rộng tùy ý */
+  }
+
+  .jso {
+    width: 100%;
+    height: 90px;
+    background: #e5ef52;
+  }
+  .jso p {
+    margin-left:20px;
+    margin-top:15px;
+  }
+  #hrex {
+    border: 1px solid rgb(224, 218, 218);
+    width: 90%;
+    margin-left:30px;
+  }
+  #hrex2 {
+    margin-left:20px;
+  }
+  #hrex3 {
+    margin-left:50px;
+  }
+  #hrexPri {
+    margin-left:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+  #hrexPri2 {
+    margin-left:20px;
+    font-family:sans-serif;
+  }
+
+  .imm {
+    background: #f4f596;
+    width: 100%;
+    height: 120px;
+  }
+  .imm #immu {
+    font-size: 20px;
+  }
+
+  .imm p {
+    margin-left: 20px;
+  }
+
+  th {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #jsonex {
+    margin-left: 20px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #jsonex2 {
+    margin-left: 20px;
+  }
+  #jsonex3 {
+    background: #f4f5f6;
+    width:98%;
+    height: 80px;
+    border-radius: 5px;
+    margin-left:   5px;
+  }
+  #jsonex4 {
+    background: white;
+    margin-left: 30px;
+    width: 90%;
+    height: 40px;
+   line-height: 40px;
+   text-align: left;
+   border-left: 3px solid green;
+   color: red;
+  }
+  
+  
+
+

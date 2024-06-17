@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="Home.css">    
+    <link rel="stylesheet" href="MenuCss.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Thêm Font Awesome vào trang web -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="search.js">
+    <link rel="stylesheet" href="../Learn_HTML/learn_HTML.css">
+    <link rel="website icon" type="jpg" href="../Images/logo-html-5-2048.png">
+    <script src="JavaScript/learn_HTML.js"></script>
+    
+    
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Menu khái quát -->
+        <div id="head">
+            <!-- Logo cua trang -->
+            <div class="logo">
+                <a href="../Home/Home.html">
+                    <img src="../logo.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu chung -->
+            <div class="general-menu">
+                <ul>
+                    <li><a href="../HuongDan/index.html">
+                        Hướng dẫn</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li> <a href="../GoiY/index.html">Gợi ý</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../ViecLam/index.html">Việc làm</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../DaoTao/index.html">Đào tạo</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <input type="text" id="searchBar" placeholder="Search...">
+                    <button class="iconsearch" href="" type="submit"><i class="fas fa-search"></i></button>
+                </ul>
+            </div>
+
+            <div class="general-icon">
+                <div class="general-icon-item">
+                    <i class='bx bx-collapse-horizontal'></i>
+                    <h3>Spaces</h3>
+                </div>
+                <div class="general-icon-item">
+                    <i class='bx bxs-shopping-bags'></i>
+                    <h3>Shop</h3>
+                </div>
+
+            </div>
+
+            <div class="login">
+                <button type="submit" class="btn"><a href="Login.html"> Login</a></button>
+            </div>
+
+
+        </div>
+        
+        <!-- Menu chính -->
+        <div id="head-link">
+            <nav>
+                <a href="../Learn_HTML/index.html">HTML</a>
+                <a href="../Learn_CSS/index.html">CSS</a>
+                <a href="../Learn_JavaScript/index.html">JAVASCRIPT</a>
+                <a href="../Learn_SQL/index.html">SQL</a>
+                <a href="../Learn_Python/index.html">PYTHON</a>
+                <a href="../Learn_Java/index.html">JAVA</a>
+                <a href="../Learn_PHP/index.html">PHP</a>
+                <a href="../Learn_C/index.html">C</a>
+                <a href="../Learn_CPlus/index.html">C++</a>
+                <a href="../Learn_CSharp/index.html">C#</a>
+                <span></span>
+            </nav>
+        </div>
+
+        <!-- Nội dung chính của trang chủ -->
+        <div id="main-content">
+        
+            <!-- Layout Bên Trái -->
+            <div id="left">
+                
+                <div class="left-container">
+                    <div style="padding:10px; font-size: 20px;" align="center"><h3> Hướng dẫn HTML</h3> </div>
+                    <h4 href="learn_HTML.html" class="left-item"><i class="fas fa-check-circle check-icon"></i> HTML HOME </h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Introduce">HTML Introduction</a>  </h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i><a href="#Editors">HTML Editors </a> </h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Basic">HTML Basic</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Elements">HTML Elements</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Attributes">HTML Attributes</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Headings">HTML Headings</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#CSS">HTML CSS</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Tables">HTML Tables</a></h4>
+                    <h4 class="left-item"><i class="fas fa-check-circle check-icon"></i> <a href="#Id">HTML Id</a></h4>
+                </div>
+                
+            </div>
+            
+                
+            
+            
+            <!-- Nội dung -->
+            <div id="content">
+                <div style="margin-left: 30px; margin-top: 30px;"> <h1> Hướng dẫn HTML</h1></div>
+                <button style="margin-left: 20px; margin-top: 20px;" class="home-button"><i class="fas fa-home"></i><a href="../Home.html"> Home</a> </button>
+                <button class="next-button">Kế Tiếp <i class="fas fa-chevron-right"></i></button>
+                <div id="background-content">
+                    <p> HTML là ngôn ngữ đánh dấu chuẩn cho các trang web</p>
+                    <br>
+                    <p> Với HTML, bạn có thể tạo trang web cho riêng mình</p>
+                    <br>
+                    <p> HTML rất dễ học - Bạn sẽ thích nó!</p>
+                    <br> 
+                    <button class="study-button"><a href="https://www.devpro.edu.vn/tai-lieu-hoc-lap-trinh-html-css">Nghiên cứu hướng dẫn chi tiết HTML</a> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>
+                </div> 
+                <div>
+                    <h2 style="padding: 16px;">Tham khảo HTML</h2>
+                    <p style="font-size: 26px; margin-bottom: 30px;"> Tại đây, bạn sẽ tìm thấy tài liệu tham khảo đầy đủ về các phần tử HTML, thuộc tính, sự kiện, tên màu, thực thể, bộ ký tự, mã hóa URL, mã ngôn ngữ, tin nhắn HTTP, hỗ trợ trình duyệt và hơn thế nữa:</p>
+                </div>
+                <div id="button-container">
+                    <!-- First Column -->
+                    <div class="column">
+                        <button type="submit" class="button-three-column">HTML Elements</button>
+                        <button type="submit" class="button-three-column">Global Attributes</button>
+                        <button type="submit" class="button-three-column">Canvas</button>
+                        <button type="submit" class="button-three-column">URL Endcoding</button>
+                        <button type="submit" class="button-three-column">HTTP Messages</button>
+                    </div>
+                
+                    <!-- Second Column -->
+                    <div class="column">
+                        <button type="submit" class="button-three-column">Browser Support</button>
+                        <button type="submit" class="button-three-column">Event Attributes</button>
+                        <button type="submit" class="button-three-column">Audio/Video DOM</button>
+                        <button type="submit" class="button-three-column">Languages Codes</button>
+                        <button type="submit" class="button-three-column">Px to Em Converter</button>
+                    </div>
+                
+                    <!-- Third Column -->
+                    <div class="column">
+                        <button type="submit" class="button-three-column">Attributes</button>
+                        <button type="submit" class="button-three-column">Color Names</button>
+                        <button type="submit" class="button-three-column">Character Sets</button>
+                        <button type="submit" class="button-three-column">Country Codes</button>
+                        <button type="submit" class="button-three-column">Keyboard Shortcuts</button>
+                    </div>
+                </div>
+                <div>
+                    <h1 id="introduce" style="padding: 20px"> HTML Introduce</h1>
+                    <hr>
+                    <h3 style="padding: 20px; margin-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">HTML là ngôn ngữ đánh dẫu tiêu chuẩn để tạo các trang Web.</h3>
+                    <hr>
+                </div>
+                <div>
+                    <h2 style="padding: 20px" >HTML là gì?</h2>
+                </div>
+                <div style="margin-left: 40px; font-size: 20px;">
+                    <ul>
+                        <li>HTML là viết tắt của Ngôn ngữ đánh dấu siêu văn bản</li>
+                        <li>HTML là ngôn ngữ đánh dấu tiêu chuẩn để tạo các trang Web</li>
+                        <li>HTML mô tả cấu trúc của một trang Web</li>
+                        <li>HTML bao gồm một loạt các phần tử</li>
+                        <li>Các phần tử HTML cho trình duyệt biết cách hiển thị nội dung</li>
+                        <li>Các phần tử HTML gắn nhãn các phần nội dung như "đây là tiêu đề", "cái này là một đoạn văn", "đây là một liên kết", v.v.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 style="padding: 20px"> HTML Editors</h1>
+                    <hr>
+                    <h3 style="padding: 20px; margin-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Một trình soạn thảo văn bản đơn giản là tất cả những gì bạn cần để học HTML.</h3>
+                    <hr>
+                </div>
+                <div id="html-editors">
+                    <h3> Học HTML bằng Notepad hoặc TextEdit</h3>
+                    <br>
+                    <p>Các trang web có thể được tạo và sửa đổi bằng cách sử dụng các trình soạn thảo HTML chuyên nghiệp.</p>
+                    <br>
+                    <p>Tuy nhiên, để học HTML, chúng tôi khuyên bạn nên sử dụng một trình soạn thảo văn bản đơn giản như Notepad (PC) hoặc TextEdit (Mac).</p>
+                    <br>
+                    <p>Chúng tôi tin rằng sử dụng một trình soạn thảo văn bản đơn giản là một cách tốt để học HTML.</p>
+                    <br>
+                    <p>Làm theo các bước dưới đây để tạo trang web đầu tiên của bạn với Notepad hoặc TextEdit.</p>
+                </div>
+                <div id="notepad">
+                    <br>
+                    <h3>Mở Notepad (PC)</h3>
+                    <br>
+                    <p><b>Window 8 trở lên:</b></p>
+                    <br>
+                    <p> Mở <b>Màn hình bắt đầu </b>(biểu tượng cửa sổ ở dưới cùng bên trái trên màn hình của bạn).Nhập <b>Notepad.</b></p>
+                    <br>
+                    <p><b>Window 7 trở xuống:</b></p>
+                    <br>
+                    <p>Mở <b>Bắt đầu > Chương trình > Phụ kiện > Notepad.</b></p>
+                </div>
+                <div id="notepad-step2">
+                    <br>
+                    <h3>Bước 2: Viết một số HTML</h3>
+                    <br>
+                    <p>Viết hoặc sao chép mã HTML sau vào Notepad:</p>
+                    <br>
+                        <img id="img1" src="Images/example3.jpg " alt="">
+                        <img id="img2" src="Images/notepad.png" alt="">
+                </div>
+                <div id="notepad-step3">
+                    <br>
+                    <h3>Bước 3: Lưu trang HTML</h3>
+                    <br>
+                    <p>Lưu tệp trên máy tính của bạn. Chọn <b>File > Save as</b> trong menu Notepad.</p>
+                    <br>
+                    <p>Đặt tên tệp <b>là "index.htm"</b>và đặt mã hóa thành <b>UTF-8</b> (đây là mã hóa ưa thích cho các tệp HTML).</p>
+                    <br>
+                    <img id="img3" src="Images/notepad3.png" alt="">
+                </div>
+                <div id="meo">
+                    <br>
+                    <p><b>Mẹo: </b>Bạn có thể sử dụng .htm hoặc .html làm phần mở rộng tệp. Không có sự khác biệt; Điều đó tùy thuộc vào bạn.</p>
+                </div>
+                <div id="notepad-step4">
+                    <br>
+                    <h3>Bước 4: Xem trang HTML trong trình duyệt của bạn</h3>
+                    <br>
+                    <p>Mở tệp HTML đã lưu trong trình duyệt yêu thích của bạn (nhấp đúp vào tệp, hoặc nhấp chuột phải - và chọn "Mở bằng").</p>
+                    <br>
+                    <p>Kết quả sẽ giống như thế này:</p>
+                    <img id="img4" src="Images/notepad4.png">
+                </div>
+
+                <div style="margin-top: 20px;"></div>
+                <hr>
+            </div>
+
+
+
+
+            <!-- Layout bên phải -->
+            <div id="right">
+                <div align="left" id="example">
+                    <ul>
+                        <li>Dễ dàng học HTML "Hãy tự mình thử"</li>
+                    </ul>
+                    <h2 style="background-color:rgb(212, 212, 215);">Ví dụ</h2>
+                    <img id="ex" src="Images/example.jpg">
+                    <button class="Try-button">Hãy tự mình thử</a> <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div>
+                    <h2 style="padding: 15px; font-size: 22px; " align="left" >Một tài liệu HTML đơn giản</h2>
+                    <h2 style="background-color:rgb(212, 212, 215);">Ví dụ</h2>
+                    <img id="ex2" src="Images/example2.jpg">
+                </div>
+                <div>
+                    <h2 style="padding: 15px;">Giải thích ví dụ</h2>
+                </div>
+                <div>
+                    <ul style="margin-left: 20px;">
+                        <li ><p>Tuyên bố xác định rằng tài liệu này là tài liệu HTML5 <code class="thehtml">&lt;!DOCTYPE html&gt;</code></p></li>
+                        <li style="margin-top: 6px;"><p>Phần tử là phần tử gốc của HTML trang <code class="thehtml">&lt;html&gt;</code></p></li>
+                        <li style="margin-top: 6px;"><p>Phần tử chứa thông tin meta về Trang HTML <code class="thehtml">&lt;head&gt;</code></p></li>
+                        <li style="margin-top: 6px;"><p>Phần tử chỉ định một tiêu đề cho Trang HTML (được hiển thị trong thanh tiêu đề của trình duyệt hoặc trong tab của trang)<code class="thehtml">&lt;title&gt;</code></p></li>
+                        <li style="margin-top: 6px;"><p>Phần tử định nghĩa nội dung của tài liệu và là vùng chứa cho tất cả nội dung hiển thị, chẳng hạn như tiêu đề, đoạn văn, hình ảnh, siêu liên kết, bảng, danh sách, v.v.<code class="thehtml">&lt;body&gt;</code></p></li>
+                        <li style="margin-top: 6px;"><p>Phần tử định nghĩa một tiêu đề lớn<code class="thehtml">&lt;h1&gt;</code></p></li>
+                        <li style="margin-top: 6px;"><p>Phần tử định nghĩa một đoạn văn<code class="thehtml">&lt;p&gt;</code></p></li>
+                    </ul>
+                </div>
+                <div id="html-basic">
+                    <br>
+                    <h2>HTML BASIC</h2>
+                    <hr>
+                    <br>
+                    <p>Trong chương này, chúng tôi sẽ trình bày một số ví dụ HTML cơ bản.</p>
+                    <br>
+                    <p>Đừng lo lắng nếu chúng tôi sử dụng các thẻ mà bạn chưa tìm hiểu.</p>
+                    <br>
+                    <hr>
+                </div>
+                <div id="document-html">
+                    <br>
+                    <h3>Tài liệu HTML</h3>
+                    <br>
+                    <p>Tất cả các tài liệu HTML phải bắt đầu bằng khai báo loại tài liệu: .<code class="thehtml">&lt;!DOCTYPE html&gt;</code></p>
+                    <br>
+                    <p>Bản thân tài liệu HTML bắt đầu bằng và kết thúc bằng .<code class="thehtml">&lt;html&gt; &lt;/html&gt;</code></p>
+                    <br>
+                    <p>Phần hiển thị của tài liệu HTML nằm giữa và .<code class="thehtml">&lt;body&gt; &lt;/body&gt;</code></p>
+                </div>
+                <div id="doctype">
+                    <br>
+                    <p style="font-size: 18px; margin-left: 20px; font-family: 'Times New Roman', Times, serif;"> <b>The &lt;!DOCTYPE&gt; Declaration</b></p>
+                    <br>
+                    <p>Khai báo đại diện cho loại tài liệu và giúp trình duyệt hiển thị các trang web một cách chính xác. <code class="thehtml">&lt;!DOCTYPE &gt;</code> </p>
+                    <br>
+                    <p>Nó chỉ phải xuất hiện một lần, ở đầu trang (trước bất kỳ thẻ HTML nào).</p>
+                    <br>
+                    <p>Tờ khai không phân biệt chữ hoa chữ thường.<code class="thehtml">&lt;!DOCTYPE &gt;</code></p>
+                    <br>
+                    <p>Khai báo cho HTML5 là:<code class="thehtml">&lt;!DOCTYPE &gt;</code></p>
+                </div>
+                <div id="tieude">
+                    <br>
+                    <h2>Tiêu đề HTML</h2>
+                    <br>
+                    <p>Các tiêu đề HTML được định nghĩa bằng các thẻ đến.<code class="thehtml">&lt;h1&gt;&lt;h6&gt;</code></p>
+                    <br>
+                    <p><code class="thehtml">&lt;h1&gt;</code> xác định tiêu đề quan trọng nhất. Xác định điều ít quan trọng nhất tiêu đề: <code class="thehtml">&lt;h6&gt;</p>
+                    <br>
+                </div>
+                <div>
+                    <h2 style="color:black;background-color:rgb(212, 212, 215);">Ví dụ</h2>
+                    <img id="img5" src="Images/notepad5.png" alt="">
+                </div>
+                <div class="html-element">
+                    <br>
+                    <h2 style="color:black; margin-left: 20px;">HTML Element</h2>
+                    <hr>
+                    <br>
+                    <p style="color:black;margin-left: 20px;">Một phần tử HTML được định nghĩa bởi thẻ start, một số nội dung và thẻ kết thúc.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <h3 style="color: black">Các phần tử HTML</h3>
+                    <br>
+                    <p style="color: black">Phần tử HTML là tất cả mọi thứ từ thẻ bắt đầu đến thẻ kết thúc:</p>
+                    <br>
+                    <p style="color: black"><code class="elemt" id="targett">&lt;Tên khóa&gt;</code>Nội dung đi đây... <code class="elemt" id="target-two">&lt;/tagname&gt;</code></p>
+                    
+                    <br>
+                    <p style="color: black">Ví dụ về một số phần tử HTML:</p>
+                    <br>
+                    <p style="color: black">
+                        <code class="elemt" id="target-three">&lt;H1&gt;</code>
+                        Tiêu đề đầu tiên
+                        <code class="elemt" id="target-four">&lt;/h1&gt;</code>
+                    </p>
+                    <br>
+                    <p style="color: black">
+                        <code class="elemt" id="target-five">&lt;P&gt;</code>
+                        Đoạn đầu tiên của tôi.
+                        <code class="elemt" id="target-six">&lt;/p&gt;</code>
+                    </p>
+                    <br>
+                    <img width="100%" height="90px"  src="Images/element.png" alt="">
+                    <br>
+                    <br>
+                    <div class="notee" style="background: #ffff00; color: black;">
+                        <br>
+                        <p style="margin-bottom: 20px;"><b>Ghi chú: </b>Một số phần tử HTML không có nội dung (như <code>&lt;br&gt;</code> yếu tố). Những yếu tố này được gọi là phần tử trống. Các phần tử trống không có thẻ kết thúc!</p>
+                    </div>
+                    
+                    
+                    <div style="color: black">
+                        <h2>Các phần tử HTML lồng nhau</h2>
+                        <br>
+                        <p>Các phần tử HTML có thể được lồng vào nhau (điều này có nghĩa là các phần tử có thể chứa các phần tử khác).</p>
+                        <br>    
+                        <p>Tất cả các tài liệu HTML bao gồm các phần tử HTML lồng nhau.</p>
+                        <br>
+                        <p>Ví dụ sau đây chứa bốn phần tử HTML (, , và ):<code class="thehtml">&lt;html&gt;</code> <code class="thehtml">&lt;body&gt;</code> <code class="thehtml">&lt;h1&gt;</code> <code class="thehtml">&lt;p&gt;</code></p>
+                    </div>
+                    
+                    <br>
+                    <h2 style="background-color:rgb(212, 212, 215); color: black; margin-top:30px;">
+                        Ví dụ
+                    </h2>
+                    <img id="ex" src="Images/example.jpg">
+                </div>
+                <div style="margin-top: 120px;"></div>
+                <hr>
+            </div>
+            
+            
+            <!-- Phần phụ -->
+            <div id="sidebar">
+
+            </div>
+        </div>
+
+        <!-- Phần cuối trang web -->
+        <div id="footer">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="../Menu/main-menu.css">
+    <link rel="stylesheet" href="../Menu/general-menu.css">
+    <link rel="stylesheet" href="../search.js">
+    <link rel="stylesheet" href="../button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<script src="index.js"></script>
+<body>
+    <div id="wrapper">
+        <!-- Menu khái quát -->
+        <div id="head">
+            <!-- Logo cua trang -->
+            <div class="logo">
+                <a href="../Home/Home.html">
+                    <img src="../logo.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <!-- =====================Menu chung ===================-->
+            <div class="general-menu">
+                <ul>
+                    <li><a href="../HuongDan/index.html">
+                        Hướng dẫn</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li> <a href="../GoiY/index.html">Gợi ý</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../ViecLam/index.html">Việc làm</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <li><a href="../DaoTao/index.html">Đào tạo</a>
+                        <i class='bx bxs-down-arrow'></i>
+                    </li>
+                    <input type="text" class="text-search" placeholder="Search...">
+                    <button  href="" type="submit" class="btn-search" ><i class="fas fa-search"></i></button>
+                </ul>
+            </div>
+
+            <div class="general-icon">
+                <div class="general-icon-item">
+                    <i class='bx bx-collapse-horizontal'></i>
+                    <h3>Spaces</h3>
+                </div>
+                <div class="general-icon-item">
+                    <i class='bx bxs-shopping-bags'></i>
+                    <h3>Shop</h3>
+                </div>
+
+            </div>
+
+            <div class="login">
+                <button type="submit" class="btn-search"><a href="../FormDangKy/index.html"> Đăng ký</a></button>
+                <button type="submit" class="btn-search"><a href="../LoginForm/Login.html"> Đăng nhập</a></button>
+            </div>
+
+
+        </div>
+        <!-- ================END MENU CHUNG================== -->
+        
+        <!-- ======================Menu chính =====================-->
+        <div id="head-link">
+            <nav class="main-menu">
+                <a href="../Learn_HTML/index.html">HTML</a>
+                <a href="../Learn_CSS/index.html">CSS</a>
+                <a href="../Learn_JavaScript/index.html">JAVASCRIPT</a>
+                <a href="../Learn_SQL/index.html">SQL</a>
+                <a href="../Learn_Python/index.html">PYTHON</a>
+                <a href="../Learn_Java/index.html">JAVA</a>
+                <a href="../Learn_PHP/index.html">PHP</a>
+                <a href="../Learn_C/index.html">C</a>
+                <a href="../Learn_CPlus/index.html">C++</a>
+                <a href="../Learn_CSharp/index.html">C#</a>
+                <span></span>
+            </nav>
+        </div>
+        <!-- =================END Menu chính================= -->
+
+
+        <!-- Nội dung chính của trang chủ -->
+        <div id="main-content">
+            <!-- Phần phụ -->
+            <div id="left">
+                <img src="Images/PhiHanhGia.jpg">
+            </div>
+
+            <!-- Nội dung -->
+            <div id="content">
+                <h1>Learn to Code</h1>
+                <h2>With the world's largest web developer site.</h2>
+                <input type="text" class="text-main-search" placeholder="Search...">
+                <button  href="" type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+                <h3>Not Sure Where To Begin?</h3>
+                
+            </div>
+
+            
+            <div id="right">
+                <img src="Images/PhiHanhGia2.jpg">
+            </div>
+        </div>
+
+
+        <!-- SUB CONTENT HTML -->
+        <div class="sub-content sub-content-html">
+            <div class="sub-content-item sub-content-item-menu">
+                <h1>HTML</h1>
+                <h3>The language for building web pages</h3>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-learn"><a href="#"> Learn HTML</a></button>
+                </div>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-reference"><a href="#"> HTML Reference</a></button>
+                </div>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-certified"><a href="#"> Get Certified</a></button>
+                </div>
+            </div>
+            <div class="sub-content-item sub-content-item-code">
+                <h1>CSS Example:</h1>
+                    <div class="codeExample">
+                        <img src="Images/CodeHTML.png" alt="">
+                    </div>
+                
+            </div>
+            
+            
+        </div>
+
+        <!-- SubContent CSS -->
+        <div class="sub-content sub-content-css">
+            <div class="sub-content-item sub-content-item-menu">
+                <h1>CSS</h1>
+                <h3>The language for styling web pages</h3>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-learn"><a href="#"> Learn CSS</a></button>
+                </div>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-reference"><a href="#"> CSS Reference</a></button>
+                </div>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-certified"><a href="#"> Get Certified</a></button>
+                </div>
+            </div>
+            <div class="sub-content-item sub-content-item-code">
+                <h1>CSS Example:</h1>
+                    <div class="codeExample">
+                        <img src="Images/CodeCSS.png" alt="">
+                    </div>
+                
+            </div>
+            
+        </div>
+
+        <!-- Subcontent JAVASCRIPT -->
+        <div class="sub-content sub-content-js">
+            <div class="sub-content-item sub-content-item-menu">
+                <h1>JAvascript</h1>
+                <h3>The language for building web pages</h3>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-learn"><a href="#"> Learn JavaScript</a></button>
+                </div>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-reference"><a href="#"> JavaScript Reference</a></button>
+                </div>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-certified"><a href="#"> Get Certified</a></button>
+                </div>
+            </div>
+            <div class="sub-content-item sub-content-item-code">
+                <h1>JavaScipts Example:</h1>
+                <img src="Images/CodeJS.png" alt="">
+                
+            </div>
+            
+        </div>
+        <!-- CODE PYTHON -->
+        <div class="sub-content sub-content-pt">
+            <div class="sub-content-item sub-content-item-menu">
+                <h1>PYTHON</h1>
+                <h3>A popular programing langue</h3>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-learn"><a href="#"> Learn Python</a></button>
+                </div>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-reference"><a href="#"> Python Reference</a></button>
+                </div>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-certified"><a href="#"> Get Certified</a></button>
+                </div>
+            </div>
+            <div class="sub-content-item sub-content-item-code">
+                <h1>Python Example:</h1>
+                <br>
+                <h2>
+                    if 5 > 2; <br>
+                    print("Five is greater than two!")
+                </h2>
+                
+            </div>
+            
+        </div>
+        <!-- SQL  -->
+        <div class="sub-content sub-content-sql">
+            <div class="sub-content-item sub-content-item-menu">
+                <h1>SQL</h1>
+                <h3>The language for accessing database</h3>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-learn"><a href="#"> Learn SQL</a></button>
+                </div>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-reference"><a href="#"> SQL Reference</a></button>
+                </div>
+                <div class="btn-general">
+                    <button type="submit" class="btn btn-certified"><a href="#"> Get Certified</a></button>
+                </div>
+            </div>
+            <div class="sub-content-item sub-content-item-code">
+                <h1>SQL Example:</h1>
+                <img src="Images/CodeSQL.png" alt="">
+                
+            </div>
+            
+        </div>
+        <!--======================= 4 Ngôn ngữ 4 ô=================================== -->
+        <div class="wrap-learn">
+            <div class="wrap-learn-item wrap-learn-php">
+                <h1>PHP</h1>  
+                <h3>A web server programing language</h3>
+                <div class="wrap-learn-item-btn">
+                    <button type="submit" class="btn btn-learn"><a href="#"> Learn PHP</a></button>
+                </div>
+            </div>
+
+            <div class="wrap-learn-item wrap-learn-jquery">
+                <h1>jQuery</h1>
+        
+                <h3>A JS libary for developing web pages</h3>
+                <div class="wrap-learn-item-btn">
+                    <button type="submit" class="btn btn-learn"><a href="#"> Learn jQuery</a></button>
+                </div>
+            </div>
+
+            <div class="wrap-learn-item wrap-learn-cplus">
+                <h1>C++</h1>
+                <h3>A programming language</h3>
+                <div class="wrap-learn-item-btn">
+                    <button type="submit" class="btn btn-learn "><a href="#"> Learn C++</a></button>
+                </div>
+            </div>
+
+            <div class="wrap-learn-item wrap-learn-bootstrap">
+                <h1>Bootstrap</h1>
+                <h3>A CSS framwork for designing better web pages</h3>
+                <div class="wrap-learn-item-btn">
+                    <button type="submit" class="btn btn-learn "><a href="#"> Learn Bootstrap</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini-learn">
+            <div class="mini-learn-item mini-learn-item-C">
+                <a href="#">C</a>
+            </div>
+            <div class="mini-learn-item mini-learn-item-Csap">
+                <a href="#">C#</a>
+            </div>
+            <div class="mini-learn-item mini-learn-item-R">
+                <a href="#">R</a>
+            </div>
+            <div class="mini-learn-item mini-learn-item-Kotlin">
+                <a href="#">Kotlin</a>
+            </div>
+            <div class="mini-learn-item mini-learn-item-Node.js">
+                <a href="#">Node.js</a>
+            </div>
+            <div class="mini-learn-item mini-learn-item-React">
+                <a href="#">React</a>
+            </div>
+            <div class="mini-learn-item mini-learn-item-JSON">
+                <a href="#">JSON</a>
+            </div>
+            <div class="mini-learn-item mini-learn-item-Vue">
+                <a href="#">Vue</a>
+            </div>
+            <div class="mini-learn-item mini-learn-item-MySQL">
+                <a href="#">MySQL</a>
+            </div>
+            <div class="mini-learn-item">
+                <a href="#">XML</a>
+            </div>
+
+            <div class="mini-learn-item mini-learn-item-Pandas">
+                <a href="#">Pandas</a>
+            </div>
+
+            <div class="mini-learn-item mini-learn-item-AppML">
+                <a href="#">AppML</a>
+            </div>
+
+
+        </div>
+
+
+        <!-- Phần cuối trang web -->
+        <div id="footer">
+
+        </div>
+    </div>
+</body>
+</html>

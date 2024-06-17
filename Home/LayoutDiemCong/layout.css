@@ -1,0 +1,350 @@
+body{
+    font-family: Arial, Tahoma;
+    font-size: 12px;
+}
+#main{
+    width: 1000px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#head {
+    width: 100%;
+    height: 100px;
+    background-color: #F5F5F5;
+    border: 2px solid #222;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#head .logo {
+    flex-grow: 25;
+    margin-right: 10px;
+    border-right: 2px solid #222;
+     /* Logo chiếm 30% chiều rộng */
+}
+
+#head .logo img {
+    width: 100%;
+    height: 100px;
+}
+
+#head .banner {
+    flex-grow: 75; /* Banner chiếm 70% chiều rộng */
+}
+
+#head .banner img {
+    width: 100%;
+    height: 100px;
+}
+
+
+#head-link {
+    justify-content: space-between;
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #222;
+    background-color: #F5F5F5;
+    margin-bottom: 5px;
+    clear: both;
+    position: relative; /* Thêm thuộc tính position: relative để xác định vị trí của submenu */
+}
+
+.menu {
+    top: 0; /* Dịch chuyển menu xuống phía dưới head-link */
+    left: 0; /* Căn menu với phần tử cha là head-link */
+    width: 100%; /* Đảm bảo menu có chiều rộng bằng với head-link */
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    background-color: #fff;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    border-right: 2px solid #222;
+    position: relative;
+}
+.menu ul li:last-child {
+    border-right: none;
+}
+
+.menu ul li a {
+    color: blue;
+    text-decoration: none;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #5C5DD1;
+    color: black;
+}
+
+.menu ul li > .sub-menu {
+    display: none;
+    position: absolute;
+    top: 0; /* Căn menu con với menu cha */
+    left: 100%; /* Đặt menu con bên phải của menu cha */
+}
+
+.menu ul li > .sub-menu ul {
+    background-color: #1F116B;
+}
+
+.menu ul li:hover .sub-menu {
+    display: block;
+}
+
+.search {
+    margin-left: auto;
+    margin-right: 10px; /* Thêm khoảng cách bên phải để tạo không gian giữa khung tìm kiếm và menu */
+    display: flex;
+}
+input[type="text"] {
+    padding: 8px;
+    font-size: 10px;
+    font-style: italic;/* font chữ nghiêng */
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+button {
+    padding: 10px 16px;
+    background-color: rgb(4, 170, 109);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+#left{
+     width: 150px;
+     min-height: 400px;
+     border: 2px solid #222;
+     float:left;
+     background-color: white;
+     margin-bottom: 5px;
+}
+
+.introduce1{
+    margin-top: 5px;
+    margin-left: 7px;
+    width: 135px;
+    height: 150px;
+    border: 1px solid #c81717;
+}
+.introduce2{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 135px;
+    height: 200px;
+    border: 1px solid #2e22b2;
+}
+#content{
+     width: 600px;
+     min-height: 400px;
+     border: 1px solid #CDCDCD;
+     float:left;
+     margin-left: 5px;
+     margin-right: 5px;
+     margin-bottom: 5px;
+}
+
+#content{
+    width: 600px;
+    min-height: 400px;
+    border: 0px solid #CDCDCD;
+    float:left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#layout1 {
+   width: 300px;
+   height: 120px;
+   border: 1px solid #222;
+   float: left;
+   line-height: 120px;
+   text-align: center;
+   box-sizing: border-box;
+   
+}
+#layout2 {
+    width: 250px;
+    height: 120px;
+    border: 1px solid #222;
+    margin-left: 20px; /* Để tạo khoảng cách giữa layout1 và layout2 */
+    float: right;
+    padding-right: 20px;
+    position: relative; /* Tạo ra không gian tương đối để xác định vị trí của các khung con */
+ }
+ 
+ #layout2 .nested-frame {
+    width: 40px; /* Chiều rộng của các khung con */
+    height: 100px; /* Chiều cao của các khung con */
+    border: 1px solid red; /* Biên cho các khung con */
+    position: absolute; /* Đặt các khung con tuyệt đối trong layout2 */
+    top: 0; /* Duy trì vị trí trên cùng của layout2 */
+ }
+ 
+ #layout2 .nested-frame:nth-child(1) {
+    right: 0; /* Đặt khung đầu tiên bên phải cách mép phải của layout2 */
+ }
+ 
+ #layout2 .nested-frame:nth-child(2) {
+    right: 45px; /* Cách khung thứ hai khỏi mép phải của layout2 */
+ }
+ 
+ #layout2 .nested-frame:nth-child(3) {
+    right: 90px; /* Cách khung thứ ba khỏi mép phải của layout2 */
+ }
+ 
+ /* Tiếp tục thêm các luật CSS cho các khung con tiếp theo nếu cần */
+ 
+#layout3 {
+   width: 190px;
+   height: 120px;
+   border: 1px solid #222;
+   float: left;
+   margin-top: 20px;
+}
+#layout4 {
+   width: 190px;
+   height: 120px;
+   border: 1px solid #222;
+   margin-top: 20px;
+   float: left;
+   margin-left: 7px;
+}
+#layout5 {
+   width: 190px;
+   height: 120px;
+   border: 1px solid #222;
+   margin-top: 20px;
+   float: right;
+   padding-right: 10px;
+}
+#layout6 {
+   width: 190px;
+   height: 120px;
+   border: 1px solid #222;
+   float: left;
+   margin-top: 20px;
+}
+#layout7 {
+   width: 190px;
+   height: 120px;
+   border: 1px solid #222;
+   margin-top: 20px;
+   float: left;
+   margin-left: 7px;
+}
+#layout8 {
+   width: 190px;
+   height: 120px;
+   border: 1px solid #222;
+   margin-top: 20px;
+   float: right;
+   padding-right: 10px;
+}
+#right{
+    width: 234px;
+    min-height: 400px;
+    border: 1px solid #222;
+    float:right;
+    margin-bottom: 5px;
+}
+#right1 {
+   width: 200px;
+   height: 120px;
+   border: 3px solid #222;
+   margin: 10px;
+   
+}
+#right1 img {
+   box-sizing: border-box;
+   width: 200px;
+   height: 120px;
+}
+#right2 {
+   width: 200px;
+   height: 120px;
+   border: 0px solid #222;
+   margin: 10px;
+   border-left: 3px solid black;
+   border-bottom: 3px solid black;
+}
+#right2 img {
+   box-sizing: border-box;
+   width: 200px;
+   height: 120px;
+}
+#right3 {
+   width: 200px;
+   height: 100px;
+   border: 0px solid blue;
+   margin: 10px;
+   margin-top: 30px;
+   
+}
+#right3 img {
+   box-sizing: border-box;
+   width: 200px;
+   height: 100px;
+}
+
+
+
+
+
+
+
+#footer{
+    justify-content: space-between;
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #CDCDCD;
+    background-color: #F5F5F5;
+    margin-bottom: 5px;
+    clear: both;
+    position: relative;
+}
+
+.menu-footer {
+    margin-left: auto;
+}
+.menu-footer ul {
+    margin-left: 60px;
+}
+
+.noCopy {
+    width: 100%;
+}
+
+.noCopy h3 {
+    font-size: 10px;
+}
+
